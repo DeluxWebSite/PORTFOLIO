@@ -1,0 +1,36 @@
+.page-why {
+  height: 568px;
+  display: flex;
+  flex-direction: column;
+}
+.dog-image {
+  height: 341px;
+  width: 100%;
+}
+.page-why__text {
+  height: 227px;
+  background: rgba(77, 81, 42, 1);
+}
+.page-why__title {
+  font-family: Icegirl;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fffbf2;
+  margin-top: 35px;
+}
+.page-why__discription {
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 116.5%;
+  text-transform: lowercase;
+  color: #fffbf2;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 10px;
+}

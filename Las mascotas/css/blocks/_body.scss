@@ -1,0 +1,30 @@
+.page__body {
+  max-width: 414px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* @media (max-width: 479px) {
+  .page__body {
+    max-width: 480px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .page__body {
+    min-width: 480px;
+    max-width: 768px;
+  }
+}
+@media (min-width: 768px) and (max-width: 959px) {
+  .page__body {
+    min-width: 768px;
+    max-width: 959px;
+  }
+}
+@media (min-width: 960px) and (max-width: 1440px) {
+  .page__body {
+    min-width: 960px;
+    max-width: 1440px;
+  }
+} */

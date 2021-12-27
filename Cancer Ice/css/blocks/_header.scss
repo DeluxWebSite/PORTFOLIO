@@ -1,0 +1,151 @@
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 57px;
+  background: #fff8e7;
+  border-bottom: 1px solid #fdb054;
+  position: relative;
+}
+.site-header__list {
+  display: none;
+}
+
+.site-header__list li {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.site-header__burger {
+  border: none;
+  background: #fff8e7;
+  margin-left: 20px;
+}
+.logo-close {
+  display: none;
+}
+
+.site-header__entry {
+  border: none;
+  background: #fff8e7;
+  margin-right: 20px;
+}
+
+.site-header__logo {
+  margin-top: 55px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.site-header__logo-img {
+  height: 80px;
+  width: 80px;
+}
+.site-header__search {
+  display: none;
+  border: none;
+  background: #fff8e7;
+}
+.header__svg-hiden {
+  display: none;
+}
+
+.site-header__list li svg:hover {
+  transform: rotate(180deg);
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .site-header__logo-img {
+    height: 110px;
+    width: 110px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .site-header {
+    height: 80px;
+    justify-content: end;
+  }
+  .site-header__search {
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .site-header__burger {
+    display: none;
+  }
+  .site-header__entry-img {
+    height: 20px;
+    width: 20px;
+  }
+  .site-header__entry {
+    margin-right: 20px;
+  }
+
+  .site-header__logo {
+    left: 20px;
+    position: absolute;
+    top: 34px;
+    margin-top: 0;
+  }
+  .site-header__logo-img {
+    height: 90px;
+    width: 90px;
+  }
+  .site-header__list {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 100px;
+  }
+
+  /* .site-header__list li + li {
+    margin-left: 11px;
+  } */
+}
+@media (min-width: 1440px) {
+  .site-header {
+    height: 80px;
+    justify-content: end;
+  }
+  .site-header__search {
+    display: block;
+    margin-left: 179px;
+    margin-right: 132px;
+  }
+  .site-header__burger {
+    display: none;
+  }
+  .site-header__entry-img {
+    height: 20px;
+    width: 20px;
+  }
+  .site-header__entry {
+    margin-right: 160px;
+  }
+
+  .site-header__logo {
+    left: 110px;
+    position: absolute;
+    top: 10px;
+    margin-top: 0;
+  }
+  .site-header__logo-img {
+    height: 140px;
+    width: 140px;
+  }
+  .site-header__list {
+    display: flex;
+  }
+  .site-header__list li + li {
+    margin-left: 30px;
+  }
+  .header__svg-hiden {
+    display: inline;
+  }
+}

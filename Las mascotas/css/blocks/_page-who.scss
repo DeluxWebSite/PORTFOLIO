@@ -1,0 +1,96 @@
+.page-who {
+  height: 568px;
+  width: 100%;
+  background-image: url(../img/320px/bckground@2x.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.page-who__title {
+  font-family: Icegirl;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #6e4356;
+}
+.page-who__img {
+  font-family: Icegirl;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #6e4356;
+
+  margin-top: 32px;
+}
+.img-item {
+  border-radius: 5px;
+  background: #fff;
+}
+.img-dog,
+.img-cat {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.img-item + .img-item {
+  margin-left: 12px;
+}
+.page-who__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form__nombre,
+.form__edad,
+.form__peso,
+.form__roca {
+  width: 288px;
+  height: 40px;
+  border-radius: 50px;
+  cursor: pointer;
+
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: lowercase;
+  color: #a5a5a5;
+  border: none;
+  margin-top: 20px;
+}
+.form__registar {
+  width: 140px;
+  height: 40px;
+  background: #408221;
+  border-radius: 50px;
+  margin-top: 25px;
+  cursor: pointer;
+
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: lowercase;
+  color: #ffffff;
+  border: none;
+}

@@ -1,0 +1,64 @@
+.page-main {
+  height: 568px;
+  width: 100%;
+  background-image: url(../img/320px/main-banner@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.page-main__title {
+  font-family: Icegirl;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #fffbf2;
+  margin-top: 122px;
+  margin-left: 16px;
+}
+.page-main__discription {
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: lowercase;
+  color: #ffffff;
+  margin-left: 16px;
+  margin-top: 13px;
+}
+.page-main__button-tratar {
+  background: #408221;
+  border-radius: 25px;
+  width: 140px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+
+  font-family: Futura;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #fffbf2;
+  margin-top: 149px;
+  margin-left: 16px;
+}
+.page-main__button-comprar {
+  background: #fffbf2;
+  border-radius: 25px;
+  width: 140px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+
+  font-family: Futura;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #408221;
+  margin-left: 10px;
+}

@@ -1,0 +1,121 @@
+.what-todo {
+  height: 700px;
+  background-color: #cce4ff;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.what-todo__title {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+
+  text-align: center;
+
+  color: #002855;
+  flex-basis: 100%;
+  margin-top: 50px;
+}
+.what-todo__left {
+  /* flex-basis: 40%; */
+  width: 388px;
+}
+.what-todo__right {
+  /* flex-basis: 60%; */
+  width: 762px;
+  margin-left: 130px;
+}
+.what-todo__left-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  color: #002855;
+}
+.what-todo__left-image {
+  margin-top: 113px;
+}
+.what-todo__right-buttons {
+  margin-bottom: 100px;
+}
+.applicants-btn {
+  width: 207px;
+  height: 39px;
+  margin-right: 134px;
+  background: none;
+  border: none;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+
+  text-align: center;
+
+  color: #0466c8;
+  cursor: pointer;
+}
+.employers-btn {
+  width: 207px;
+  height: 39px;
+  background: none;
+
+  border: 1px solid #0466c8;
+  box-sizing: border-box;
+  border-radius: 100px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+
+  text-align: center;
+
+  color: #0466c8;
+  cursor: pointer;
+}
+
+.what-todo__right-text {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 31px;
+
+  color: #0466c8;
+  margin-bottom: 50px;
+
+  white-space: nowrap;
+  overflow: hidden;
+}
+.what-todo__right-text svg {
+  vertical-align: middle;
+}
+.registration-btn,
+.entrance-btn {
+  background: #0466c8;
+  border-radius: 100px;
+  border: none;
+  width: 189px;
+  height: 35px;
+
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.registration-btn {
+  margin-right: 40px;
+}

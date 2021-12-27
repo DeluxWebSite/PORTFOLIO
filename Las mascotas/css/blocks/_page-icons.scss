@@ -1,0 +1,129 @@
+.page-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 1097px;
+  width: 100%;
+  background-image: url(../img/320px/back-icons@2x.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.page-icons__heart,
+.page-icons__bag,
+.page-icons__track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.page-icons__heart {
+  margin-top: 39px;
+}
+.page-icons__bag {
+  margin-top: 69px;
+}
+.page-icons__track {
+  margin-top: 72px;
+}
+
+.page-icons__heart-title,
+.page-icons__bag-title,
+.page-icons__track-title {
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: lowercase;
+  color: #373528;
+  margin: 8px auto;
+}
+.page-icons__heart-discription,
+.page-icons__bag-discription,
+.page-icons__track-discription {
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: lowercase;
+  color: #373528;
+  margin: 0 auto;
+}
+.page-icons__heart-button,
+.page-icons__bag-button,
+.page-icons__track-button {
+  width: 140px;
+  height: 40px;
+  border-radius: 25px;
+  background: #fffbf2;
+  border: 2px solid #408221;
+
+  font-family: Futura;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  color: #408221;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.page-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 42px;
+}
+.form__text {
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: lowercase;
+  color: #373528;
+  margin: 0 auto;
+}
+.form__email {
+  width: 288px;
+  height: 40px;
+  border-radius: 25px;
+  cursor: pointer;
+  background: #fffbf2;
+  border: 2px solid #408221;
+
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: lowercase;
+  color: #a5a5a5;
+  text-align: center;
+  margin-top: 12px;
+}
+.form__submit {
+  width: 288px;
+  height: 40px;
+  background: #408221;
+  border-radius: 25px;
+  border: 2px solid #408221;
+
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: lowercase;
+  color: #ffffff;
+  margin-top: 15px;
+  cursor: pointer;
+  margin-bottom: 28px;
+}

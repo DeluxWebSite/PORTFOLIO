@@ -1,0 +1,25 @@
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 45px;
+  width: 100%;
+  max-width: 414px;
+  background-color: rgba(77, 60, 43, 1);
+  position: fixed;
+  color: #fff;
+}
+
+.page-header__logo {
+  margin-left: 16px;
+  height: 35px;
+  width: 35px;
+}
+.page-header__burger {
+  margin-right: 16px;
+  color: #fff;
+  background: none;
+  border: none;
+  height: 31px;
+  width: 27px;
+}

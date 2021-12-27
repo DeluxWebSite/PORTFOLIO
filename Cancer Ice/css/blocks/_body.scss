@@ -1,0 +1,39 @@
+.site-body {
+  min-width: 320px;
+  max-width: 479px;
+  background: #fff8e7;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  min-width: 280px;
+  max-width: 439px;
+  margin: auto 20px;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .site-body {
+    min-width: 480px;
+    max-width: 767px;
+  }
+  .container {
+    min-width: 440px;
+    max-width: 727px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .site-body {
+    min-width: 768px;
+    max-width: 1439px;
+  }
+  .container {
+    min-width: 728px;
+    max-width: 1399px;
+  }
+}
+@media (min-width: 1440px) {
+  .site-body {
+    min-width: 1440px;
+  }
+  .container {
+    min-width: 1120px;
+  }
+}

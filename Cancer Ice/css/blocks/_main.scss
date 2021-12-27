@@ -1,0 +1,555 @@
+.site-main {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .site-main {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1440px) {
+  .site-main {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+}
+
+/* main img */
+.site-main__img {
+  width: 100%;
+  height: 105px;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .site-main__img {
+    width: 100%;
+    height: 238px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .site-main__img {
+    width: 100%;
+    height: 267px;
+  }
+}
+@media (min-width: 1440px) {
+  .site-main__img {
+    width: 100%;
+    height: 350px;
+  }
+}
+/* секция наша миссия */
+
+.site-main__mission {
+  background: #ffffff;
+  border-radius: 10px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.site-main__mission-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #7d9418;
+}
+.site-main__mission-article {
+  display: flex;
+  flex-direction: column;
+}
+.site-main__mission-img {
+  border-radius: 10px;
+  margin: auto 24px;
+}
+.site-main__mission-description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  margin: 22px 24px 20px 24px;
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .site-main__mission-title {
+    text-align: start;
+    margin-left: 24px;
+    margin-bottom: 0;
+  }
+  .site-main__mission-article {
+    flex-direction: row;
+  }
+  .site-main__mission-text {
+    order: -1;
+  }
+  .site-main__mission-img {
+    width: 221px;
+    margin-right: 24px;
+  }
+  .site-main__mission-description {
+    margin-right: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .site-main__mission-article {
+    flex-direction: row;
+  }
+  .site-main__mission-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: left;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #7d9418;
+
+    margin-left: 50px;
+    margin-bottom: 0;
+  }
+  .site-main__mission-text {
+    order: -1;
+  }
+  .site-main__mission-img {
+    width: 455px;
+    margin: 0;
+  }
+  .site-main__mission-description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+
+    margin: 20px 112px 71px 50px;
+  }
+}
+
+/* секция задать вопрос */
+
+.site-main__question {
+  background: #ffffff;
+  border: 1px solid #fb7542;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.question-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.question-article__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  color: #fb7542;
+  text-align: center;
+  margin: 20px 24px 0 24px;
+}
+.question-article__decription {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+  margin: 30px 24px 26px 24px;
+}
+.question-article__button {
+  width: 186px;
+  height: 37px;
+  background: #fb7542;
+  border-radius: 4px;
+  border: none;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.question-article__img {
+  height: 132px;
+  margin-top: 16px;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .site-main__question {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .question-article__title {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .question-article__button {
+    margin-left: 20px;
+  }
+  .question-article__img {
+    height: 132px;
+    margin-left: auto;
+    margin-right: 13px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .site-main__question {
+    flex-direction: row;
+    align-items: end;
+    margin-top: 30px;
+  }
+  .question-article {
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .question-article__button {
+    margin-left: 20px;
+  }
+  .question-article__img {
+    height: 228px;
+    margin-left: auto;
+    margin-right: 13px;
+  }
+}
+@media (min-width: 1440px) {
+  .site-main__question {
+    flex-direction: row;
+    align-items: end;
+    margin-top: 30px;
+  }
+  .question-article {
+    align-items: flex-start;
+    margin-bottom: 30px;
+  }
+
+  .question-article__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #fb7542;
+
+    margin-left: 50px;
+  }
+  .question-article__decription {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #333333;
+    margin: 20px 109px 20px 50px;
+  }
+  .question-article__button {
+    margin-left: 50px;
+  }
+  .question-article__img {
+    height: 310px;
+    margin-right: 85px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+/* секция как получить лечение по омс */
+
+.site-main__how {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #ffffff;
+  border: 1px solid #7d9418;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.how-article {
+  display: flex;
+  flex-direction: column;
+}
+.how-article__title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #7d9418;
+  margin: 20px 24px 0 24px;
+}
+.how-article__discription {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  margin: 30px 24px 26px 24px;
+}
+.how-article__link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #c3d863;
+  text-decoration: none;
+  margin-left: 24px;
+  margin-right: auto;
+}
+.how-article__link svg {
+  margin-left: 10px;
+}
+
+.how-article__img {
+  height: 176px;
+  margin: 14px 24px 20px 24px;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .how-article__img {
+    height: 298px;
+    margin: 14px 24px 20px 24px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .site-main__how {
+    flex-direction: row;
+  }
+  .how-article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1440px) {
+  .site-main__how {
+    flex-direction: row;
+  }
+  .how-article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+  .how-article__img {
+    height: 245px;
+    margin: 0;
+  }
+  .how-article__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: #7d9418;
+    text-align: start;
+    margin: 0 260px 20px 50px;
+  }
+  .how-article__discription {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #333333;
+    margin: 20px 361px 16px 50px;
+  }
+  .how-article__link {
+    margin-left: 50px;
+  }
+}
+/* секция наши врачи */
+
+.site-main__doctors {
+  background: #ffffff;
+  border: 1px solid #fb7542;
+  border-radius: 10px;
+  margin-top: 30px;
+  width: 100%;
+}
+.site-main__doctors-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fb7542;
+}
+@media (min-width: 1440px) {
+  .site-main__doctors {
+    width: 808px;
+    min-width: 808px;
+    height: 359px;
+  }
+}
+
+/* секция присоединиться */
+
+.site-main__join {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  background: #ffffff;
+  border: 1px solid #fb7542;
+  border-radius: 10px;
+}
+.join-img {
+  height: 155px;
+  width: 187px;
+  background: #ffd5a8;
+  border-radius: 10px;
+  margin: 38px 47px 19px 47px;
+}
+.join-discription {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+  margin: auto 47px;
+  width: 184px;
+}
+.join-button {
+  width: 186px;
+  height: 37px;
+  background: #fb7542;
+  border-radius: 4px;
+  border: none;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin: 15px 47px 38px 47px;
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .site-main__join {
+    width: 340px;
+    min-width: 340px;
+  }
+}
+@media (min-width: 1440px) {
+  .site-main__join {
+    width: 280px;
+    min-width: 280px;
+  }
+}
+
+/* секция помощь проекту */
+
+.site-main__help {
+  height: 359px;
+  background: #ffffff;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.svg-top {
+  margin-right: auto;
+  margin-bottom: auto;
+}
+.svg-bottom {
+  margin-left: auto;
+  margin-top: auto;
+}
+.site-main__help-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+
+  color: #fb7542;
+  margin: 53px 27px 34px 27px;
+}
+.site-main__help-button {
+  width: 186px;
+  height: 37px;
+  margin: 0 47px;
+  background: #fb7542;
+  border-radius: 4px;
+  border: none;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .site-main__help svg {
+    height: 128px;
+    width: 116px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1439px) {
+  .site-main__help {
+    width: 340px;
+    min-width: 340px;
+  }
+}
+@media (min-width: 1440px) {
+  .site-main__help {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 267px;
+    justify-content: space-around;
+  }
+  .svg-top {
+    transform: rotate(-90deg);
+    width: 237px;
+    height: 263px;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  .svg-bottom {
+    transform: rotate(-90deg);
+    width: 237px;
+    height: 263px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+}

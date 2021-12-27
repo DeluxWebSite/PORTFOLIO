@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Las mascotas</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./fonts/HelveticaNeue/stylesheet.css" />
+    <style type="text/css">
+      @font-face {
+        font-family: "Icegirl-Regular";
+        src: url("./fonts/Icegirl/Icegirl-Regular.ttf.woff") format("woff"),
+          url("./fonts/Icegirl/Icegirl-Regular.ttf.svg#Icegirl-Regular")
+            format("svg"),
+          url("./fonts/Icegirl/Icegirl-Regular.ttf.eot"),
+          url("./fonts/Icegirl/Icegirl-Regular.eot?#iefix")
+            format("embedded-opentype");
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="./fonts/Futura/stylesheet.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo" href="#">
+        <img
+          class="page-header__logo-image"
+          src="img/320px/logo.svg"
+          width="35px"
+          height="35px"
+          alt="las mascotas"
+        />
+      </a>
+      <button class="page-header__burger">
+        <img
+          class="page-header__burger-image"
+          src="img/320px/burger.svg"
+          width="27px"
+          height="31px"
+          alt="menu"
+        />
+      </button>
+    </header>
+    <section class="page-main">
+      <h1 class="page-main__title">
+        Las mascotas <br />
+        son nuestra <br />
+        familia
+      </h1>
+      <p class="page-main__discription">
+        El mejor cuidado es <br />
+        la clave para la <br />
+        salud de tu <br />
+        mascota durante <br />
+        muchos años
+      </p>
+      <button class="page-main__button-tratar" type="button">tratar</button>
+      <button class="page-main__button-comprar" type="button">comprar</button>
+    </section>
+    <section class="page-who">
+      <h2 class="page-who__title">quien es?</h2>
+      <div class="page-who__img">
+        <figure class="img-item">
+          <img
+            class="img-dog"
+            src="./img/320px/dogblack.jpg"
+            alt="dogblack"
+            width="138px"
+            height="150px"
+          />
+          <figcaption>Gato</figcaption>
+        </figure>
+        <figure class="img-item">
+          <img
+            class="img-cat"
+            src="./img/320px/cat.jpg"
+            alt="cat"
+            width="138px"
+            height="150px"
+          />
+          <figcaption>perro</figcaption>
+        </figure>
+      </div>
+      <form class="page-who__form" action="" method="post">
+        <input
+          class="form__nombre"
+          type="text"
+          name="nombre"
+          placeholder="nombre"
+        /><input
+          class="form__edad"
+          type="text"
+          name="edad"
+          placeholder="edad"
+        /><input
+          class="form__peso"
+          type="text"
+          name="peso"
+          placeholder="peso"
+        />
+        <input class="form__roca" type="text" name="roca" placeholder="roca" />
+        <input class="form__registar" type="submit" value="registar" />
+      </form>
+    </section>
+    <section class="page-why">
+      <img class="dog-image" src="img/320px/dogrun.jpg" alt="dog run" />
+      <div class="page-why__text">
+        <h2 class="page-why__title">porque nosotros</h2>
+        <p class="page-why__discription">
+          nuestra vida está llena de la devoción y el amor de las bestias de
+          cuatro patas y colas. Y queremos brindarles la mejor atención posible,
+          que es difícil de brindar con solo visitas al veterinario dos veces al
+          año.
+        </p>
+      </div>
+    </section>
+    <section class="page-icons">
+      <div class="page-icons__heart">
+        <img src="./img/320px/heart.svg" alt="heart" />
+        <h2 class="page-icons__heart-title">consulta 24/7</h2>
+        <p class="page-icons__heart-discription">
+          consulta inicial en línea en chat o por <br />
+          enlace de video con especialistas <br />
+          calificados, interpretación de <br />
+          análisis.
+        </p>
+        <button class="page-icons__heart-button" type="button">tratar</button>
+      </div>
+      <div class="page-icons__bag">
+        <img src="./img/320px/bag.svg" alt="bag" />
+        <h2 class="page-icons__bag-title">Tienda</h2>
+        <p class="page-icons__bag-discription">
+          Todo tipo de alimentos del fabricante <br />
+          a bajo precio, juguetes y <br />
+          complementos para tus mascotas.
+        </p>
+        <button class="page-icons__bag-button" type="button">comprar</button>
+      </div>
+      <div class="page-icons__track">
+        <img src="./img/320px/track.svg" alt="track" />
+        <h2 class="page-icons__track-title">información</h2>
+        <p class="page-icons__track-discription">
+          Artículos, preguntas frecuentes <br />
+          foros y comunidades para compartir <br />
+          información con otros dueños de <br />
+          mascotas.
+        </p>
+        <button class="page-icons__track-button" type="button">más</button>
+      </div>
+      <form class="page-form" action="" method="post">
+        <p class="form__text">
+          suscríbete y obtén un descuento <br />
+          10% en tu primera compra
+        </p>
+        <input
+          class="form__email"
+          type="text"
+          name="email"
+          placeholder="e-mail"
+        />
+        <input class="form__submit" type="submit" value="suscribir" />
+      </form>
+    </section>
+    <footer class="page-footer">
+      <div class="page-footer__social-icon">
+        <a class="social-icon__instagram" href="#">
+          <img src="./img/320px/icon-instagram.svg" alt="instagram" />
+        </a>
+        <a class="social-icon__watsapp" href="#">
+          <img src="./img/320px/icon-watsapp.svg" alt="instagram" />
+        </a>
+        <a class="social-icon__facebook" href="#">
+          <img src="./img/320px/icon-facebook.svg" alt="instagram" />
+        </a>
+      </div>
+      <button class="page-footer__button">Preguntas más frecuentes</button>
+      <a class="page-footer__text" href="#">política de privacidad</a>
+      <a class="page-footer__copyright">&copy; Copyright 2021</a>
+    </footer>
+  </body>
+</html>

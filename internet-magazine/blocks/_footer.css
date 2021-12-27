@@ -1,0 +1,36 @@
+.footer {
+  background-color: #000;
+  height: 79px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.text {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fbfbfb;
+}
+.icon {
+  display: flex;
+  justify-content: flex-end;
+}
+.fab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  height: 32px;
+  width: 32px;
+  margin-left: 8px;
+  text-decoration: none;
+  font-size: 32px;
+  cursor: pointer;
+  transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+.fab:hover {
+  color: #f16d7f;
+  transform: rotate(360deg);
+}

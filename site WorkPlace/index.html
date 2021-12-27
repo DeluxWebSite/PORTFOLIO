@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workplace</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="site-body">
+    <header class="site-header">
+      <a href="index.html"></a>
+        <img class="logo-main" src="/img/logo-main.svg" alt="Workplace" />
+      </a>
+      <nav class="site-header__navigation">
+        <ul class="topmenu">
+          <li>
+            <a href="#">Соискателям</a>
+            <ul class="submenu">
+              <li><a href="#">Создать резюме</a></li>
+              <li><a href="#">Найти работу</a></li>
+              <li><a href="#">Создать команду</a></li>
+              <li><a href="#">Вступить в команду</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Работодателям</a>
+            <ul class="submenu">
+              <li><a href="#">Разместить вакансию/ проект</a></li>
+              <li><a href="#">Найти сотрудника</a></li>
+              <li><a href="#">Найти команду</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Сервисы</a>
+            <ul class="submenu">
+              <li><a href="#">Реклама вакансий</a></li>
+              <li><a href="#">Услуги и цены</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Помощь</a>
+            <ul class="submenu">
+              <li><a href="#">Техническая поддержка</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <button class="site-header__button-resume">
+        Создать резюме/вакансии
+      </button>
+      <button class="site-header__button-login">Войти</button>
+    </header>
+
+    <main class="site-main">
+      <h1 class="site-main__title">Workplace</h1>
+      <h2 class="site-main__slogan">Найти работу -просто.</h2>
+      <form class="site-main__form" action="" method="post">
+        <svg
+          class="icon-search"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M13.3947 14.5548C11.9806 15.712 10.1729 16.4062 8.20312 16.4062C3.67266 16.4062 0 12.7336 0 8.20312C0 3.67266 3.67266 0 8.20312 0C12.7336 0 16.4062 3.67266 16.4062 8.20312C16.4062 10.1729 15.712 11.9806 14.5548 13.3947L19.4472 18.2871C19.7676 18.6075 19.7676 19.1269 19.4472 19.4472C19.1269 19.7676 18.6075 19.7676 18.2871 19.4472L13.3947 14.5548ZM14.7656 8.20312C14.7656 11.8275 11.8275 14.7656 8.20312 14.7656C4.57876 14.7656 1.64062 11.8275 1.64062 8.20312C1.64062 4.57876 4.57876 1.64062 8.20312 1.64062C11.8275 1.64062 14.7656 4.57876 14.7656 8.20312Z"
+            fill="#B7BBC2"
+          />
+        </svg>
+        <input
+          class="site-main__search"
+          type="text"
+          placeholder="Введите ваш запрос, профессию или должность"
+          rel="search"
+        />
+        <button class="site-main__find" type="submit">Найти</button>
+        <p class="site-main__popular-queries">Популярные запросы:</p>
+        <a class="site-main__advanced-search" href="#">Расширенный поиск</a>
+      </form>
+
+      <div class="site-main__buttons">
+        <button>Почасовая оплата</button>
+        <button>Пеший курьер</button>
+        <button>Без опыта работы</button>
+        <button>Стажировка</button>
+        <button>График 2/2</button>
+      </div>
+    </main>
+
+    <section class="hot-vacancies">
+      <h2 class="hot-vacancies__title">Горящие вакансии</h2>
+      <div class="hot-vacancies__wrap">
+        <div class="item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 80 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="item-button">Откликнуться</button>
+          <svg
+            width="23"
+            height="29"
+            viewBox="0 0 23 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.849323 16.383C0.431376 24.1506 6.59609 27.8905 9.73069 28.7895C10.7754 26.0925 8.16358 25.553 7.11871 22.3166C6.07385 19.0801 9.73069 15.3042 9.73069 15.3042C9.73069 15.3042 8.68583 18.5406 11.2982 21.2377C11.9382 21.8985 13.3834 22.6435 13.9103 23.3954C15.1042 25.0988 14.5928 27.9163 14.9552 28.7895C16.0001 28.7895 20.702 26.0925 22.2693 20.1589C23.5231 15.412 20.3537 9.3706 18.6123 7.21294C18.1943 9.3706 16.3484 12.0677 15.4777 13.1465C15.8956 7.53659 11.6465 2.3582 9.20845 0.73996C9.20845 9.91001 1.37176 6.67352 0.849323 16.383Z"
+              fill="#FF4D00"
+            />
+          </svg>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 80 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="item-button">Откликнуться</button>
+          <svg
+            width="23"
+            height="29"
+            viewBox="0 0 23 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.849323 16.383C0.431376 24.1506 6.59609 27.8905 9.73069 28.7895C10.7754 26.0925 8.16358 25.553 7.11871 22.3166C6.07385 19.0801 9.73069 15.3042 9.73069 15.3042C9.73069 15.3042 8.68583 18.5406 11.2982 21.2377C11.9382 21.8985 13.3834 22.6435 13.9103 23.3954C15.1042 25.0988 14.5928 27.9163 14.9552 28.7895C16.0001 28.7895 20.702 26.0925 22.2693 20.1589C23.5231 15.412 20.3537 9.3706 18.6123 7.21294C18.1943 9.3706 16.3484 12.0677 15.4777 13.1465C15.8956 7.53659 11.6465 2.3582 9.20845 0.73996C9.20845 9.91001 1.37176 6.67352 0.849323 16.383Z"
+              fill="#FF4D00"
+            />
+          </svg>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 80 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="item-button">Откликнуться</button>
+          <svg
+            width="23"
+            height="29"
+            viewBox="0 0 23 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.849323 16.383C0.431376 24.1506 6.59609 27.8905 9.73069 28.7895C10.7754 26.0925 8.16358 25.553 7.11871 22.3166C6.07385 19.0801 9.73069 15.3042 9.73069 15.3042C9.73069 15.3042 8.68583 18.5406 11.2982 21.2377C11.9382 21.8985 13.3834 22.6435 13.9103 23.3954C15.1042 25.0988 14.5928 27.9163 14.9552 28.7895C16.0001 28.7895 20.702 26.0925 22.2693 20.1589C23.5231 15.412 20.3537 9.3706 18.6123 7.21294C18.1943 9.3706 16.3484 12.0677 15.4777 13.1465C15.8956 7.53659 11.6465 2.3582 9.20845 0.73996C9.20845 9.91001 1.37176 6.67352 0.849323 16.383Z"
+              fill="#FF4D00"
+            />
+          </svg>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 80 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="item-button">Откликнуться</button>
+          <svg
+            width="23"
+            height="29"
+            viewBox="0 0 23 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.849323 16.383C0.431376 24.1506 6.59609 27.8905 9.73069 28.7895C10.7754 26.0925 8.16358 25.553 7.11871 22.3166C6.07385 19.0801 9.73069 15.3042 9.73069 15.3042C9.73069 15.3042 8.68583 18.5406 11.2982 21.2377C11.9382 21.8985 13.3834 22.6435 13.9103 23.3954C15.1042 25.0988 14.5928 27.9163 14.9552 28.7895C16.0001 28.7895 20.702 26.0925 22.2693 20.1589C23.5231 15.412 20.3537 9.3706 18.6123 7.21294C18.1943 9.3706 16.3484 12.0677 15.4777 13.1465C15.8956 7.53659 11.6465 2.3582 9.20845 0.73996C9.20845 9.91001 1.37176 6.67352 0.849323 16.383Z"
+              fill="#FF4D00"
+            />
+          </svg>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 80 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="item-button">Откликнуться</button>
+          <svg
+            width="23"
+            height="29"
+            viewBox="0 0 23 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.849323 16.383C0.431376 24.1506 6.59609 27.8905 9.73069 28.7895C10.7754 26.0925 8.16358 25.553 7.11871 22.3166C6.07385 19.0801 9.73069 15.3042 9.73069 15.3042C9.73069 15.3042 8.68583 18.5406 11.2982 21.2377C11.9382 21.8985 13.3834 22.6435 13.9103 23.3954C15.1042 25.0988 14.5928 27.9163 14.9552 28.7895C16.0001 28.7895 20.702 26.0925 22.2693 20.1589C23.5231 15.412 20.3537 9.3706 18.6123 7.21294C18.1943 9.3706 16.3484 12.0677 15.4777 13.1465C15.8956 7.53659 11.6465 2.3582 9.20845 0.73996C9.20845 9.91001 1.37176 6.67352 0.849323 16.383Z"
+              fill="#FF4D00"
+            />
+          </svg>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 80 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="item-button">Откликнуться</button>
+          <svg
+            width="23"
+            height="29"
+            viewBox="0 0 23 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.849323 16.383C0.431376 24.1506 6.59609 27.8905 9.73069 28.7895C10.7754 26.0925 8.16358 25.553 7.11871 22.3166C6.07385 19.0801 9.73069 15.3042 9.73069 15.3042C9.73069 15.3042 8.68583 18.5406 11.2982 21.2377C11.9382 21.8985 13.3834 22.6435 13.9103 23.3954C15.1042 25.0988 14.5928 27.9163 14.9552 28.7895C16.0001 28.7895 20.702 26.0925 22.2693 20.1589C23.5231 15.412 20.3537 9.3706 18.6123 7.21294C18.1943 9.3706 16.3484 12.0677 15.4777 13.1465C15.8956 7.53659 11.6465 2.3582 9.20845 0.73996C9.20845 9.91001 1.37176 6.67352 0.849323 16.383Z"
+              fill="#FF4D00"
+            />
+          </svg>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 80 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="item-button">Откликнуться</button>
+          <svg
+            width="23"
+            height="29"
+            viewBox="0 0 23 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.849323 16.383C0.431376 24.1506 6.59609 27.8905 9.73069 28.7895C10.7754 26.0925 8.16358 25.553 7.11871 22.3166C6.07385 19.0801 9.73069 15.3042 9.73069 15.3042C9.73069 15.3042 8.68583 18.5406 11.2982 21.2377C11.9382 21.8985 13.3834 22.6435 13.9103 23.3954C15.1042 25.0988 14.5928 27.9163 14.9552 28.7895C16.0001 28.7895 20.702 26.0925 22.2693 20.1589C23.5231 15.412 20.3537 9.3706 18.6123 7.21294C18.1943 9.3706 16.3484 12.0677 15.4777 13.1465C15.8956 7.53659 11.6465 2.3582 9.20845 0.73996C9.20845 9.91001 1.37176 6.67352 0.849323 16.383Z"
+              fill="#FF4D00"
+            />
+          </svg>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 80 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="item-button">Откликнуться</button>
+          <svg
+            width="23"
+            height="29"
+            viewBox="0 0 23 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.849323 16.383C0.431376 24.1506 6.59609 27.8905 9.73069 28.7895C10.7754 26.0925 8.16358 25.553 7.11871 22.3166C6.07385 19.0801 9.73069 15.3042 9.73069 15.3042C9.73069 15.3042 8.68583 18.5406 11.2982 21.2377C11.9382 21.8985 13.3834 22.6435 13.9103 23.3954C15.1042 25.0988 14.5928 27.9163 14.9552 28.7895C16.0001 28.7895 20.702 26.0925 22.2693 20.1589C23.5231 15.412 20.3537 9.3706 18.6123 7.21294C18.1943 9.3706 16.3484 12.0677 15.4777 13.1465C15.8956 7.53659 11.6465 2.3582 9.20845 0.73996C9.20845 9.91001 1.37176 6.67352 0.849323 16.383Z"
+              fill="#FF4D00"
+            />
+          </svg>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 80 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="item-button">Откликнуться</button>
+          <svg
+            width="23"
+            height="29"
+            viewBox="0 0 23 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.849323 16.383C0.431376 24.1506 6.59609 27.8905 9.73069 28.7895C10.7754 26.0925 8.16358 25.553 7.11871 22.3166C6.07385 19.0801 9.73069 15.3042 9.73069 15.3042C9.73069 15.3042 8.68583 18.5406 11.2982 21.2377C11.9382 21.8985 13.3834 22.6435 13.9103 23.3954C15.1042 25.0988 14.5928 27.9163 14.9552 28.7895C16.0001 28.7895 20.702 26.0925 22.2693 20.1589C23.5231 15.412 20.3537 9.3706 18.6123 7.21294C18.1943 9.3706 16.3484 12.0677 15.4777 13.1465C15.8956 7.53659 11.6465 2.3582 9.20845 0.73996C9.20845 9.91001 1.37176 6.67352 0.849323 16.383Z"
+              fill="#FF4D00"
+            />
+          </svg>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 80 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="item-button">Откликнуться</button>
+          <svg
+            width="23"
+            height="29"
+            viewBox="0 0 23 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.849323 16.383C0.431376 24.1506 6.59609 27.8905 9.73069 28.7895C10.7754 26.0925 8.16358 25.553 7.11871 22.3166C6.07385 19.0801 9.73069 15.3042 9.73069 15.3042C9.73069 15.3042 8.68583 18.5406 11.2982 21.2377C11.9382 21.8985 13.3834 22.6435 13.9103 23.3954C15.1042 25.0988 14.5928 27.9163 14.9552 28.7895C16.0001 28.7895 20.702 26.0925 22.2693 20.1589C23.5231 15.412 20.3537 9.3706 18.6123 7.21294C18.1943 9.3706 16.3484 12.0677 15.4777 13.1465C15.8956 7.53659 11.6465 2.3582 9.20845 0.73996C9.20845 9.91001 1.37176 6.67352 0.849323 16.383Z"
+              fill="#FF4D00"
+            />
+          </svg>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 80 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="item-button">Откликнуться</button>
+          <svg
+            width="23"
+            height="29"
+            viewBox="0 0 23 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.849323 16.383C0.431376 24.1506 6.59609 27.8905 9.73069 28.7895C10.7754 26.0925 8.16358 25.553 7.11871 22.3166C6.07385 19.0801 9.73069 15.3042 9.73069 15.3042C9.73069 15.3042 8.68583 18.5406 11.2982 21.2377C11.9382 21.8985 13.3834 22.6435 13.9103 23.3954C15.1042 25.0988 14.5928 27.9163 14.9552 28.7895C16.0001 28.7895 20.702 26.0925 22.2693 20.1589C23.5231 15.412 20.3537 9.3706 18.6123 7.21294C18.1943 9.3706 16.3484 12.0677 15.4777 13.1465C15.8956 7.53659 11.6465 2.3582 9.20845 0.73996C9.20845 9.91001 1.37176 6.67352 0.849323 16.383Z"
+              fill="#FF4D00"
+            />
+          </svg>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 80 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="item-button">Откликнуться</button>
+          <svg
+            width="23"
+            height="29"
+            viewBox="0 0 23 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.849323 16.383C0.431376 24.1506 6.59609 27.8905 9.73069 28.7895C10.7754 26.0925 8.16358 25.553 7.11871 22.3166C6.07385 19.0801 9.73069 15.3042 9.73069 15.3042C9.73069 15.3042 8.68583 18.5406 11.2982 21.2377C11.9382 21.8985 13.3834 22.6435 13.9103 23.3954C15.1042 25.0988 14.5928 27.9163 14.9552 28.7895C16.0001 28.7895 20.702 26.0925 22.2693 20.1589C23.5231 15.412 20.3537 9.3706 18.6123 7.21294C18.1943 9.3706 16.3484 12.0677 15.4777 13.1465C15.8956 7.53659 11.6465 2.3582 9.20845 0.73996C9.20845 9.91001 1.37176 6.67352 0.849323 16.383Z"
+              fill="#FF4D00"
+            />
+          </svg>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 80 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="item-button">Откликнуться</button>
+          <svg
+            width="23"
+            height="29"
+            viewBox="0 0 23 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.849323 16.383C0.431376 24.1506 6.59609 27.8905 9.73069 28.7895C10.7754 26.0925 8.16358 25.553 7.11871 22.3166C6.07385 19.0801 9.73069 15.3042 9.73069 15.3042C9.73069 15.3042 8.68583 18.5406 11.2982 21.2377C11.9382 21.8985 13.3834 22.6435 13.9103 23.3954C15.1042 25.0988 14.5928 27.9163 14.9552 28.7895C16.0001 28.7895 20.702 26.0925 22.2693 20.1589C23.5231 15.412 20.3537 9.3706 18.6123 7.21294C18.1943 9.3706 16.3484 12.0677 15.4777 13.1465C15.8956 7.53659 11.6465 2.3582 9.20845 0.73996C9.20845 9.91001 1.37176 6.67352 0.849323 16.383Z"
+              fill="#FF4D00"
+            />
+          </svg>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 80 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="item-button">Откликнуться</button>
+          <svg
+            width="23"
+            height="29"
+            viewBox="0 0 23 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.849323 16.383C0.431376 24.1506 6.59609 27.8905 9.73069 28.7895C10.7754 26.0925 8.16358 25.553 7.11871 22.3166C6.07385 19.0801 9.73069 15.3042 9.73069 15.3042C9.73069 15.3042 8.68583 18.5406 11.2982 21.2377C11.9382 21.8985 13.3834 22.6435 13.9103 23.3954C15.1042 25.0988 14.5928 27.9163 14.9552 28.7895C16.0001 28.7895 20.702 26.0925 22.2693 20.1589C23.5231 15.412 20.3537 9.3706 18.6123 7.21294C18.1943 9.3706 16.3484 12.0677 15.4777 13.1465C15.8956 7.53659 11.6465 2.3582 9.20845 0.73996C9.20845 9.91001 1.37176 6.67352 0.849323 16.383Z"
+              fill="#FF4D00"
+            />
+          </svg>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 80 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="item-button">Откликнуться</button>
+          <svg
+            width="23"
+            height="29"
+            viewBox="0 0 23 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.849323 16.383C0.431376 24.1506 6.59609 27.8905 9.73069 28.7895C10.7754 26.0925 8.16358 25.553 7.11871 22.3166C6.07385 19.0801 9.73069 15.3042 9.73069 15.3042C9.73069 15.3042 8.68583 18.5406 11.2982 21.2377C11.9382 21.8985 13.3834 22.6435 13.9103 23.3954C15.1042 25.0988 14.5928 27.9163 14.9552 28.7895C16.0001 28.7895 20.702 26.0925 22.2693 20.1589C23.5231 15.412 20.3537 9.3706 18.6123 7.21294C18.1943 9.3706 16.3484 12.0677 15.4777 13.1465C15.8956 7.53659 11.6465 2.3582 9.20845 0.73996C9.20845 9.91001 1.37176 6.67352 0.849323 16.383Z"
+              fill="#FF4D00"
+            />
+          </svg>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 80 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="item-button">Откликнуться</button>
+          <svg
+            width="23"
+            height="29"
+            viewBox="0 0 23 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.849323 16.383C0.431376 24.1506 6.59609 27.8905 9.73069 28.7895C10.7754 26.0925 8.16358 25.553 7.11871 22.3166C6.07385 19.0801 9.73069 15.3042 9.73069 15.3042C9.73069 15.3042 8.68583 18.5406 11.2982 21.2377C11.9382 21.8985 13.3834 22.6435 13.9103 23.3954C15.1042 25.0988 14.5928 27.9163 14.9552 28.7895C16.0001 28.7895 20.702 26.0925 22.2693 20.1589C23.5231 15.412 20.3537 9.3706 18.6123 7.21294C18.1943 9.3706 16.3484 12.0677 15.4777 13.1465C15.8956 7.53659 11.6465 2.3582 9.20845 0.73996C9.20845 9.91001 1.37176 6.67352 0.849323 16.383Z"
+              fill="#FF4D00"
+            />
+          </svg>
+          <p class="item-data">6 сентября</p>
+        </div>
+      </div>
+      <button class="hot-vacancies__button">Показать ещё</button>
+    </section>
+
+    <section class="job-overview">
+      <h2 class="job-overview__title">Обзор вакансий</h2>
+      <div class="job-overview__buttons-wrap">
+        <button class="job-overview__button-item">Почасовая оплата</button>
+        <button class="job-overview__button-item">Подработка</button>
+        <button class="job-overview__button-item">Без опыта работы</button>
+        <button class="job-overview__button-item">Стажировка</button>
+        <button class="job-overview__button-item">График 2/2</button>
+      </div>
+      <div class="job-overview__wrap">
+        <div class="job-overview__item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 45 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="job-overview__item-button">Откликнуться</button>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="job-overview__item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 45 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="job-overview__item-button">Откликнуться</button>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="job-overview__item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 45 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="job-overview__item-button">Откликнуться</button>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="job-overview__item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от45 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="job-overview__item-button">Откликнуться</button>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="job-overview__item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 45 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="job-overview__item-button">Откликнуться</button>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="job-overview__item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 45 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="job-overview__item-button">Откликнуться</button>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="job-overview__item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 45 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="job-overview__item-button">Откликнуться</button>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="job-overview__item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 45 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="job-overview__item-button">Откликнуться</button>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="job-overview__item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 45 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="job-overview__item-button">Откликнуться</button>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="job-overview__item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 45 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="job-overview__item-button">Откликнуться</button>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="job-overview__item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 45 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="job-overview__item-button">Откликнуться</button>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="job-overview__item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 45 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="job-overview__item-button">Откликнуться</button>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="job-overview__item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 45 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="job-overview__item-button">Откликнуться</button>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="job-overview__item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 80 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="job-overview__item-button">Откликнуться</button>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="job-overview__item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 45 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="job-overview__item-button">Откликнуться</button>
+          <p class="item-data">6 сентября</p>
+        </div>
+        <div class="job-overview__item">
+          <p class="item-vacancy">Графический дизайнер</p>
+          <p class="item-price">от 45 000 &#8381;</p>
+          <p class="item-city">ООО Касатик, Казань</p>
+          <p class="item-description">
+            Разработка макетов полиграфической продукции. 3Д визуализация. Опыт
+            работы дизайнером, наличие полтфолиио. Исполнит...
+          </p>
+          <button class="job-overview__item-button">Откликнуться</button>
+          <p class="item-data">6 сентября</p>
+        </div>
+      </div>
+      <button class="job-overview__button">Показать ещё</button>
+    </section>
+
+    <section class="advantage">
+      <h2 class="advantage-title">
+        Почему  <span>Workplace?</span> 
+      </h2>
+      <div class="advantage-wrap">
+      
+        <figure class="advantage-item__convenience">
+          <img
+            class="advantage-item__convenience-image"
+            src="./img/convenience.png"
+            alt="Удобство в навигации и надежность платформы"
+            sizes=""
+            srcset=""
+          />
+          <figcaption class="advantage-item__convenience-description">
+            <h3 class="advantage-item__convenience-title">
+            Удобство навигации 
+          </h3>          
+            Позволит привлекать лучших кандидатов,
+            <br />
+            а Вам – быстро и качественно осуществлять <br>
+             поиск грамотных специалистов или проверенных
+            <br />
+             работодателей.
+          </figcaption>
+        </figure>
+
+        <figure class="advantage-item__base">
+          <img
+            class="advantage-item__base-image"
+            src="./img/base.png"
+            alt="Усовершенствованная база"
+            srcset=""
+          />
+          <figcaption class="advantage-item__base-description">
+          <h3 class="advantage-item__base-title">Улучшенная база</h3>
+            Собственная и уникальная база соискателей
+            <br />
+            позволит Вам быстро и качественно привлечь
+            <br />
+            лучших кандидатов или работодателей
+            <br />
+            в кратчайшие сроки.
+        </figcaption>
+        </figure>
+
+        <figure class="advantage-item__command">
+          <img
+            class="advantage-item__command-image"
+            src="./img/teamwork.png"
+            alt="командная работа"
+          />
+          <figcaption class="advantage-item__command-description">
+            <h3 class="advantage-item__command-title">
+            Командная работа
+          </h3>
+            Возможность объединения соискателей в одну 
+            <br />
+            команду для более качественной работы над <br> проектом.
+          </figcaption>
+        </figure>
+
+        <figure class="advantage-item__intuitiveness">
+          <img
+            class="advantage-item__intuitiveness-image"
+            src="./img/intuitiveness.png"
+            alt="“WorkPlace” сама покажет Вам подходящего 
+            соискателя или работодателя"
+            srcset=""
+          />
+          <figcaption class="advantage-item__intuitiveness-description">
+            <h3 class="advantage-item__intuitiveness-title">
+            Интуитивность
+            <br />
+            платформы
+          </h3>
+            workPlace сама покажет Вам подходящего
+            <br />
+            соискателя или работодателя. Мы бережём 
+            <br />
+            Ваше время!
+          </figcaption>
+        </figure>
+      
+        <figure class="advantage-item__reliability">
+          <img
+            class="advantage-item__reliability-image"
+            src="./img/reliability.png"
+            alt="Надежность"
+            srcset=""
+          />
+          <figcaption class="advantage-item__reliability-description"> 
+            <h3 class="advantage-item__reliability-title">Надежность и <br> уверенность</h3>
+              Каждое объявление проходит строгую модерацию.
+              <br />
+              Мы не позволим Вам наткнуться на сомнительную
+              <br />
+              вакансию или недобросовестного работодателя.
+            </figcaption>
+         
+        </figure>
+      </div>
+    </section>
+
+    <section class="what-todo">
+      <h2 class="what-todo__title">Как работает поиск команд?</h2>
+      <div class="what-todo__left">
+        <h3 class="what-todo__left-title">Путь для</h3>
+        <img class="what-todo__left-image" src="/img/what-todo-image.png" alt="путь для поиска команд">
+      </div>
+      <div class="what-todo__right">
+       <div class="what-todo__right-buttons">
+         <button class="applicants-btn">Соискателям</button>
+         <button class="employers-btn">Работодателям</button>
+       </div>
+       <p class="what-todo__right-text"><svg width="85" height="22" viewBox="0 0 85 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.611758 0.0599996H5.17176V16.95H11.5018V0.0599996H16.0618V16.95H22.3318V0.0599996H26.8918V21H0.611758V0.0599996ZM42.92 21C42.12 21 41.45 20.75 40.91 20.25C40.39 19.75 40.06 19.08 39.92 18.24H39.74C39.5 19.26 38.97 20.04 38.15 20.58C37.33 21.1 36.32 21.36 35.12 21.36C33.54 21.36 32.33 20.94 31.49 20.1C30.65 19.26 30.23 18.15 30.23 16.77C30.23 15.11 30.83 13.88 32.03 13.08C33.25 12.26 34.9 11.85 36.98 11.85H39.47V10.86C39.47 10.1 39.27 9.5 38.87 9.06C38.47 8.6 37.8 8.37 36.86 8.37C35.98 8.37 35.28 8.56 34.76 8.94C34.24 9.32 33.81 9.75 33.47 10.23L30.83 7.89C31.47 6.95 32.27 6.22 33.23 5.7C34.21 5.16 35.53 4.89 37.19 4.89C39.43 4.89 41.11 5.38 42.23 6.36C43.35 7.34 43.91 8.77 43.91 10.65V17.55H45.38V21H42.92ZM36.77 18.27C37.51 18.27 38.14 18.11 38.66 17.79C39.2 17.47 39.47 16.95 39.47 16.23V14.37H37.31C35.57 14.37 34.7 14.96 34.7 16.14V16.59C34.7 17.17 34.88 17.6 35.24 17.88C35.6 18.14 36.11 18.27 36.77 18.27ZM48.36 5.25H59.01V8.7H52.8V21H48.36V5.25ZM69.53 21V17.37H75.17V3.33H74.9L70.64 8.91L67.76 6.66L72.77 0.0599996H79.67V17.37H84.11V21H69.53Z" fill="#0466C8"/>
+        </svg>&nbsp;&nbsp;&nbsp;<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="15" cy="15" r="15" fill="#0466C8" fill-opacity="0.28"/>
+          <circle cx="15" cy="15" r="10" fill="#0466C8"/>
+          </svg>&nbsp;&nbsp;&nbsp;Регистрация на платформе Workplace 
+      </p>
+       <p class="what-todo__right-text"><svg width="84" height="23" viewBox="0 0 84 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.611758 1.06H5.17176V17.95H11.5018V1.06H16.0618V17.95H22.3318V1.06H26.8918V22H0.611758V1.06ZM42.92 22C42.12 22 41.45 21.75 40.91 21.25C40.39 20.75 40.06 20.08 39.92 19.24H39.74C39.5 20.26 38.97 21.04 38.15 21.58C37.33 22.1 36.32 22.36 35.12 22.36C33.54 22.36 32.33 21.94 31.49 21.1C30.65 20.26 30.23 19.15 30.23 17.77C30.23 16.11 30.83 14.88 32.03 14.08C33.25 13.26 34.9 12.85 36.98 12.85H39.47V11.86C39.47 11.1 39.27 10.5 38.87 10.06C38.47 9.6 37.8 9.37 36.86 9.37C35.98 9.37 35.28 9.56 34.76 9.94C34.24 10.32 33.81 10.75 33.47 11.23L30.83 8.89C31.47 7.95 32.27 7.22 33.23 6.7C34.21 6.16 35.53 5.89 37.19 5.89C39.43 5.89 41.11 6.38 42.23 7.36C43.35 8.34 43.91 9.77 43.91 11.65V18.55H45.38V22H42.92ZM36.77 19.27C37.51 19.27 38.14 19.11 38.66 18.79C39.2 18.47 39.47 17.95 39.47 17.23V15.37H37.31C35.57 15.37 34.7 15.96 34.7 17.14V17.59C34.7 18.17 34.88 18.6 35.24 18.88C35.6 19.14 36.11 19.27 36.77 19.27ZM48.36 6.25H59.01V9.7H52.8V22H48.36V6.25ZM83.24 22H68.42V17.89L74.87 12.37C75.45 11.87 75.94 11.42 76.34 11.02C76.74 10.6 77.06 10.2 77.3 9.82C77.56 9.42 77.74 9.03 77.84 8.65C77.96 8.27 78.02 7.86 78.02 7.42V7C78.02 6.6 77.94 6.25 77.78 5.95C77.62 5.65 77.41 5.4 77.15 5.2C76.89 5 76.59 4.85 76.25 4.75C75.93 4.65 75.6 4.6 75.26 4.6C74.76 4.6 74.32 4.68 73.94 4.84C73.58 5 73.26 5.22 72.98 5.5C72.72 5.76 72.5 6.07 72.32 6.43C72.14 6.77 72 7.14 71.9 7.54L67.97 6.04C68.21 5.32 68.54 4.64 68.96 4C69.38 3.34 69.9 2.77 70.52 2.29C71.16 1.79 71.91 1.4 72.77 1.12C73.63 0.839999 74.6 0.699999 75.68 0.699999C76.82 0.699999 77.83 0.859999 78.71 1.18C79.59 1.5 80.33 1.94 80.93 2.5C81.55 3.06 82.02 3.73 82.34 4.51C82.66 5.27 82.82 6.1 82.82 7C82.82 7.9 82.67 8.72 82.37 9.46C82.07 10.2 81.66 10.9 81.14 11.56C80.64 12.2 80.05 12.81 79.37 13.39C78.69 13.97 77.98 14.56 77.24 15.16L73.34 18.22H83.24V22Z" fill="#0466C8"/>
+        </svg>&nbsp;&nbsp;&nbsp;<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="15" cy="15" r="15" fill="#0466C8" fill-opacity="0.28"/>
+        <circle cx="15" cy="15" r="10" fill="#0466C8"/>
+        </svg>&nbsp;&nbsp;&nbsp;Заполнение личного кабинета</p>
+       <p class="what-todo__right-text"><svg width="83" height="23" viewBox="0 0 83 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.611758 1.06H5.17176V17.95H11.5018V1.06H16.0618V17.95H22.3318V1.06H26.8918V22H0.611758V1.06ZM42.92 22C42.12 22 41.45 21.75 40.91 21.25C40.39 20.75 40.06 20.08 39.92 19.24H39.74C39.5 20.26 38.97 21.04 38.15 21.58C37.33 22.1 36.32 22.36 35.12 22.36C33.54 22.36 32.33 21.94 31.49 21.1C30.65 20.26 30.23 19.15 30.23 17.77C30.23 16.11 30.83 14.88 32.03 14.08C33.25 13.26 34.9 12.85 36.98 12.85H39.47V11.86C39.47 11.1 39.27 10.5 38.87 10.06C38.47 9.6 37.8 9.37 36.86 9.37C35.98 9.37 35.28 9.56 34.76 9.94C34.24 10.32 33.81 10.75 33.47 11.23L30.83 8.89C31.47 7.95 32.27 7.22 33.23 6.7C34.21 6.16 35.53 5.89 37.19 5.89C39.43 5.89 41.11 6.38 42.23 7.36C43.35 8.34 43.91 9.77 43.91 11.65V18.55H45.38V22H42.92ZM36.77 19.27C37.51 19.27 38.14 19.11 38.66 18.79C39.2 18.47 39.47 17.95 39.47 17.23V15.37H37.31C35.57 15.37 34.7 15.96 34.7 17.14V17.59C34.7 18.17 34.88 18.6 35.24 18.88C35.6 19.14 36.11 19.27 36.77 19.27ZM48.36 6.25H59.01V9.7H52.8V22H48.36V6.25ZM74.57 9.34C75.69 9.34 76.5 9.13 77 8.71C77.52 8.27 77.78 7.73 77.78 7.09V6.88C77.78 6.12 77.53 5.51 77.03 5.05C76.55 4.59 75.86 4.36 74.96 4.36C74.12 4.36 73.33 4.58 72.59 5.02C71.85 5.44 71.22 6.05 70.7 6.85L67.88 4.21C68.28 3.69 68.71 3.22 69.17 2.8C69.63 2.36 70.15 1.99 70.73 1.69C71.31 1.37 71.96 1.13 72.68 0.969999C73.4 0.789999 74.21 0.699999 75.11 0.699999C76.23 0.699999 77.24 0.829999 78.14 1.09C79.06 1.35 79.84 1.73 80.48 2.23C81.14 2.71 81.64 3.29 81.98 3.97C82.34 4.65 82.52 5.41 82.52 6.25C82.52 6.91 82.41 7.51 82.19 8.05C81.99 8.59 81.7 9.06 81.32 9.46C80.96 9.86 80.54 10.19 80.06 10.45C79.58 10.69 79.07 10.86 78.53 10.96V11.14C79.15 11.26 79.72 11.46 80.24 11.74C80.78 12 81.24 12.34 81.62 12.76C82.02 13.18 82.33 13.68 82.55 14.26C82.77 14.82 82.88 15.46 82.88 16.18C82.88 17.12 82.69 17.97 82.31 18.73C81.93 19.49 81.39 20.14 80.69 20.68C79.99 21.22 79.15 21.64 78.17 21.94C77.19 22.22 76.11 22.36 74.93 22.36C73.87 22.36 72.93 22.25 72.11 22.03C71.29 21.81 70.57 21.52 69.95 21.16C69.35 20.78 68.82 20.35 68.36 19.87C67.92 19.39 67.53 18.88 67.19 18.34L70.52 15.76C70.98 16.62 71.54 17.33 72.2 17.89C72.88 18.43 73.79 18.7 74.93 18.7C75.95 18.7 76.74 18.45 77.3 17.95C77.88 17.43 78.17 16.73 78.17 15.85V15.67C78.17 14.81 77.84 14.17 77.18 13.75C76.54 13.31 75.65 13.09 74.51 13.09H72.62V9.34H74.57Z" fill="#0466C8"/>
+        </svg>&nbsp;&nbsp;&nbsp;<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="15" cy="15" r="15" fill="#0466C8" fill-opacity="0.28"/>
+        <circle cx="15" cy="15" r="10" fill="#0466C8"/>
+        </svg>&nbsp;&nbsp;&nbsp;Создание вакансий. Отбор и собеседование соискателей</p>
+       <p class="what-todo__right-text"><svg width="84" height="22" viewBox="0 0 84 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.611758 0.0599996H5.17176V16.95H11.5018V0.0599996H16.0618V16.95H22.3318V0.0599996H26.8918V21H0.611758V0.0599996ZM42.92 21C42.12 21 41.45 20.75 40.91 20.25C40.39 19.75 40.06 19.08 39.92 18.24H39.74C39.5 19.26 38.97 20.04 38.15 20.58C37.33 21.1 36.32 21.36 35.12 21.36C33.54 21.36 32.33 20.94 31.49 20.1C30.65 19.26 30.23 18.15 30.23 16.77C30.23 15.11 30.83 13.88 32.03 13.08C33.25 12.26 34.9 11.85 36.98 11.85H39.47V10.86C39.47 10.1 39.27 9.5 38.87 9.06C38.47 8.6 37.8 8.37 36.86 8.37C35.98 8.37 35.28 8.56 34.76 8.94C34.24 9.32 33.81 9.75 33.47 10.23L30.83 7.89C31.47 6.95 32.27 6.22 33.23 5.7C34.21 5.16 35.53 4.89 37.19 4.89C39.43 4.89 41.11 5.38 42.23 6.36C43.35 7.34 43.91 8.77 43.91 10.65V17.55H45.38V21H42.92ZM36.77 18.27C37.51 18.27 38.14 18.11 38.66 17.79C39.2 17.47 39.47 16.95 39.47 16.23V14.37H37.31C35.57 14.37 34.7 14.96 34.7 16.14V16.59C34.7 17.17 34.88 17.6 35.24 17.88C35.6 18.14 36.11 18.27 36.77 18.27ZM48.36 5.25H59.01V8.7H52.8V21H48.36V5.25ZM76.82 21V16.98H67.61V13.14L75.77 0.0599996H81.11V13.5H83.75V16.98H81.11V21H76.82ZM71.21 13.5H76.82V4.71H76.52L71.21 13.5Z" fill="#0466C8"/>
+        </svg>&nbsp;&nbsp;&nbsp;<svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="15" cy="15" r="15" fill="#0466C8" fill-opacity="0.28"/>
+          <circle cx="15" cy="15" r="10" fill="#0466C8"/>
+          </svg>&nbsp;&nbsp;&nbsp;Ваша команда готова к работе</p>
+
+          <button class="registration-btn">Регистрация</button><button class="entrance-btn">Вход</button>
+      </div>
+      
+     
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-wrap">
+        <div class="footer-menu">
+          <div class="footer-employers">
+            <ul>
+              <li><h3>Работодателям</h3></li>
+              <li><a href="#">Разместить вакансию</a></li>
+              <li><a href="#">Разместить проект</a></li>
+              <li><a href="#">Найти сотрудника</a></li>
+              <li><a href="#">Найти команду</a></li>
+            </ul>
+          </div>
+          <div class="footer-applicants">
+            <ul>
+              <li><h3>Соискателям</h3></li>
+              <li><a href="#">Создать резюме</a></li>
+              <li><a href="#">Найти работу</a></li>
+              <li><a href="#">Создать команду</a></li>
+              <li><a href="#">Вступить в команду</a></li>
+            </ul>
+          </div>
+          <div class="footer-servises">
+            <ul>
+              <li><h3>Сервисы</h3></li>
+              <li><a href="#">Реклама вакансий</a></li>
+              <li><a href="#">Услуги и цены</a></li>
+            </ul>
+          </div>
+          <div class="footer-help">
+            <ul>
+              <li><h3>Помощь</h3></li>
+              <li><a href="#">Контакты</a></li>
+              <li><a href="#">Политика соглашения</a></li>
+              <li><a href="#">Конфиденциальность</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="social-icon">
+          <a href="#" target="_blank">
+            <svg
+              width="35"
+              height="35"
+              viewBox="0 0 35 35"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.37173 0H30.6021C31.7615 0 32.8735 0.460591 33.6934 1.28045C34.5132 2.10031 34.9738 3.21227 34.9738 4.37173V30.6021C34.9738 31.7615 34.5132 32.8735 33.6934 33.6934C32.8735 34.5132 31.7615 34.9738 30.6021 34.9738H20.2232V22.5577H24.2977L25.0758 17.5128H20.2232V14.2165C20.2232 12.8263 20.8965 11.4798 23.0736 11.4973H25.2857V7.19549C23.9871 6.9869 22.675 6.87294 21.3599 6.85449C17.3816 6.85449 14.7586 9.27643 14.7586 13.6482V17.5128H10.3169V22.5402H14.7586V34.9738H4.37173C3.21227 34.9738 2.10031 34.5132 1.28045 33.6934C0.460594 32.8735 0 31.7615 0 30.6021V4.37173C0 3.21227 0.460594 2.10031 1.28045 1.28045C2.10031 0.460591 3.21227 0 4.37173 0Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+          <a href="#" target="_blank">
+            <svg
+              width="35"
+              height="35"
+              viewBox="0 0 35 35"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.375 0H30.625C31.7853 0 32.8981 0.460936 33.7186 1.28141C34.5391 2.10188 35 3.21468 35 4.375V30.625C35 31.7853 34.5391 32.8981 33.7186 33.7186C32.8981 34.5391 31.7853 35 30.625 35H4.375C3.21468 35 2.10188 34.5391 1.28141 33.7186C0.460939 32.8981 0 31.7853 0 30.625V4.375C0 3.21468 0.460939 2.10188 1.28141 1.28141C2.10188 0.460936 3.21468 0 4.375 0ZM18.9613 22.5837C18.9613 23.0212 18.9613 24.0449 18.2351 24.0449H17.5088C16.0476 23.9662 14.3676 23.8262 11.8213 21.2012C9.0476 18.2787 8.02385 16.0212 6.57135 12.3724C6.4926 12.0837 6.57135 11.6462 7.2976 11.6462H9.4851C9.58588 11.6462 9.67554 11.6433 9.75678 11.6407C10.2611 11.6246 10.4414 11.6188 10.9463 12.3724C11.3788 13.0237 11.8112 13.7401 12.2247 14.4251C13.2001 16.041 14.0702 17.4824 14.5863 17.4824C15.3213 17.4824 15.3213 14.5599 15.3213 14.5599V13.1074C15.3213 12.2022 14.2951 12.3232 13.9547 12.3633C13.9101 12.3686 13.8773 12.3724 13.8601 12.3724C13.7113 12.3724 14.5863 11.6462 14.5863 11.6462C15.2358 11.2094 15.9921 10.9582 16.7738 10.9199H18.9613C19.8205 11.1467 19.7834 12.2321 19.728 13.8535C19.7128 14.2962 19.6963 14.7789 19.6963 15.2949C19.6963 16.0912 19.7663 17.4824 20.4226 17.4824C20.8964 17.4824 21.0646 17.0993 21.3981 16.3396C21.5266 16.0471 21.6795 15.6987 21.8838 15.2949C22.4981 14.0134 23.2305 12.7919 24.0713 11.6462C24.5788 10.9899 28.3063 11.7162 28.4463 12.1537C28.5863 12.5912 27.5713 14.2012 26.2588 16.0212C24.5488 18.2989 24.6194 18.3523 25.4297 18.9651C25.656 19.1362 25.9399 19.351 26.2588 19.6699C27.9301 21.3412 28.4463 22.1462 28.4463 22.5837C28.4353 22.9677 28.2779 23.333 28.0062 23.6047C27.7345 23.8764 27.3692 24.0339 26.9851 24.0449H24.7976C24.0714 24.0449 24.0713 24.0449 23.3363 23.3099L23.3363 23.3099C22.3913 22.3649 21.1488 21.1224 20.4226 21.1224C20.0438 21.1489 19.6873 21.3114 19.4188 21.5799C19.1503 21.8484 18.9878 22.2049 18.9613 22.5837Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+          <a href="#" target="_blank">
+            <svg
+              width="35"
+              height="35"
+              viewBox="0 0 35 35"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.375 0H30.625C31.7853 0 32.8981 0.460936 33.7186 1.28141C34.5391 2.10188 35 3.21468 35 4.375V30.625C35 31.7853 34.5391 32.8981 33.7186 33.7186C32.8981 34.5391 31.7853 35 30.625 35H4.375C3.21468 35 2.10188 34.5391 1.2814 33.7186C0.460933 32.8981 0 31.7853 0 30.625V4.375C0 3.21468 0.460933 2.10188 1.2814 1.28141C2.10188 0.460936 3.21468 0 4.375 0ZM29.1113 9.44988C29.4641 10.4033 29.6563 11.4086 29.68 12.4249C29.7412 13.7374 29.75 14.1836 29.75 17.4824C29.75 20.7811 29.7412 21.2186 29.68 22.5311C29.6563 23.5474 29.4641 24.5528 29.1113 25.5061C28.8015 26.3215 28.3212 27.0614 27.7025 27.6761C27.0898 28.2974 26.3494 28.7781 25.5325 29.0849C24.5801 29.4411 23.5742 29.6334 22.5575 29.6536C21.245 29.7236 20.7987 29.7236 17.5 29.7236C14.2013 29.7236 13.7637 29.7149 12.4512 29.6536C11.4345 29.6343 10.4285 29.4419 9.47625 29.0849C8.65937 28.7781 7.91894 28.2974 7.30626 27.6761C6.68495 27.0634 6.20427 26.323 5.8975 25.5061C5.54047 24.5539 5.34813 23.5479 5.32875 22.5311C5.25 21.2187 5.25 20.7899 5.25 17.4828V17.4824C5.25 14.1749 5.2675 13.7374 5.32875 12.4249C5.34813 11.4081 5.54047 10.4021 5.8975 9.44988C6.20427 8.633 6.68495 7.89257 7.30626 7.27988C7.91894 6.65858 8.65937 6.1779 9.47625 5.87113C10.4285 5.51409 11.4345 5.32176 12.4512 5.30238C13.7637 5.22363 14.1925 5.22363 17.5 5.22363C20.8075 5.22363 21.245 5.24113 22.5575 5.30238C23.5742 5.32261 24.5801 5.51491 25.5325 5.87113C26.3494 6.1779 27.0898 6.65858 27.7025 7.27988C28.3212 7.89466 28.8015 8.63449 29.1113 9.44988ZM27.0463 24.7011C27.3206 23.9736 27.4657 23.2036 27.475 22.4261C27.5363 21.1311 27.545 20.7636 27.545 17.4824C27.545 14.2011 27.5363 13.8249 27.475 12.5299C27.4657 11.7524 27.3206 10.9825 27.0463 10.2549C26.8652 9.72503 26.566 9.2433 26.1713 8.84613C25.7713 8.45492 25.2904 8.15623 24.7625 7.97113C24.0327 7.70592 23.2639 7.56398 22.4875 7.55113C21.1925 7.48113 20.8075 7.48113 17.535 7.48113C14.2625 7.48113 13.8862 7.48988 12.5912 7.55113C11.8149 7.56398 11.046 7.70592 10.3163 7.97113C9.78832 8.15623 9.30743 8.45492 8.90751 8.84613C8.49769 9.23939 8.1834 9.7213 7.98875 10.2549C7.7188 10.9837 7.57384 11.7528 7.56 12.5299C7.49 13.8249 7.49 14.2099 7.49 17.4824C7.49 20.7006 7.50692 21.1179 7.55742 22.3625L7.56 22.4261C7.57384 23.2032 7.7188 23.9723 7.98875 24.7011C8.1834 25.2347 8.49769 25.7166 8.90751 26.1099C9.30308 26.5169 9.78431 26.8307 10.3163 27.0286C11.046 27.2938 11.8149 27.4358 12.5912 27.4486C13.8862 27.5274 14.2538 27.5274 17.535 27.5274C20.8163 27.5274 21.1925 27.5099 22.4875 27.4486C23.2639 27.4358 24.0327 27.2938 24.7625 27.0286C25.2945 26.8307 25.7757 26.5169 26.1713 26.1099C26.566 25.7127 26.8652 25.231 27.0463 24.7011ZM25.5147 10.9378C25.5124 11.3284 25.3556 11.7023 25.0785 11.9778C24.8014 12.2532 24.4266 12.4078 24.036 12.4078C23.6476 12.4055 23.276 12.2496 23.0022 11.9741C22.7284 11.6987 22.5747 11.3261 22.5747 10.9378C22.5747 10.5494 22.7284 10.1768 23.0022 9.90141C23.276 9.62598 23.6476 9.47009 24.036 9.46777C24.4266 9.46777 24.8014 9.62236 25.0785 9.89779C25.3556 10.1732 25.5124 10.5471 25.5147 10.9378ZM15.0907 11.6623C15.8545 11.3456 16.6733 11.1826 17.5002 11.1826C19.1711 11.1826 20.7735 11.8464 21.955 13.0278C23.1365 14.2093 23.8002 15.8118 23.8002 17.4826C23.7979 19.152 23.1331 20.7521 21.9519 21.9317C20.7707 23.1113 19.1696 23.7739 17.5002 23.7739C15.8317 23.7739 14.2315 23.111 13.0517 21.9312C11.8718 20.7514 11.209 19.1512 11.209 17.4826C11.2078 16.6557 11.3697 15.8367 11.6854 15.0724C12.001 14.3081 12.4643 13.6135 13.0486 13.0284C13.6329 12.4432 14.3268 11.9791 15.0907 11.6623ZM14.6201 20.3726C15.3856 21.1332 16.421 21.5601 17.5002 21.5601C18.5795 21.5601 19.6148 21.1332 20.3804 20.3726C21.146 19.6119 21.5796 18.5793 21.5865 17.5001C21.5865 16.9635 21.4808 16.4321 21.2754 15.9364C21.0701 15.4406 20.7691 14.9901 20.3897 14.6107C20.0102 14.2313 19.5598 13.9303 19.064 13.7249C18.5682 13.5196 18.0369 13.4139 17.5002 13.4139C16.4172 13.4162 15.3792 13.8474 14.6134 14.6133C13.8476 15.3791 13.4163 16.4171 13.414 17.5001C13.4209 18.5793 13.8545 19.6119 14.6201 20.3726Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+          <a href="#" target="_blank">
+            <svg
+              width="35"
+              height="35"
+              viewBox="0 0 35 35"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.375 0H30.625C31.7853 0 32.8981 0.460936 33.7186 1.28141C34.5391 2.10188 35 3.21468 35 4.375V30.625C35 31.7853 34.5391 32.8981 33.7186 33.7186C32.8981 34.5391 31.7853 35 30.625 35H4.375C3.21468 35 2.10188 34.5391 1.2814 33.7186C0.460933 32.8981 0 31.7853 0 30.625V4.375C0 3.21468 0.460933 2.10188 1.2814 1.28141C2.10188 0.460936 3.21468 0 4.375 0ZM25.5237 12.0137C26.528 11.8073 27.5055 11.4873 28.4375 11.06C27.8501 11.9803 27.1104 12.794 26.25 13.4662V14.2012C26.25 20.1075 22.0937 26.5912 13.86 26.5912C11.3026 26.622 8.78342 25.9695 6.5625 24.7012C6.92405 24.7591 7.29027 24.7825 7.65625 24.7712C9.63144 24.7934 11.557 24.1526 13.125 22.9512C12.1869 22.9586 11.2682 22.6839 10.4881 22.1628C9.70796 21.6417 9.10244 20.8982 8.75 20.0287C9.0475 20.1075 11.6725 20.7637 12.3987 20.0287C10.36 19.5912 7.2975 17.115 7.2975 14.9275C7.95155 15.3548 8.70528 15.605 9.485 15.6537C8.84509 15.2783 8.30955 14.7484 7.92739 14.1125C7.54523 13.4766 7.32866 12.755 7.2975 12.0137C7.34782 11.2343 7.59792 10.481 8.02374 9.82624C10.2112 12.5212 13.125 13.4662 17.5 13.4662H17.5787C17.5099 13.2307 17.4833 12.9848 17.5 12.74C17.4893 12.1625 17.5952 11.5888 17.8112 11.0532C18.0273 10.5176 18.3492 10.031 18.7576 9.6226C19.166 9.21419 19.6525 8.89233 20.1882 8.67625C20.7238 8.46017 21.2975 8.35431 21.875 8.36499C22.4414 8.36933 22.9992 8.50327 23.5058 8.75656C24.0124 9.00985 24.4542 9.37576 24.7975 9.82624L25.375 10.4037C26.1932 10.0406 26.9754 9.60114 27.7112 9.09124C27.2883 10.261 26.5268 11.2783 25.5237 12.0137Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
+        <!-- <div class="footer-data">
+          <span>Сегодня на сайте 4 237 239 вакансий, 118 402 резюме</span>
+        </div> -->
+        <div class="footer-copyright">&copy; WorkPlace 2021</div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,147 @@
+.advantage-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 26px;
+  margin-bottom: 80px;
+}
+.advantage-title {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  text-align: center;
+  color: #002855;
+}
+.advantage-title > span {
+  color: #0466c8;
+}
+/* блок 1 */
+.advantage-item__convenience {
+  width: 413px;
+  height: 395px;
+}
+.advantage-item__convenience-title {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+
+  color: #002855;
+  margin-bottom: 12px;
+}
+.advantage-item__convenience-description {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #000000;
+}
+
+/* блок 2 */
+.advantage-item__base {
+  width: 413px;
+  height: 395px;
+}
+.advantage-item__base-title {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+
+  color: #002855;
+  margin-bottom: 12px;
+}
+.advantage-item__base-description {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #000000;
+}
+
+/* блок 3 */
+.advantage-item__command {
+  width: 413px;
+  height: 395px;
+}
+
+.advantage-item__command-title {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+  color: #002855;
+  margin-bottom: 12px;
+}
+.advantage-item__command-description {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #000000;
+}
+
+/* блок 4 */
+
+.advantage-item__intuitiveness {
+  width: 413px;
+  height: 395px;
+}
+.advantage-item__intuitiveness-title {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+
+  color: #002855;
+  margin-bottom: 20px;
+}
+.advantage-item__intuitiveness-description {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #000000;
+}
+
+/* блок 5 */
+.advantage-item__reliability {
+  width: 413px;
+  height: 395px;
+}
+.advantage-item__reliability-title {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+
+  color: #002855;
+  margin-bottom: 20px;
+}
+.advantage-item__reliability-description {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #000000;
+}

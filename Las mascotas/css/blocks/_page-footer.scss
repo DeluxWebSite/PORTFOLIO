@@ -1,0 +1,59 @@
+.page-footer {
+  height: 220px;
+  background: #408221;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.page-footer__social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+.social-icon__watsapp {
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.page-footer__button {
+  width: 288px;
+  height: 40px;
+  border: 2px solid #fffbf2;
+  border-radius: 25px;
+  background: #408221;
+  font-family: Futura;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  cursor: pointer;
+  margin-top: 25px;
+}
+.page-footer__text {
+  font-family: Futura;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.page-footer__copyright {
+  font-family: Futura;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
