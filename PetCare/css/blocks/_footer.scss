@@ -31,10 +31,17 @@
   margin-top: 29px;
   margin-bottom: 22px;
 }
-.social-icons img + img {
+.social-icons a {
+  text-decoration: none;
+}
+.social-icons a + a {
   margin-left: 20px;
 }
+
 .site-footer__list > li {
+  list-style-type: none;
+}
+.site-footer__list_link {
   font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
@@ -43,7 +50,19 @@
 
   color: #14171c;
 
-  list-style-type: none;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+.site-footer__list_strong {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #160e33;
+  text-decoration: none;
 }
 .site-footer__list li + li {
   margin-top: 12px;

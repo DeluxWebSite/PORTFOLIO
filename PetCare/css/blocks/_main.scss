@@ -1,3 +1,4 @@
+/* main */
 .site-main {
   width: 100%;
   background-color: #ff725e;
@@ -41,6 +42,7 @@
 
 .site-main__buttons {
   margin-top: 28px;
+  position: relative;
 }
 .button {
   width: 204px;
@@ -58,10 +60,33 @@
   background: #ffffff;
   border-radius: 8px;
 }
+.veterinarian__title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #ff725e;
+}
+.clinic__title,
+.upload__title {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #160e33;
+}
 .button + .button {
   margin-left: 16px;
 }
-
+.site-main__buttons_beta {
+  position: absolute;
+  right: -7px;
+  top: -8px;
+}
 .site-main__form {
   display: flex;
   align-items: center;
@@ -123,3 +148,4 @@
   margin-top: 24px;
   margin-bottom: 44px;
 }
+/* end main */

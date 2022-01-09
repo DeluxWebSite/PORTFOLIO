@@ -1,3 +1,4 @@
+/* header */
 .site-header {
   width: 100%;
   background-color: #ff725e;
@@ -9,17 +10,22 @@
   margin: 0 auto;
   height: 96px;
 }
+.site-header__menu-burger {
+  display: none;
+}
 .site-header__navigation > li {
   display: inline-block;
 
+  list-style-type: none;
+}
+.site-header__navigation > li > a {
   font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
   color: #ffffff;
-
-  list-style-type: none;
+  text-decoration: none;
 }
 .site-header__navigation > li + li {
   margin-left: 28px;
@@ -45,3 +51,16 @@
 .button-sign-in {
   background: transparent;
 }
+@media (min-width: 800px) and (max-width: 1199px) {
+  .site-header__navigation {
+    display: none;
+  }
+  .site-header__menu-burger {
+    display: block;
+  }
+  .site-header__logo {
+    margin-right: auto;
+    margin-left: 20px;
+  }
+}
+/* end header */

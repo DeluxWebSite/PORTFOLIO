@@ -1,7 +1,12 @@
 body {
   max-width: 1920px;
-  min-width: 375px;
+  min-width: 320px;
 }
 .wrap {
   width: 1170px;
+}
+@media (min-width: 800px) and (max-width: 1199px) {
+  .wrap {
+    width: 800px;
+  }
 }

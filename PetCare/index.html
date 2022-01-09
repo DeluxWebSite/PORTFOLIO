@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PetCare</title>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,15 +16,21 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body class="site">
+    <!-- header -->
     <header class="site-header">
       <div class="site-header__container wrap">
-        <img src="./img/Logo.svg" alt="PatCare" />
+        <img
+          class="site-header__menu-burger"
+          src="./img/icon-burger-menu.svg"
+          alt="icon-burger-menu"
+        />
+        <img class="site-header__logo" src="./img/Logo.svg" alt="PatCare" />
         <ul class="site-header__navigation">
-          <li>Find a doctor</li>
-          <li>Online store</li>
-          <li>How it works</li>
-          <li>Blog</li>
-          <li>About</li>
+          <li><a href="#">Find a doctor</a></li>
+          <li><a href="#">Online store</a></li>
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
         </ul>
         <div class="site-header__buttons">
           <button class="button-sign-in">Sign in</button>
@@ -31,6 +38,7 @@
         </div>
       </div>
     </header>
+    <!-- main -->
     <main class="site-main">
       <div class="site-main__container wrap">
         <p class="site-main__slogan">
@@ -43,20 +51,25 @@
         </h1>
         <div class="site-main__buttons">
           <button class="button veterinarian">
-            Veterinarian
+            <span class="veterinarian__title">Veterinarian</span>
             <br />
             Online consultation
           </button>
           <button class="button clinic">
-            Veterinary clinic
+            <span class="clinic__title">Veterinary clinic</span>
             <br />
             Book an appointment
           </button>
           <button class="button upload">
-            Disease recognition
+            <span class="upload__title">Disease recognition</span>
             <br />
             Upload a photo or video
           </button>
+          <img
+            class="site-main__buttons_beta"
+            src="./img/beta.svg"
+            alt="beta"
+          />
         </div>
         <form class="site-main__form" action="#" method="post">
           <img
@@ -81,6 +94,368 @@
         </p>
       </div>
     </main>
+    <!-- section partners -->
+    <section class="site-partners wrap">
+      <img src="/img/oswego-hospital.svg" alt="oswego-hospital" />
+      <img
+        src="/img/potts-point-veterinary-hospital.svg"
+        alt="potts-point-veterinary-hospital"
+      />
+      <img src="/img/humana-hospital.svg" alt="humana-hospital" />
+      <img src="/img/pet-pillow.svg" alt="pet-pillow" />
+    </section>
+    <!--/end section partners -->
+
+    <!-- section offer -->
+    <section class="site-offer">
+      <img
+        class="site-offer__semicircle-left"
+        src="./img/semicircle.svg"
+        alt="decoration"
+      />
+      <img
+        class="site-offer__wave-left"
+        src="./img/wave-left.svg"
+        alt="decoration"
+      />
+      <img
+        class="site-offer__wave-rigth"
+        src="./img/wave-rigth.svg"
+        alt="decoration"
+      />
+      <div class="site-offer__block-one wrap">
+        <figure class="pet-insurance">
+          <img class="pet-insurance__image" src="./img/cat-in-box.svg" alt="" />
+          <figcaption class="pet-insurance__description">
+            <strong class="pet-insurance__title">Pet insurance</strong>
+            <br />
+            <p class="pet-insurance__text">
+              American Pet Clinic is a full-service
+              <br />
+              veterinary hospital that offers
+              <br />
+              comprehensive medical.
+            </p>
+            <br />
+            <a class="pet-insurance__button" href="*">
+              <img src="./img/Button.svg" alt="button" />
+            </a>
+          </figcaption>
+        </figure>
+        <figure class="online-store">
+          <img
+            class="online-store__image"
+            src="./img/dog-in-arms.svg"
+            alt="dog-in-arms"
+          />
+          <figcaption class="online-store__description">
+            <strong class="online-store__title">Online store</strong>
+            <br />
+            <p class="online-store__text">
+              American Pet Clinic is a full-service
+              <br />
+              veterinary hospital that offers
+              <br />
+              comprehensive medical.
+            </p>
+            <br />
+            <a href="" class="online-store__button">
+              <img src="./img/Button.svg" alt="button" />
+            </a>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="site-offer__block-two wrap">
+        <img
+          class="site-offer__block-two__img-up"
+          src="./img/Icons-heart-Red-Cross.svg"
+          alt="Icons-heart-Red-Cross"
+        />
+        <figure class="high-quiality-professionals">
+          <img
+            class="high-quiality-professionals__images"
+            src="./img/veterinarians.svg"
+            alt="veterinarians"
+          />
+          <figcaption class="high-quiality-professionals__description">
+            <strong class="high-quiality-professionals__title">
+              High quiality professionals
+            </strong>
+            <br />
+            <p class="high-quiality-professionals__text">
+              From preventive care and internal medicine to pain management and
+              hospice care, our broad and varied service offering can meet all
+              of your pet’s health needs in one place.
+              <br />
+              <br />
+              We care for Ceres’s companion animals and have built a reputation
+              over the years for quality, professional care with a compassionate
+              touch.
+            </p>
+            <br />
+            <a href="" class="high-quiality-professionals__button">
+              <img
+                src="./img/Button-find-veterinarian.svg"
+                alt="find-veterinarian"
+              />
+            </a>
+          </figcaption>
+        </figure>
+        <img
+          class="site-offer__block-two__img-down"
+          src="./img/cart-veterinarian.svg"
+          alt="cart-veterinarian"
+        />
+      </div>
+      <div class="site-offer__block-three wrap">
+        <figure class="free-consultation">
+          <img
+            src="./img/Freelancer-pana.svg"
+            alt="Free consultation at the first time"
+            class="free-consultation__image"
+          />
+          <figcaption class="free-consultation__description">
+            <strong class="free-consultation__title">
+              Free consultation at the first
+              <br />
+              time
+            </strong>
+            <p class="free-consultation__text">
+              From preventive care and internal medicine to pain management and
+              hospice care, our broad and varied service offering can meet all
+              of your pet’s health needs in one place.
+              <br />
+              <br />
+              We care for Ceres’s companion animals and have built a reputation
+              over the years for quality, professional care with a compassionate
+              touch.
+            </p>
+            <a href="" class="free-consultation__button">
+              <img
+                src="./img/Button-find-veterinarian.svg"
+                alt="find veterinarian"
+              />
+            </a>
+          </figcaption>
+        </figure>
+        <img
+          class="site-offer__block-three__image-cart-veterenarian"
+          src="./img/cart-veterenarian-2.svg"
+          alt="cart veterinarian"
+        />
+        <img
+          class="site-offer__block-three__icon-syringe"
+          src="./img/icon-syringe.svg"
+          alt="icon syringe"
+        />
+      </div>
+    </section>
+    <!-- /end section offer -->
+
+    <!-- section clients say -->
+    <section class="site-clients-say">
+      <div class="site-clients-say__header wrap">
+        <img
+          class="site-clients-say__header-icon"
+          src="./img/icon-track-animal.svg"
+          alt="icon-track-animal"
+        />
+        <div class="site-clients-say__header-inner">
+          <h1 class="site-clients-say__header-title">What our clients say</h1>
+          <p class="site-clients-say__header-text">
+            Find out what our clients have to say about their
+            <br />
+            experience at PetCare Online Consultations.
+          </p>
+        </div>
+        <div class="site-clients-say__header-buttons">
+          <img src="./img/button-turn-left.svg" alt="" />
+          <img src="./img/Button.svg" alt="" />
+        </div>
+      </div>
+      <div class="site-clients-say__carousel">
+        <div class="cart-item">
+          <div class="cart-item__inner">
+            <h3 class="cart-item__name">Dianne Russell</h3>
+            <div class="cart-item__stars">
+              <img src="/img/star.svg" alt="" />
+              <span>5.0</span>
+            </div>
+          </div>
+          <p class="cart-item__text">
+            To boots on the ground venture philanthropy thought partnership,
+            optimism but capacity building social enterprise justice effective
+            altruism emerging our work.
+          </p>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item__inner">
+            <h3 class="cart-item__name">Marvin McKinney</h3>
+            <div class="cart-item__stars">
+              <img src="/img/star.svg" alt="" />
+              <span>5.0</span>
+            </div>
+          </div>
+          <p class="cart-item__text">
+            Strategize social return on investment benefit corporation engaging
+            paradigm systems thinking. Capacity building boots on the ground
+            thought partnership low-hanging fruit society preliminary...
+          </p>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item__inner">
+            <h3 class="cart-item__name">Ronald Richards</h3>
+            <div class="cart-item__stars">
+              <img src="/img/star.svg" alt="" />
+              <span>5.0</span>
+            </div>
+          </div>
+          <p class="cart-item__text">
+            Citizen-centered youth benefit corporation movements, strengthening
+            infrastructure segmentation social entrepreneurship equal
+            opportunity green space when peaceful paradigm...
+          </p>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item__inner">
+            <h3 class="cart-item__name">Robert Fox</h3>
+            <div class="cart-item__stars">
+              <img src="/img/star.svg" alt="" />
+              <span>5.0</span>
+            </div>
+          </div>
+          <p class="cart-item__text">
+            Preliminary thinking, co-creation philanthropy, natural resources
+            communities humanitarian correlation families; and emerging,
+            inspiring inspire social enterprise thought leader.
+          </p>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item__inner">
+            <h3 class="cart-item__name">Darlene Robertson</h3>
+            <div class="cart-item__stars">
+              <img src="/img/star.svg" alt="" />
+              <span>5.0</span>
+            </div>
+          </div>
+          <p class="cart-item__text">
+            Co-create think tank LGBTQ+ overcome injustice social entrepreneur
+            social capital inclusion social intrapreneurship framework silo
+            humanitarian rubric. Policymaker, we must stand up rubric white
+            paper...
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- /end section clienrs say -->
+
+    <!-- section we writing -->
+    <section class="site-we-writing">
+      <img
+        class="site-we-writing__semicircle-rigth"
+        src="./img/semicircle-rigth.svg"
+        alt="decoration"
+      />
+      <header class="site-we-writing__header wrap">
+        <h1 class="site-we-writing__header-title">We writing</h1>
+        <p class="site-we-writing__header-text">
+          Find out what our clients have to say about their
+          <br />
+          experience at PetCare Online Consultations.
+        </p>
+        <img
+          class="site-we-writing__header-icon"
+          src="./img/icon-bone.svg"
+          alt=""
+        />
+      </header>
+      <main class="site-we-writing__main wrap">
+        <figure class="content">
+          <img
+            class="content__image"
+            src="./img/foto-cat.jpg"
+            alt="Veterinary Consultation"
+          />
+          <figcaption class="content__description">
+            <h2 class="content__title">
+              Veterinary Consultation for
+              <br />
+              Business
+            </h2>
+            <p class="content__text">
+              Find out what our clients have to say about their
+              <br />
+              experience at PetCare Online Consultations.
+            </p>
+            <span class="content__date">12 Apr 2021</span>
+          </figcaption>
+        </figure>
+        <figure class="content">
+          <img
+            class="content__image"
+            src="./img/foto-a-parrot.jpg"
+            alt="Veterinary Consultation"
+          />
+          <figcaption class="content__description">
+            <h2 class="content__title">
+              Veterinary Consultation for
+              <br />
+              Business
+            </h2>
+            <p class="content__text">
+              Find out what our clients have to say about their
+              <br />
+              experience at PetCare Online Consultations.
+            </p>
+            <span class="content__date">12 Apr 2021</span>
+          </figcaption>
+        </figure>
+        <figure class="content">
+          <img
+            class="content__image"
+            src="./img/foto-cow.jpg"
+            alt="Veterinary Consultation"
+          />
+          <figcaption class="content__description">
+            <h2 class="content__title">
+              Veterinary Consultation for
+              <br />
+              Business
+            </h2>
+            <p class="content__text">
+              Find out what our clients have to say about their
+              <br />
+              experience at PetCare Online Consultations.
+            </p>
+            <span class="content__date">12 Apr 2021</span>
+          </figcaption>
+        </figure>
+      </main>
+      <footer class="site-we-writing__footer wrap">
+        <span class="site-we-writing__footer-text">
+          Join our newsletters to stay update on
+          <br />
+          promotions ond offers
+        </span>
+        <form class="site-we-writing__footer-form" action="" method="post">
+          <img src="./img/icon-email.svg" alt="e-mail" />
+          <input
+            class="site-we-writing__footer-input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your e-mail"
+          />
+          <input
+            class="site-we-writing__footer-submit"
+            type="submit"
+            value="Let’s go!"
+          />
+        </form>
+      </footer>
+    </section>
+    <!-- /end section we writing -->
+
     <footer class="site-footer">
       <div class="site-footer__container wrap">
         <div class="site-footer__social-icons">
@@ -89,32 +464,40 @@
             Find local specialist online or visit real clinic
           </span>
           <div class="social-icons">
-            <img src="./img/FB-icon.svg" alt="facebook" />
-            <img src="./img/TWITTER-icon.svg" alt="twitter" />
-            <img src="./img/YOUTUBE-icon.svg" alt="youtube" />
-            <img src="./img/instagram-black-icon.svg" alt="instagram" />
+            <a href="https://www.facebook.com" class="">
+              <img src="./img/FB-icon.svg" alt="facebook" />
+            </a>
+            <a href="https://www.twitter.com" class="">
+              <img src="./img/TWITTER-icon.svg" alt="twitter" />
+            </a>
+            <a href="https://www.youtube.com" class="">
+              <img src="./img/YOUTUBE-icon.svg" alt="youtube" />
+            </a>
+            <a href="https://www.instagram.com" class="">
+              <img src="./img/instagram-black-icon.svg" alt="instagram" />
+            </a>
           </div>
         </div>
         <ul class="site-footer__list">
-          <li><strong>Quick links</strong></li>
-          <li>Find a doctor</li>
-          <li>Marketplace</li>
-          <li>How it works</li>
-          <li>About</li>
+          <li class="site-footer__list_strong">Quick links</li>
+          <li><a class="site-footer__list_link" href="#">Find a doctor</a></li>
+          <li><a class="site-footer__list_link" href="#">Marketplace</a></li>
+          <li><a class="site-footer__list_link" href="#">How it works</a></li>
+          <li><a class="site-footer__list_link" href="#">About</a></li>
         </ul>
         <ul class="site-footer__list">
-          <li><strong>More info</strong></li>
-          <li>Privacy policy</li>
-          <li>Terms of Use</li>
-          <li>Accessibility</li>
-          <li>Search</li>
+          <li class="site-footer__list_strong">More info</li>
+          <li><a class="site-footer__list_link" href="#">Privacy policy</a></li>
+          <li><a class="site-footer__list_link" href="#">Terms of Use</a></li>
+          <li><a class="site-footer__list_link" href="#">Accessibility</a></li>
+          <li><a class="site-footer__list_link" href="#">Search</a></li>
         </ul>
         <ul class="site-footer__list">
-          <li><strong>Additional</strong></li>
-          <li>Privacy policy</li>
-          <li>Terms of Use</li>
-          <li>Accessibility</li>
-          <li>Search</li>
+          <li class="site-footer__list_strong">Additional</li>
+          <li><a class="site-footer__list_link" href="#">Privacy policy</a></li>
+          <li><a class="site-footer__list_link" href="#">Terms of Use</a></li>
+          <li><a class="site-footer__list_link" href="#">Accessibility</a></li>
+          <li><a class="site-footer__list_link" href="#">Search</a></li>
         </ul>
       </div>
     </footer>
