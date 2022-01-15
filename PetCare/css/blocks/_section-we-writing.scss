@@ -4,7 +4,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: stretch;
   margin: 0 auto;
   margin-top: 100px;
   position: relative;
@@ -48,7 +47,6 @@
   justify-content: space-between;
 }
 .content {
-  height: 400px;
   width: 374px;
 }
 .content__image {
@@ -56,6 +54,8 @@
   height: 214px;
 
   border-radius: 16px;
+
+  object-fit: cover;
 }
 .content__title {
   font-family: 'Poppins';
@@ -151,9 +151,346 @@
 
   display: none;
 }
+/* media */
 @media (min-width: 1600px) {
   .site-we-writing__semicircle-rigth {
     display: block;
+  }
+}
+@media (min-width: 800px) and (max-width: 1199px) {
+  .site-we-writing {
+    margin-top: 52px;
+  }
+  .site-we-writing__header-title {
+    font-size: 29px;
+    line-height: 36px;
+
+    margin-bottom: 12px;
+    padding-left: 24px;
+  }
+  .site-we-writing__header-text {
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 24px;
+  }
+  .site-we-writing__header-icon {
+    display: none;
+  }
+  .site-we-writing__main {
+    margin-top: 32px;
+    padding: 0 16px;
+  }
+  .content {
+    height: 392px;
+    width: 376px;
+  }
+  .content__image {
+    width: 374px;
+    height: 214px;
+
+    border-radius: 16px;
+  }
+  .content__title {
+    font-size: 22px;
+    line-height: 28px;
+
+    margin-top: 12px;
+  }
+  .content-cow {
+    display: none;
+  }
+  .site-we-writing__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    margin-top: 52px;
+    margin-bottom: 60px;
+  }
+  .site-we-writing__footer-text {
+    display: inline-block;
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 28px;
+  }
+  .site-we-writing__footer-form {
+    width: 572px;
+    height: 60px;
+  }
+}
+@media (min-width: 600px) and (max-width: 799px) {
+  .site-we-writing {
+    justify-content: center;
+    padding: 0 24px;
+    margin-top: 0;
+  }
+  .site-we-writing__header {
+    padding: 44px 24px 12px 24px;
+  }
+  .site-we-writing__header-title {
+    font-size: 29px;
+    line-height: 36px;
+  }
+  .site-we-writing__header-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .site-we-writing__header-icon {
+    display: none;
+  }
+  .site-we-writing__main {
+    margin-top: 11px;
+
+    align-items: center;
+    justify-content: center;
+  }
+  .content {
+    width: 552px;
+  }
+  .content-cat,
+  .content-parrot {
+    display: none;
+  }
+  .content__image {
+    width: 552px;
+  }
+  .content__title {
+    font-size: 22px;
+    line-height: 28px;
+
+    margin-top: 12px;
+  }
+  .content__text {
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-top: 12px;
+    margin-bottom: 32px;
+  }
+
+  .site-we-writing__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 60px;
+    margin-bottom: 41px;
+  }
+  .site-we-writing__footer-text {
+    font-size: 22px;
+    line-height: 28px;
+
+    text-align: center;
+  }
+  .site-we-writing__footer-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 4px 4px 4px 20px;
+
+    width: 552px;
+    height: 60px;
+
+    margin-top: 20px;
+  }
+}
+@media (min-width: 480px) and (max-width: 599px) {
+  .site-we-writing {
+    justify-content: center;
+    padding: 0 15px;
+    margin-top: 0;
+  }
+  .site-we-writing__header {
+    padding: 40px 15px 11px 15px;
+  }
+  .site-we-writing__header-title {
+    font-size: 24px;
+    line-height: 32px;
+
+    letter-spacing: -0.02em;
+  }
+  .site-we-writing__header-text {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .site-we-writing__header-icon {
+    display: none;
+  }
+  .site-we-writing__main {
+    margin-top: 11px;
+
+    align-items: center;
+    justify-content: center;
+  }
+  .content {
+    width: 450px;
+  }
+  .content-cat,
+  .content-parrot {
+    display: none;
+  }
+  .content__image {
+    width: 450px;
+  }
+  .content__title {
+    font-size: 20px;
+    line-height: 24px;
+
+    letter-spacing: -0.02em;
+
+    margin-top: 12px;
+  }
+  .content__text {
+    font-size: 14px;
+    line-height: 20px;
+
+    margin-top: 12px;
+    margin-bottom: 32px;
+  }
+
+  .site-we-writing__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 60px;
+    margin-bottom: 41px;
+  }
+  .site-we-writing__footer-text {
+    font-size: 20px;
+    line-height: 24px;
+
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+  .site-we-writing__footer-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 4px 4px 4px 20px;
+
+    width: 450px;
+    height: 52px;
+
+    margin-top: 20px;
+  }
+  .site-we-writing__footer-input {
+    flex-grow: 2;
+    margin-left: 12px;
+  }
+  .site-we-writing__footer-submit {
+    padding: 4px;
+
+    width: 101px;
+    height: 44px;
+
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #ffffff;
+  }
+}
+@media (max-width: 479px) {
+  .site-we-writing {
+    justify-content: center;
+    padding: 0 12px;
+    margin-top: 0;
+  }
+  .site-we-writing__header {
+    padding: 7px 12px;
+  }
+  .site-we-writing__header-title {
+    font-size: 24px;
+    line-height: 32px;
+
+    letter-spacing: -0.02em;
+  }
+  .site-we-writing__header-text {
+    font-size: 14px;
+    line-height: 20px;
+
+    margin-top: 12px;
+  }
+  .site-we-writing__header-icon {
+    display: none;
+  }
+  .site-we-writing__main {
+    margin-top: 7px;
+
+    align-items: center;
+    justify-content: center;
+  }
+  .content {
+    width: 296px;
+  }
+  .content__image {
+    width: 296px;
+  }
+  .content-cat,
+  .content-parrot {
+    display: none;
+  }
+
+  .content__title {
+    font-size: 20px;
+    line-height: 24px;
+
+    letter-spacing: -0.02em;
+
+    margin-top: 12px;
+  }
+  .content__text {
+    font-size: 14px;
+    line-height: 20px;
+
+    margin-top: 12px;
+    margin-bottom: 32px;
+  }
+
+  .site-we-writing__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 60px;
+    margin-bottom: 52px;
+  }
+  .site-we-writing__footer-text {
+    font-size: 16px;
+    line-height: 20px;
+
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+  .site-we-writing__footer-form {
+    padding: 4px 4px 4px 20px;
+
+    width: 290px;
+    height: 44px;
+
+    margin-top: 16px;
+  }
+  .site-we-writing__footer-input {
+    margin-left: 8px;
+    width: 100%;
+  }
+  .site-we-writing__footer-submit {
+    padding: 4px;
+
+    width: 101px;
+    height: 36px;
+
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #ffffff;
   }
 }
 /* end section we writing */

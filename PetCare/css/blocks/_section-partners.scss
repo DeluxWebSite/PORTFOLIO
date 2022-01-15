@@ -1,8 +1,19 @@
 /* section partners */
 .site-partners {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin: 40px auto;
+  width: 100%;
 }
+/* media */
+/* @media (min-width: 600px) and (max-width: 799px) {
+  .site-partners img:nth-child(n + 3) {
+    display: none;
+  }
+  .site-partners {
+    justify-content: space-around;
+  }
+} */
 /* /end section partners */

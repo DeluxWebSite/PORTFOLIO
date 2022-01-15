@@ -10,3 +10,18 @@ body {
     width: 800px;
   }
 }
+@media (min-width: 600px) and (max-width: 799px) {
+  .wrap {
+    width: 600px;
+  }
+}
+@media (min-width: 480px) and (max-width: 599px) {
+  .wrap {
+    width: 480px;
+  }
+}
+@media (max-width: 479px) {
+  .wrap {
+    width: 320px;
+  }
+}

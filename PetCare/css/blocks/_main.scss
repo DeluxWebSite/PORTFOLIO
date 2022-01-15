@@ -38,9 +38,15 @@
   color: #ffffff;
 
   margin-top: 14px;
+
+  width: 970px;
 }
 
 .site-main__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   margin-top: 28px;
   position: relative;
 }
@@ -147,5 +153,282 @@
 
   margin-top: 24px;
   margin-bottom: 44px;
+
+  width: 570px;
+}
+/* media */
+@media (min-width: 800px) and (max-width: 1199px) {
+  .site-main__slogan {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .site-main__title {
+    font-size: 48px;
+    line-height: 56px;
+
+    width: 642px;
+  }
+  .site-main__form {
+    width: 752px;
+  }
+  .site-main__text {
+    line-height: 20px;
+
+    width: 570px;
+  }
+}
+@media (min-width: 600px) and (max-width: 799px) {
+  .site-main__slogan {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+    margin-top: 28px;
+  }
+
+  .site-main__title {
+    font-size: 48px;
+    line-height: 56px;
+
+    margin-top: 16px;
+
+    width: 552px;
+  }
+
+  .site-main__buttons {
+    margin-top: 32px;
+  }
+  .button {
+    width: 177px;
+    height: 64px;
+
+    padding-left: 16px;
+  }
+  .veterinarian__title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .clinic__title,
+  .upload__title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .button + .button {
+    margin-left: 8px;
+  }
+  .site-main__buttons_beta {
+    display: none;
+  }
+  .site-main__form {
+    width: 552px;
+    height: 60px;
+
+    margin-top: 44px;
+  }
+
+  .site-main__form_img {
+    margin: 18px 12px 18px 24px;
+  }
+  .site-main__button-search {
+    width: 91px;
+    height: 44px;
+
+    margin: 8px;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .site-main__text {
+    font-size: 14px;
+    line-height: 20px;
+
+    text-align: center;
+
+    margin-top: 20px;
+    margin-bottom: 44px;
+
+    width: 552px;
+  }
+}
+@media (min-width: 480px) and (max-width: 599px) {
+  .site-main__container {
+    padding: 0 12px;
+  }
+  .site-main__slogan {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+
+    margin-top: 48px;
+  }
+
+  .site-main__title {
+    font-size: 48px;
+    line-height: 56px;
+
+    margin-top: 16px;
+
+    width: 451px;
+  }
+
+  .site-main__buttons {
+    margin-top: 28px;
+  }
+  .button {
+    min-width: 137px;
+    height: 58px;
+
+    font-size: 12px;
+    line-height: 18px;
+    text-align: start;
+
+    padding: 0 12px;
+
+    flex-basis: content;
+  }
+  .veterinarian__title {
+    font-size: 14px;
+    line-height: 20px;
+
+    letter-spacing: -0.02em;
+  }
+  .clinic__title,
+  .upload__title {
+    font-size: 14px;
+    line-height: 20px;
+
+    letter-spacing: -0.02em;
+  }
+  .button + .button {
+    margin-left: 8px;
+  }
+  .site-main__buttons_beta {
+    display: none;
+  }
+  .site-main__form {
+    width: 450px;
+    height: 60px;
+
+    margin-top: 36px;
+  }
+  .site-main__placeholder-search {
+    width: 100%;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .site-main__form_img {
+    margin: 18px 12px 18px 16px;
+  }
+  .site-main__button-search {
+    width: 91px;
+    height: 44px;
+
+    margin: 8px;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .site-main__text {
+    font-size: 14px;
+    line-height: 20px;
+
+    text-align: center;
+
+    margin-top: 20px;
+    margin-bottom: 32px;
+
+    width: 450px;
+  }
+}
+@media (max-width: 479px) {
+  .site-main__container {
+    padding: 0 12px;
+  }
+  .site-main__slogan {
+    margin-top: 32px;
+  }
+
+  .site-main__title {
+    font-size: 34px;
+    line-height: 40px;
+
+    text-align: center;
+    letter-spacing: -0.04em;
+
+    margin-top: 12px;
+
+    width: 291px;
+  }
+
+  .site-main__buttons {
+    margin-top: 28px;
+  }
+  .button {
+    min-width: 127px;
+    height: 58px;
+
+    font-size: 12px;
+    line-height: 18px;
+    text-align: start;
+
+    padding: 0 12px;
+
+    flex-basis: content;
+  }
+  .veterinarian__title {
+    font-size: 14px;
+    line-height: 20px;
+
+    letter-spacing: -0.02em;
+  }
+  .clinic__title,
+  .upload__title {
+    font-size: 14px;
+    line-height: 20px;
+
+    letter-spacing: -0.02em;
+  }
+  .button + .button {
+    margin-left: 8px;
+  }
+  .site-main__buttons_beta {
+    display: none;
+  }
+  .site-main__form {
+    width: 296px;
+    height: 44px;
+
+    margin-top: 36px;
+  }
+  .site-main__placeholder-search {
+    width: 100%;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .site-main__form_img {
+    margin: 12px 6px 12px 8px;
+  }
+  .site-main__button-search {
+    width: 91px;
+    height: 36px;
+
+    margin: 4px;
+
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .site-main__text {
+    font-size: 14px;
+    line-height: 20px;
+
+    text-align: center;
+
+    margin-top: 20px;
+    margin-bottom: 28px;
+
+    width: 296px;
+  }
 }
 /* end main */

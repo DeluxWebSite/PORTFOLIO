@@ -1,7 +1,7 @@
 /* footer */
 .site-footer {
   background: #fff1ef;
-  height: 286px;
+  /* height: 286px; */
 }
 .site-footer__container {
   display: flex;
@@ -82,5 +82,212 @@
   font-size: 14px;
   line-height: 74px;
   color: #ffffff;
+}
+/* media */
+@media (min-width: 800px) and (max-width: 1199px) {
+  .site-footer__container {
+    padding: 0 24px;
+  }
+  .copyright-text {
+    text-align: center;
+  }
+}
+@media (min-width: 600px) and (max-width: 799px) {
+  .site-footer {
+    background: #fff1ef;
+    /* height: 286px; */
+  }
+  .site-footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .site-footer__social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    flex-basis: 100%;
+  }
+  .site-footer__list {
+    text-align: start;
+    margin-bottom: 44px;
+  }
+  .site-footer__text {
+    margin-top: 25px;
+    margin-bottom: 32px;
+  }
+
+  .social-icons a + a {
+    margin-left: 20px;
+  }
+
+  .site-footer__list > li {
+    list-style-type: none;
+  }
+  .site-footer__list_link {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .site-footer__list_strong {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .site-footer__list li + li {
+    margin-top: 12px;
+  }
+  .copyright {
+    width: 100%;
+    background: #ff725e;
+    text-align: center;
+    vertical-align: middle;
+
+    height: 120px;
+  }
+  .copyright-text {
+    display: inline-block;
+    text-align: center;
+
+    font-size: 16px;
+    line-height: 120px;
+  }
+}
+@media (min-width: 480px) and (max-width: 599px) {
+  .site-footer {
+    background: #fff1ef;
+    /* height: 286px; */
+  }
+  .site-footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .site-footer__social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    flex-basis: 100%;
+  }
+  .site-footer__list {
+    text-align: start;
+    margin-bottom: 44px;
+  }
+  .site-footer__text {
+    margin-top: 25px;
+    margin-bottom: 32px;
+  }
+
+  .social-icons a + a {
+    margin-left: 20px;
+  }
+
+  .site-footer__list > li {
+    list-style-type: none;
+  }
+  .site-footer__list_link {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .site-footer__list_strong {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .site-footer__list li + li {
+    margin-top: 12px;
+  }
+  .copyright {
+    width: 100%;
+    background: #ff725e;
+    text-align: center;
+    vertical-align: middle;
+
+    height: 120px;
+  }
+  .copyright-text {
+    display: inline-block;
+    text-align: center;
+
+    font-size: 16px;
+    line-height: 120px;
+  }
+}
+@media (max-width: 479px) {
+  .site-footer {
+    background: #fff1ef;
+  }
+  .site-footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .site-footer__social-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+
+    flex-basis: 100%;
+  }
+  .site-footer__list {
+    text-align: start;
+    margin-bottom: 44px;
+  }
+  .site-footer__text {
+    margin-top: 25px;
+    margin-bottom: 32px;
+  }
+
+  .social-icons a + a {
+    margin-left: 20px;
+  }
+
+  .site-footer__list > li {
+    list-style-type: none;
+  }
+  .site-footer__list_link {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .site-footer__list_strong {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .site-footer__list li + li {
+    margin-top: 12px;
+  }
+
+  .site-footer__list + .site-footer__list {
+    margin-left: 20px;
+  }
+  .copyright {
+    width: 100%;
+    background: #ff725e;
+    text-align: center;
+    vertical-align: middle;
+
+    height: 120px;
+  }
+  .copyright-text {
+    display: inline-block;
+    text-align: center;
+
+    font-size: 16px;
+    line-height: 120px;
+  }
 }
 /* footer end */

@@ -10,6 +10,8 @@
 .site-offer__block-one {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-between;
+
   margin-top: 100px;
   z-index: 2;
 }
@@ -49,6 +51,8 @@
   color: #14171c;
 
   margin-top: 22px;
+
+  width: 280px;
 }
 
 .pet-insurance__button,
@@ -69,11 +73,11 @@
 
   margin-top: 100px;
 }
-.site-offer__block-two__img-up {
+/* .site-offer__block-two__img-up {
   margin-left: 200px;
   margin-bottom: -65px;
   width: 250px;
-}
+} */
 .site-offer__block-two__img-down {
   margin-left: 277px;
   margin-top: -115px;
@@ -82,7 +86,7 @@
 .high-quiality-professionals {
   display: flex;
   align-items: center;
-  height: 470px;
+  /* height: 470px; */
 }
 
 .high-quiality-professionals__description {
@@ -109,6 +113,8 @@
   color: #222944;
 
   margin-top: 24px;
+
+  width: 570px;
 }
 .high-quiality-professionals__button {
   margin-top: 48px;
@@ -128,7 +134,7 @@
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: nowrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 }
 .free-consultation__description {
@@ -137,7 +143,7 @@
   justify-content: center;
   flex-direction: column;
 
-  height: 470px;
+  /* height: 470px; */
 }
 .free-consultation__image {
   margin-left: 130px;
@@ -159,9 +165,10 @@
   line-height: 26px;
 
   margin-top: 24px;
-  width: 570px;
 
   color: #222944;
+
+  width: 570px;
 }
 .free-consultation__button {
   margin-top: 48px;
@@ -199,6 +206,7 @@
 
   display: none;
 }
+/* media */
 @media (min-width: 1600px) {
   .site-offer__semicircle-left {
     display: block;
@@ -208,6 +216,554 @@
   }
   .site-offer__wave-rigth {
     display: block;
+  }
+}
+@media (min-width: 800px) and (max-width: 1199px) {
+  .site-offer__block-one {
+    padding: 0 16px;
+    margin-top: 36px;
+  }
+  .pet-insurance {
+    width: 376px;
+  }
+  .pet-insurance__image {
+    width: 144px;
+  }
+  .pet-insurance__description {
+    margin-left: 0;
+  }
+  .online-store__description {
+    margin-right: 34px;
+  }
+
+  .pet-insurance__title,
+  .online-store__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .pet-insurance__text,
+  .online-store__text {
+    font-size: 14px;
+    line-height: 20px;
+
+    margin-top: 6px;
+
+    width: 220px;
+  }
+
+  .pet-insurance__button,
+  .online-store__button {
+    margin-top: 20px;
+  }
+  .online-store {
+    width: 376px;
+  }
+  .online-store__image {
+    width: 122px;
+  }
+  /* block-two  */
+  .site-offer__block-two {
+    margin-top: 21px;
+  }
+  /* .site-offer__block-two__img-up {
+    margin-left: 140px;
+    margin-bottom: -45px;
+    width: 180px;
+  } */
+
+  .high-quiality-professionals {
+    height: 336px;
+  }
+  .high-quiality-professionals__images {
+    height: 336px;
+    padding-left: 16px;
+  }
+  .high-quiality-professionals__description {
+    margin-left: 0;
+    padding-right: 24px;
+  }
+
+  .high-quiality-professionals__title {
+    font-size: 29px;
+    line-height: 36px;
+    padding-top: 16px;
+  }
+
+  .high-quiality-professionals__text {
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-top: 12px;
+
+    width: 412px;
+  }
+  .high-quiality-professionals__button {
+    margin-top: 8px;
+  }
+  .site-offer__block-two__img-down {
+    display: none;
+  }
+  /* block 3 */
+  .site-offer__block-three {
+    margin-top: 48px;
+  }
+
+  .free-consultation {
+    padding: 0 16px;
+  }
+  .free-consultation__description {
+    height: 336px;
+    margin-left: 8px;
+  }
+  .free-consultation__image {
+    width: 337px;
+    margin-left: 0;
+  }
+  .free-consultation__title {
+    font-size: 29px;
+    line-height: 36px;
+  }
+  .free-consultation__text {
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-top: 12px;
+
+    width: 418px;
+  }
+  .free-consultation__button {
+    margin-top: 33px;
+  }
+  .site-offer__block-three__image-cart-veterenarian {
+    display: none;
+  }
+  .site-offer__block-three__icon-syringe {
+    display: none;
+  }
+}
+@media (min-width: 600px) and (max-width: 799px) {
+  .site-offer__block-one {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 35px;
+  }
+  .pet-insurance {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 552px;
+  }
+  .pet-insurance__image {
+    height: 216px;
+    width: 144px;
+  }
+  .pet-insurance__description {
+    margin-left: 15px;
+    margin-right: auto;
+  }
+  .online-store {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 552px;
+  }
+  .online-store__image {
+    width: 122px;
+    height: 216px;
+  }
+  .pet-insurance__title,
+  .online-store__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .pet-insurance__text,
+  .online-store__text {
+    font-size: 14px;
+    line-height: 20px;
+
+    margin-top: 8px;
+  }
+
+  .pet-insurance__button,
+  .online-store__button {
+    margin-top: 36px;
+  }
+
+  /* block2 */
+  .site-offer__block-two {
+    padding: 0 24px;
+    margin-top: 40px;
+  }
+
+  .site-offer__block-two__img-down {
+    display: none;
+  }
+  .high-quiality-professionals {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* height: 470px; */
+  }
+  .high-quiality-professionals__images {
+    height: 268px;
+    width: 268px;
+  }
+  .high-quiality-professionals__description {
+    margin-left: 0;
+  }
+
+  .high-quiality-professionals__title {
+    font-size: 29px;
+    line-height: 36px;
+  }
+
+  .high-quiality-professionals__text {
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-top: 12px;
+  }
+  .high-quiality-professionals__button {
+    margin-top: 28px;
+  }
+  /* block 3 */
+  .site-offer__block-three {
+    margin-top: 40px;
+    padding: 0 24px;
+  }
+
+  .free-consultation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .free-consultation__image {
+    height: 268px;
+    width: 268px;
+
+    margin-left: 0;
+  }
+  .free-consultation__description {
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .free-consultation__title {
+    font-size: 29px;
+    line-height: 36px;
+  }
+  .free-consultation__text {
+    font-size: 16px;
+    line-height: 24px;
+
+    margin-top: 12px;
+  }
+  .free-consultation__button {
+    margin-top: 28px;
+  }
+  .site-offer__block-three__image-cart-veterenarian {
+    display: none;
+  }
+
+  .site-offer__block-three__icon-syringe {
+    display: none;
+  }
+}
+@media (min-width: 480px) and (max-width: 599px) {
+  .site-offer__block-one {
+    margin-top: 0;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .pet-insurance {
+    width: 450px;
+  }
+  .pet-insurance__image {
+    width: 144px;
+    height: 216px;
+  }
+
+  .pet-insurance__description {
+    margin-left: 15px;
+  }
+  .online-store__image {
+    height: 216px;
+    width: 123px;
+  }
+  .online-store__description {
+    margin-right: auto;
+    padding-left: 24px;
+  }
+
+  .pet-insurance__title,
+  .online-store__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .pet-insurance__text,
+  .online-store__text {
+    font-size: 14px;
+    line-height: 20px;
+
+    margin-top: 8px;
+  }
+
+  .pet-insurance__button,
+  .online-store__button {
+    margin-top: 16px;
+  }
+  .online-store {
+    width: 450px;
+    margin-top: 20px;
+  }
+  /* block 2 */
+  .site-offer__block-two {
+    margin-top: 40px;
+  }
+
+  .site-offer__block-two__img-down {
+    display: none;
+  }
+  .high-quiality-professionals {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 0 16px;
+  }
+  .high-quiality-professionals__images {
+    width: 345px;
+    height: 345px;
+  }
+  .high-quiality-professionals__description {
+    margin-left: 0;
+  }
+
+  .high-quiality-professionals__title {
+    font-size: 24px;
+    line-height: 32px;
+
+    letter-spacing: -0.02em;
+  }
+
+  .high-quiality-professionals__text {
+    font-size: 14px;
+    line-height: 20px;
+
+    margin-top: 12px;
+
+    width: 450px;
+  }
+  .high-quiality-professionals__button {
+    margin-top: 28px;
+  }
+  /* block 3 */
+  .site-offer__block-three {
+    margin-top: 40px;
+  }
+
+  .free-consultation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .free-consultation__image {
+    height: 345px;
+    width: 345px;
+
+    margin-left: 0;
+  }
+  .free-consultation__description {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 0 15px;
+  }
+
+  .free-consultation__title {
+    font-size: 24px;
+    line-height: 32px;
+
+    letter-spacing: -0.02em;
+
+    margin-top: 0;
+  }
+  .free-consultation__text {
+    font-size: 14px;
+    line-height: 20px;
+
+    margin-top: 12px;
+
+    width: 450px;
+  }
+  .free-consultation__button {
+    margin-top: 28px;
+  }
+  .site-offer__block-three__image-cart-veterenarian {
+    display: none;
+  }
+
+  .site-offer__block-three__icon-syringe {
+    display: none;
+  }
+}
+@media (max-width: 479px) {
+  .site-offer__block-one {
+    margin-top: 0;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .pet-insurance {
+    width: 293px;
+  }
+  .pet-insurance__image {
+    display: none;
+  }
+
+  .pet-insurance__description {
+    margin-left: 20px;
+  }
+  .online-store__image {
+    display: none;
+  }
+  .online-store__description {
+    margin-right: auto;
+    padding-left: 20px;
+  }
+
+  .pet-insurance__title,
+  .online-store__title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .pet-insurance__text,
+  .online-store__text {
+    font-size: 14px;
+    line-height: 20px;
+
+    margin-top: 8px;
+  }
+
+  .pet-insurance__button,
+  .online-store__button {
+    margin-top: 16px;
+  }
+  .online-store {
+    width: 296px;
+    margin-top: 16px;
+  }
+  /* block 2 */
+  .site-offer__block-two {
+    margin-top: 28px;
+  }
+
+  .site-offer__block-two__img-down {
+    display: none;
+  }
+  .high-quiality-professionals {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 0 12px;
+  }
+  .high-quiality-professionals__images {
+    width: 296px;
+    height: 297px;
+  }
+  .high-quiality-professionals__description {
+    margin-left: 0;
+  }
+
+  .high-quiality-professionals__title {
+    font-size: 24px;
+    line-height: 32px;
+
+    letter-spacing: -0.02em;
+  }
+
+  .high-quiality-professionals__text {
+    font-size: 14px;
+    line-height: 20px;
+
+    margin-top: 12px;
+
+    width: 296px;
+  }
+  .high-quiality-professionals__button {
+    margin-top: 24px;
+  }
+  /* block 3 */
+  .site-offer__block-three {
+    margin-top: 28px;
+  }
+
+  .free-consultation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .free-consultation__image {
+    height: 296px;
+    width: 296px;
+
+    margin-left: 0;
+  }
+  .free-consultation__description {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    padding: 0 15px;
+  }
+
+  .free-consultation__title {
+    font-size: 24px;
+    line-height: 32px;
+
+    letter-spacing: -0.02em;
+
+    margin-top: 0;
+  }
+  .free-consultation__text {
+    font-size: 14px;
+    line-height: 20px;
+
+    margin-top: 12px;
+
+    width: 296px;
+  }
+  .free-consultation__button {
+    margin-top: 24px;
+  }
+  .site-offer__block-three__image-cart-veterenarian {
+    display: none;
+  }
+
+  .site-offer__block-three__icon-syringe {
+    display: none;
   }
 }
 /* -- /end section offer -- */
