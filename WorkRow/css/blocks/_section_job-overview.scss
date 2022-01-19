@@ -1,0 +1,161 @@
+.job-overview {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.job-overview__title {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #002855;
+
+  text-align: center;
+}
+.job-overview__buttons-wrap {
+  width: 100%;
+  text-align: center;
+  margin: 30px auto 35px auto;
+}
+
+.job-overview__button-item {
+  height: 35px;
+  border: 1px solid #0466c8;
+  box-sizing: border-box;
+  border-radius: 100px;
+  padding: 0 15px;
+  background-color: transparent;
+  cursor: pointer;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #0466c8;
+}
+
+.job-overview__button-item + .job-overview__button-item {
+  margin-left: 15px;
+}
+.job-overview__wrap {
+  width: 1250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.job-overview__card {
+  width: 394px;
+  height: 170px;
+  padding: 10px;
+
+  background: #eaf4ff;
+  border-radius: 14px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.job-overview__card-header,
+.job-overview__card-main,
+.job-overview__card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.job-overview__card-img {
+  width: 44px;
+  height: 44px;
+}
+.job-overview__card-city {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #0466c8;
+}
+.job-overview__card-vacancy {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+
+  color: #0466c8;
+}
+.job-overview__card-price {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+
+  color: #0466c8;
+}
+.job-overview__card-description {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #0466c8;
+}
+.job-overview__card-button {
+  width: 120px;
+  height: 25px;
+
+  background: #0466c8;
+  border-radius: 72px;
+  border: none;
+
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+
+  color: #ffffff;
+}
+.job-overview__card-data {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+
+  color: #0466c8;
+}
+
+.job-overview__button {
+  width: 194px;
+  height: 50px;
+  background: #eaf4ff;
+  border-radius: 25px;
+  border: none;
+  margin: 30px auto;
+  cursor: pointer;
+
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+
+  color: #000000;
+}

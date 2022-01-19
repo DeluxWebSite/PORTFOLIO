@@ -1,0 +1,139 @@
+.hot-vacancies {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hot-vacancies__title {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #002855;
+
+  text-align: center;
+  margin-top: 46px;
+}
+.hot-vacancies__wrap {
+  width: 1250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 46px;
+  gap: 42px;
+}
+.hot-vacancies__card {
+  width: 346px;
+  height: 356px;
+  padding: 20px;
+
+  background: #eaf4ff;
+
+  border: 4px solid #fb6a2c;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 16px 1px rgba(0, 0, 0, 0.03);
+  border-radius: 14px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.hot-vacancies__card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.hot-vacancies__card-city {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #0466c8;
+}
+
+.hot-vacancies__card-vacancy {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+
+  color: #0466c8;
+}
+.hot-vacancies__card-price {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 26px;
+
+  color: #0466c8;
+}
+
+.hot-vacancies__card-description {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 19px;
+
+  color: #0466c8;
+}
+.hot-vacancies__card-button {
+  height: 38px;
+  width: 145px;
+  background: #ff4c00;
+  border-radius: 72px;
+  border: none;
+  cursor: pointer;
+
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #f3f3f3;
+}
+.hot-vacancies__card-data {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #0466c8;
+}
+.hot-vacancies__card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hot-vacancies__button {
+  width: 194px;
+  height: 50px;
+  background: #eaf4ff;
+  border-radius: 25px;
+  border: none;
+  margin: 30px auto;
+  cursor: pointer;
+
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+
+  color: #000000;
+}
