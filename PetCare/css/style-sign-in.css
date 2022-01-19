@@ -16,39 +16,39 @@ html {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   font: inherit;
-  vertical-align: baseline;
 }
-.sign-up__main {
+.sign-in__main {
   max-width: 1920px;
 
   display: flex;
+
   margin: 0 auto;
 }
-.sign-up__left {
+.sign-in__left {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
+  text-align: start;
+
+  flex-basis: 50%;
+  height: 1080px;
+
   background-image: url('../img/background-wave-left.svg');
   background-repeat: no-repeat;
   background-position: 20% 20%;
-
-  flex-basis: 50%;
-
-  height: 1080px;
 }
-
-.sign-up__inner {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
-
+.sign-in__inner {
   width: 520px;
   height: 700px;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
 }
-.sign-up__text {
+.sign-in__text {
   font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
@@ -57,10 +57,10 @@ html {
 
   color: #0f182e;
 }
-.sign-up__link {
+.sign-in__link {
   text-decoration: none;
 }
-.sign-up__title {
+.sign-in__title {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -71,7 +71,7 @@ html {
 
   margin-top: 100px;
 }
-.sign-up__desc {
+.sign-in__desc {
   font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
@@ -80,20 +80,18 @@ html {
 
   color: #64748b;
 
-  text-align: start;
-
   margin-top: 21px;
 }
-.sign-up__form {
+.sign-in__form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 
-  margin-top: 48px;
+  margin-top: 40px;
 }
-.sign-up__email-fieldset,
-.sign-up__password-fieldset {
+.sign-in__email-fieldset,
+.sign-in__password-fieldset {
   width: 518px;
   height: 60px;
 
@@ -101,11 +99,11 @@ html {
   border: 1px solid #6f47ff;
   border-radius: 30px;
 }
-.sign-up__password-fieldset {
+.sign-in__password-fieldset {
   margin-top: 33px;
 }
-.sign-up__email-legend,
-.sign-up__password-legend {
+.sign-in__email-legend,
+.sign-in__password-legend {
   font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
@@ -117,17 +115,17 @@ html {
   padding: 8px;
   margin-left: 24px;
 }
-.sign-up__email-input,
-.sign-up__password-input {
+.sign-in__email-input,
+.sign-in__password-input {
   width: 100%;
   height: 100%;
   border-radius: 30px;
 
   border: none;
-  /* outline: none; */
+  outline: none;
   text-align: center;
 }
-.sign-up__input-checkbox {
+.sign-in__input-checkbox {
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -140,7 +138,7 @@ html {
 
   margin-right: 8px;
 }
-.sign-up__checkbox-label {
+.sign-in__checkbox-label {
   font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
@@ -151,12 +149,11 @@ html {
 
   margin-top: 17px;
 }
-
-.sign-up__input-submit {
-  width: 518px;
+.sign-in__input-submit {
+  width: 520px;
   height: 60px;
 
-  margin-top: 40px;
+  margin-top: 41px;
 
   background: #6f47ff;
   border-radius: 30px;
@@ -170,7 +167,7 @@ html {
 
   color: #ffffff;
 }
-.sign-up__text-form {
+.sign-in__text-form {
   font-family: 'Lato';
   font-style: normal;
   font-weight: normal;
@@ -183,7 +180,7 @@ html {
 
   margin-top: 24px;
 }
-.sign-up__buttons {
+.sign-in__buttons {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -205,8 +202,7 @@ html {
 .button + .button {
   margin-left: 16px;
 }
-/* rigth */
-.sign-up__right {
+.sign-in__right {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -221,11 +217,11 @@ html {
   background-position: 20% 20%;
 }
 
-.sign-up__right-img {
+.sign-in__right-img {
   width: 520px;
   height: 462px;
 }
-.sign-up__right-text {
+.sign-in__right-text {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -236,95 +232,92 @@ html {
 
   color: #fff1ef;
 
-  width: 413px;
+  width: 370px;
   margin-top: 56px;
 }
 /* media */
 @media (min-width: 800px) and (max-width: 1200px) {
-  .sign-up__main {
+  .sign-in__main {
     flex-direction: column;
   }
-  .sign-up__left {
+  .sign-in__left {
     flex-basis: auto;
+
     height: 100%;
 
     background-image: none;
-
-    margin: 54px auto;
   }
-
-  .sign-up__inner {
+  .sign-in__inner {
     width: 520px;
-    height: 700px;
+    height: 663px;
+
+    margin: 40px auto;
   }
 
-  .sign-up__right {
+  .sign-in__right {
+    background-image: none;
+
     flex-direction: row;
 
+    margin-top: 0;
+
     flex-basis: auto;
-
-    height: 100%;
-
-    background-image: none;
 
     margin: 16px;
   }
-
-  .sign-up__right-img {
+  .sign-in__right-img {
     width: 282px;
     height: 251px;
-
     margin: 40px;
   }
-  .sign-up__right-text {
-    width: 376px;
-    margin-top: 0;
-
+  .sign-in__right-text {
     font-size: 34px;
     line-height: 40px;
   }
 }
 @media (min-width: 600px) and (max-width: 799px) {
-  .sign-up__left {
+  .sign-in__left {
     flex-basis: auto;
+
     height: 100%;
 
     background-image: none;
 
     margin: 0 auto;
   }
-
-  .sign-up__inner {
+  .sign-in__inner {
     width: 520px;
-    height: 720px;
-    margin: 40px;
+    height: 663px;
+
+    margin: 50px auto;
   }
 
-  .sign-up__right {
+  .sign-in__right {
     display: none;
   }
 }
 @media (min-width: 480px) and (max-width: 599px) {
-  .sign-up__left {
+  .sign-in__left {
     flex-basis: auto;
+
     height: 100%;
 
     background-image: none;
 
     margin: 0 auto;
   }
-
-  .sign-up__inner {
+  .sign-in__inner {
     width: 450px;
     height: 631px;
-    margin: 24px 15px;
+
+    margin: 15px;
   }
-  .sign-up__text {
+  .sign-in__text {
     font-size: 14px;
     line-height: 20px;
   }
 
-  .sign-up__title {
+  .sign-in__title {
     font-size: 24px;
     line-height: 32px;
 
@@ -332,106 +325,81 @@ html {
 
     margin-top: 68px;
   }
-  .sign-up__desc {
+  .sign-in__desc {
     font-size: 14px;
     line-height: 20px;
 
     margin-top: 29px;
   }
-  .sign-up__form {
-    margin-top: 48px;
+  .sign-in__form {
+    margin-top: 38px;
   }
-  .sign-up__email-fieldset,
-  .sign-up__password-fieldset {
-    width: 448px;
+  .sign-in__email-fieldset,
+  .sign-in__password-fieldset {
+    width: 450px;
     height: 52px;
-
-    background: #ffffff;
-    border: 1px solid #6f47ff;
-    border-radius: 30px;
   }
-  .sign-up__password-fieldset {
+  .sign-in__password-fieldset {
     margin-top: 26px;
   }
-  .sign-up__email-legend,
-  .sign-up__password-legend {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .sign-up__email-input,
-  .sign-up__password-input {
-    width: 100%;
-    height: 100%;
-  }
-  .sign-up__input-checkbox {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-
-    margin-right: 8px;
-  }
-  .sign-up__checkbox-label {
+  .sign-in__email-legend,
+  .sign-in__password-legend {
     font-size: 14px;
     line-height: 20px;
 
-    margin-top: 16px;
+    padding: 8px;
+    margin-left: 24px;
   }
 
-  .sign-up__input-submit {
-    width: 449px;
+  .sign-in__input-submit {
+    width: 450px;
     height: 52px;
 
-    margin-top: 40px;
+    margin-top: 32px;
 
     font-size: 16px;
     line-height: 24px;
   }
-  .sign-up__text-form {
+  .sign-in__text-form {
     font-size: 16px;
     line-height: 24px;
 
     margin-top: 24px;
   }
-  .sign-up__buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-top: 32px;
+  .sign-in__buttons {
+    margin-top: 24px;
   }
   .button {
     width: 100px;
     height: 64px;
   }
-  .button + .button {
-    margin-left: 16px;
-  }
 
-  .sign-up__right {
+  .sign-in__right {
     display: none;
   }
 }
 @media (min-width: 0px) and (max-width: 479px) {
-  .sign-up__left {
+  .sign-in__left {
     flex-basis: auto;
+
     height: 100%;
 
-    margin: 0 auto;
-
     background-image: none;
-  }
 
-  .sign-up__inner {
+    margin: 0 auto;
+  }
+  .sign-in__inner {
     width: 300px;
     height: 631px;
-    margin: 15px 10px;
+
+    margin: 10px;
   }
-  .sign-up__text {
+  .sign-in__text {
     font-size: 14px;
     line-height: 20px;
   }
 
-  .sign-up__title {
+  .sign-in__title {
     font-size: 24px;
     line-height: 32px;
 
@@ -439,107 +407,56 @@ html {
 
     margin-top: 68px;
   }
-  .sign-up__desc {
+  .sign-in__desc {
     font-size: 14px;
     line-height: 20px;
 
     margin-top: 29px;
   }
-  .sign-up__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-
-    margin-top: 46px;
+  .sign-in__form {
+    margin-top: 38px;
   }
-  .sign-up__email-fieldset,
-  .sign-up__password-fieldset {
+  .sign-in__email-fieldset,
+  .sign-in__password-fieldset {
     width: 300px;
     height: 52px;
-
-    background: #ffffff;
-    border: 1px solid #6f47ff;
-    border-radius: 30px;
   }
-  .sign-up__password-fieldset {
+  .sign-in__password-fieldset {
     margin-top: 26px;
   }
-  .sign-up__email-legend,
-  .sign-up__password-legend {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .sign-up__email-input,
-  .sign-up__password-input {
-    width: 100%;
-    height: 100%;
-    border-radius: 30px;
-
-    border: none;
-    /* outline: none; */
-    text-align: center;
-  }
-  .sign-up__input-checkbox {
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-
-    background: #ffffff;
-    border: 1.5px solid #6f47ff;
-    border-radius: 4px;
-
-    vertical-align: middle;
-
-    margin-right: 0;
-  }
-  .sign-up__checkbox-label {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: normal;
+  .sign-in__email-legend,
+  .sign-in__password-legend {
     font-size: 14px;
     line-height: 20px;
 
-    color: #0f182e;
-
-    margin-top: 16px;
+    padding: 8px;
+    margin-left: 24px;
   }
 
-  .sign-up__input-submit {
+  .sign-in__input-submit {
     width: 300px;
     height: 52px;
 
     margin-top: 32px;
 
-    background: #6f47ff;
-    border-radius: 30px;
-    border: none;
-
     font-size: 16px;
     line-height: 24px;
   }
-  .sign-up__text-form {
+  .sign-in__text-form {
     font-size: 16px;
     line-height: 24px;
 
     margin-top: 24px;
   }
-  .sign-up__buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    margin-top: 32px;
+  .sign-in__buttons {
+    margin-top: 24px;
   }
   .button {
     width: 62px;
     height: 64px;
   }
-  .button + .button {
-    margin-left: 16px;
-  }
 
-  .sign-up__right {
+  .sign-in__right {
     display: none;
   }
 }

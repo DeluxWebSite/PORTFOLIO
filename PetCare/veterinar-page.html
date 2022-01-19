@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Veterinarian page</title>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style-veterinar-page.css" />
+  </head>
+  <body class="site">
+    <!-- header -->
+    <header class="site-header">
+      <div class="site-header__container wrap">
+        <img
+          class="site-header__menu-burger"
+          src="./img/icon-burger-menu.svg"
+          alt="icon-burger-menu"
+        />
+        <img class="site-header__logo" src="./img/Logo.svg" alt="PatCare" />
+        <ul class="site-header__navigation">
+          <li><a href="#">Find a doctor</a></li>
+          <li><a href="#">Online store</a></li>
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <div class="site-header__buttons">
+          <button class="button-sign-in">
+            <a href="/sign-in.html" target="_blank">Sign in</a>
+          </button>
+          <button class="button-sign-up">
+            <a href="/sign-up.html" target="_blank">Sign up</a>
+          </button>
+        </div>
+        <a href="#" class="button-login">
+          <img
+            class="button-login__image"
+            src="./img/icon-button-login.svg"
+            alt=""
+          />
+        </a>
+      </div>
+    </header>
+    <!-- /end header -->
+
+    <!-- main -->
+    <main class="site-main">
+      <div class="site-main__container wrap">
+        <h1 class="site-main__title">
+          Find any veterinarian online
+        </h1>
+        <p class="site-main__text">
+          We can help you find any specialist for your pet to make right
+          diagnose or can notify when the closest clinic will open near you
+        </p>
+        <form class="site-main__form wrap" action="#" method="post">
+          <div class="site-main__form-inner">
+            <img
+              class="site-main__form_img"
+              src="./img/search.svg"
+              alt="search"
+            />
+            <input
+              class="site-main__placeholder-search"
+              name="search"
+              type="search"
+              placeholder="Type any search request"
+            />
+            <button class="site-main__button-search" type="submit">
+              Search
+            </button>
+          </div>
+          <div class="main-form__line"></div>
+          <div class="main-select">
+            <div class="main-select__inner">
+              <img
+                class="main-select__image"
+                src="./img/icon-paw.svg"
+                alt="paw"
+              />
+              <select class="main-select__item" name="" id="">
+                <option value="">Consultation topic</option>
+                <option value="">topic 1</option>
+                <option value="">topic 2</option>
+                <option value="">topic 3</option>
+                <option value="">topic 4</option>
+              </select>
+            </div>
+            <div class="main-select__inner">
+              <img
+                class="main-select__image"
+                src="./img/icon-paw.svg"
+                alt="paw"
+              />
+              <select class="main-select__item" name="" id="">
+                <option value="">Available</option>
+                <option value="">topic 1</option>
+                <option value="">topic 2</option>
+                <option value="">topic 3</option>
+                <option value="">topic 4</option>
+              </select>
+            </div>
+            <div class="main-select__inner">
+              <img
+                class="main-select__image"
+                src="./img/icon-question.svg"
+                alt="question"
+              />
+              <select class="main-select__item" name="" id="">
+                <option value="">Specialist</option>
+                <option value="">topic 1</option>
+                <option value="">topic 2</option>
+                <option value="">topic 3</option>
+                <option value="">topic 4</option>
+              </select>
+            </div>
+            <div class="main-select__inner">
+              <img
+                class="main-select__image"
+                src="./img/icon-star.svg"
+                alt="star"
+              />
+              <select class="main-select__item" name="" id="">
+                <option value="">Rating</option>
+                <option value="">topic 1</option>
+                <option value="">topic 2</option>
+                <option value="">topic 3</option>
+                <option value="">topic 4</option>
+              </select>
+            </div>
+          </div>
+          <!--  -->
+        </form>
+      </div>
+    </main>
+    <!-- /end main -->
+    <!-- section arrow-ios-left -->
+    <section class="arrow-ios-left wrap">
+      <a href="/find-veterenarian.html" class="arrow-ios-left__link">
+        <img
+          class="arrow-ios-left__link-img"
+          src="./img/icon-arrow-ios-left.svg"
+          alt=""
+        />
+        Back to search result
+      </a>
+    </section>
+    <!-- /end section arrow-ios-left -->
+    <!-- section page -->
+    <section class="veterinar-page wrap">
+      <figure class="veterinar-page__card">
+        <img
+          class="veterinar-page__card-foto"
+          src="./img/foto-veterinarians/Michael_Stewart.jpg"
+          alt="Michael Stewart"
+        />
+        <figcaption class="veterinar-page__card-inner">
+          <span class="veterinar-page__card-rating">
+            Overall rating
+            <span class="veterinar-page__card-stars">
+              <img
+                class="veterinar-page__card-img"
+                src="./img/star.svg"
+                alt="star"
+              />
+              5.0
+            </span>
+          </span>
+          <span class="veterinar-page__card-friendly">
+            Friendly
+            <span class="veterinar-page__card-">5.0</span>
+          </span>
+          <span class="veterinar-page__card-helpful">
+            Helpful
+            <span class="veterinar-page__card-">4.0</span>
+          </span>
+          <span class="veterinar-page__card-polite">
+            Polite
+            <span class="veterinar-page__card-">4.0</span>
+          </span>
+          <span class="veterinar-page__card-experienced">
+            Experienced
+            <span class="veterinar-page__card-">5.0</span>
+          </span>
+        </figcaption>
+      </figure>
+
+      <div class="veterinar-page__resume">
+        <div class="inner-name">
+          <span class="veterinar-page__resume-name">Michael Stewart</span>
+          <button class="veterinar-page__resume-button">
+            Start consultation
+          </button>
+          <span class="tag">
+            <img src="./img/icon-tag.svg" alt="tag" />
+            Ophthalmologist, nutritionist
+          </span>
+          <span class="pin">
+            <img src="./img/icon-pin.svg" alt="pin" />
+            Alicante, Spain
+          </span>
+        </div>
+        <div class="veterinar-page__resume-about">
+          <h2 class="about-title">
+            About
+            <img class="blue-line" src="./img/icon-blue-line.svg" alt="line" />
+          </h2>
+          <p class="about-text">
+            From preventive care and internal medicine to pain management and
+            hospice care, our broad and varied service offering can meet all of
+            your pet's health needs in one place.
+            <br />
+            We care for Ceres's
+            <a href="#">companion animals</a>
+            and have built a reputation over the years for quality, professional
+            care with a compassionate touch.
+          </p>
+        </div>
+        <div class="veterinar-page__resume-experience">
+          <h2 class="experience-title">
+            Experience
+            <img class="blue-line" src="./img/icon-blue-line.svg" alt="line" />
+          </h2>
+
+          <figure class="experience-desc">
+            <img src="./img/icon-vertical-line.svg" alt="line" />
+            <figcaption class="experience-desc__inner">
+              <h3 class="experience-desc__title">
+                Pointer Veterinary Clinic Marbella
+                <span class="year">2016</span>
+              </h3>
+              <p class="experience-desc__text">
+                From preventive care and internal medicine to pain management
+                and hospice care, our broad and varied service offering can meet
+                all of your pet's health needs in one place.
+              </p>
+            </figcaption>
+          </figure>
+
+          <figure class="experience-desc">
+            <img src="./img/icon-vertical-line.svg" alt="line" />
+            <figcaption class="experience-desc__inner">
+              <h3 class="experience-desc__title">
+                AAH Veterinary Services
+                <span class="year">2019</span>
+              </h3>
+              <p class="experience-desc__text">
+                From preventive care and internal medicine to pain management
+                and hospice care, our broad and varied service offering can meet
+                all of your pet's health needs in one place.
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="veterinar-page__resume-awards">
+          <h2 class="awards-title">
+            Awards
+            <img class="blue-line" src="./img/icon-blue-line.svg" alt="line" />
+          </h2>
+
+          <figure class="awards-desc">
+            <img
+              class="awards-desc__img"
+              src="./img/certificates/Veterinary_Inspection.jpg"
+              alt="certificate"
+            />
+            <figcaption class="awards-desc__inner">
+              <h3 class="awards-desc__title">
+                Veterinary Inspection
+                <span class="year">2021</span>
+              </h3>
+              <p class="awards-desc__text">
+                From preventive care and internal medicine to pain management
+                and hospice care, our broad and varied service offering can meet
+                all of your pet's health needs in one place.
+              </p>
+            </figcaption>
+          </figure>
+
+          <figure class="awards-desc">
+            <img
+              class="awards-desc__img"
+              src="./img/certificates/Veterinaries_Choice_Award.jpg"
+              alt="certificate"
+            />
+            <figcaption class="awards-desc__inner">
+              <h3 class="awards-desc__title">
+                Veterinaries Choice Award
+                <span class="year">2020</span>
+              </h3>
+              <p class="awards-desc__text">
+                From preventive care and internal medicine to pain management
+                and hospice care, our broad and varied service offering can meet
+                all of your pet's health needs in one place.
+              </p>
+            </figcaption>
+          </figure>
+
+          <figure class="awards-desc">
+            <img
+              class="awards-desc__img"
+              src="./img/certificates/Sertificate_Excellence.jpg"
+              alt="certificate"
+            />
+            <figcaption class="awards-desc__inner">
+              <h3 class="awards-desc__title">
+                TOP 3 Veterinaries
+                <span class="year">2019</span>
+              </h3>
+              <p class="awards-desc__text">
+                From preventive care and internal medicine to pain management
+                and hospice care, our broad and varied service offering can meet
+                all of your pet's health needs in one place.
+              </p>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <!-- /end section page -->
+
+    <!-- subscribe -->
+    <div class="subscribe wrap">
+      <span class="subscribe-text">
+        Join our newsletters to stay update
+        <br />
+        on promotions ond offers
+      </span>
+      <form class="subscribe-form" action="" method="post">
+        <img src="./img/icon-email.svg" alt="e-mail" />
+        <input
+          class="subscribe-input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your e-mail"
+        />
+        <input class="subscribe-submit" type="submit" value="Let's go!" />
+      </form>
+    </div>
+    <!-- /end subscribe -->
+
+    <footer class="site-footer">
+      <div class="site-footer__container wrap">
+        <div class="site-footer__social-icons">
+          <img src="./img/Logo-footer.svg" alt="PetCare" />
+          <span class="site-footer__text">
+            Find local specialist online or visit real clinic
+          </span>
+          <div class="social-icons">
+            <a href="https://www.facebook.com" class="">
+              <img src="./img/FB-icon.svg" alt="facebook" />
+            </a>
+            <a href="https://www.twitter.com" class="">
+              <img src="./img/TWITTER-icon.svg" alt="twitter" />
+            </a>
+            <a href="https://www.youtube.com" class="">
+              <img src="./img/YOUTUBE-icon.svg" alt="youtube" />
+            </a>
+            <a href="https://www.instagram.com" class="">
+              <img src="./img/instagram-black-icon.svg" alt="instagram" />
+            </a>
+          </div>
+        </div>
+        <ul class="site-footer__list">
+          <li class="site-footer__list_strong">Quick links</li>
+          <li><a class="site-footer__list_link" href="#">Find a doctor</a></li>
+          <li><a class="site-footer__list_link" href="#">Marketplace</a></li>
+          <li><a class="site-footer__list_link" href="#">How it works</a></li>
+          <li><a class="site-footer__list_link" href="#">About</a></li>
+        </ul>
+        <ul class="site-footer__list">
+          <li class="site-footer__list_strong">More info</li>
+          <li><a class="site-footer__list_link" href="#">Privacy policy</a></li>
+          <li><a class="site-footer__list_link" href="#">Terms of Use</a></li>
+          <li><a class="site-footer__list_link" href="#">Accessibility</a></li>
+          <li><a class="site-footer__list_link" href="#">Search</a></li>
+        </ul>
+        <ul class="site-footer__list">
+          <li class="site-footer__list_strong">Additional</li>
+          <li><a class="site-footer__list_link" href="#">Privacy policy</a></li>
+          <li><a class="site-footer__list_link" href="#">Terms of Use</a></li>
+          <li><a class="site-footer__list_link" href="#">Accessibility</a></li>
+          <li><a class="site-footer__list_link" href="#">Search</a></li>
+        </ul>
+      </div>
+    </footer>
+    <div class="copyright">
+      <span class="copyright-text wrap">
+        Copyright © 2021. All Rights Reserved.
+      </span>
+    </div>
+  </body>
+</html>

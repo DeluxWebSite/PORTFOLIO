@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find veterinarian</title>
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/css/style-find-veterenarian.css" />
+  </head>
+  <body class="site">
+    <!-- header -->
+    <header class="site-header">
+      <div class="site-header__container wrap">
+        <img
+          class="site-header__menu-burger"
+          src="./img/icon-burger-menu.svg"
+          alt="icon-burger-menu"
+        />
+        <img class="site-header__logo" src="./img/Logo.svg" alt="PatCare" />
+        <ul class="site-header__navigation">
+          <li><a href="#">Find a doctor</a></li>
+          <li><a href="#">Online store</a></li>
+          <li><a href="#">How it works</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About</a></li>
+        </ul>
+        <div class="site-header__buttons">
+          <button class="button-sign-in">
+            <a href="/sign-in.html" target="_blank">Sign in</a>
+          </button>
+          <button class="button-sign-up">
+            <a href="/sign-up.html" target="_blank">Sign up</a>
+          </button>
+        </div>
+        <a href="#" class="button-login">
+          <img
+            class="button-login__image"
+            src="./img/icon-button-login.svg"
+            alt=""
+          />
+        </a>
+      </div>
+    </header>
+    <!-- /end header -->
+
+    <!-- main -->
+    <main class="site-main">
+      <div class="site-main__container wrap">
+        <h1 class="site-main__title">
+          Find any veterinarian online
+        </h1>
+        <p class="site-main__text">
+          We can help you find any specialist for your pet to make right
+          diagnose or can notify when the closest clinic will open near you
+        </p>
+        <form class="site-main__form wrap" action="#" method="post">
+          <div class="site-main__form-inner">
+            <img
+              class="site-main__form_img"
+              src="./img/search.svg"
+              alt="search"
+            />
+            <input
+              class="site-main__placeholder-search"
+              name="search"
+              type="search"
+              placeholder="Type any search request"
+            />
+            <button class="site-main__button-search" type="submit">
+              Search
+            </button>
+          </div>
+          <div class="main-form__line"></div>
+          <div class="main-select">
+            <div class="main-select__inner">
+              <img
+                class="main-select__image"
+                src="./img/icon-paw.svg"
+                alt="paw"
+              />
+              <select class="main-select__item" name="" id="">
+                <option value="">Consultation topic</option>
+                <option value="">topic 1</option>
+                <option value="">topic 2</option>
+                <option value="">topic 3</option>
+                <option value="">topic 4</option>
+              </select>
+            </div>
+            <div class="main-select__inner">
+              <img
+                class="main-select__image"
+                src="./img/icon-paw.svg"
+                alt="paw"
+              />
+              <select class="main-select__item" name="" id="">
+                <option value="">Available</option>
+                <option value="">topic 1</option>
+                <option value="">topic 2</option>
+                <option value="">topic 3</option>
+                <option value="">topic 4</option>
+              </select>
+            </div>
+            <div class="main-select__inner">
+              <img
+                class="main-select__image"
+                src="./img/icon-question.svg"
+                alt="question"
+              />
+              <select class="main-select__item" name="" id="">
+                <option value="">Specialist</option>
+                <option value="">topic 1</option>
+                <option value="">topic 2</option>
+                <option value="">topic 3</option>
+                <option value="">topic 4</option>
+              </select>
+            </div>
+            <div class="main-select__inner">
+              <img
+                class="main-select__image"
+                src="./img/icon-star.svg"
+                alt="star"
+              />
+              <select class="main-select__item" name="" id="">
+                <option value="">Rating</option>
+                <option value="">topic 1</option>
+                <option value="">topic 2</option>
+                <option value="">topic 3</option>
+                <option value="">topic 4</option>
+              </select>
+            </div>
+          </div>
+          <!--  -->
+        </form>
+      </div>
+    </main>
+    <!-- /end main -->
+
+    <!-- section veterinarians -->
+    <section class="site-veterinarians wrap">
+      <span class="site-veterinarians__found">35 veterinarians found</span>
+      <div class="site-veterinarians__select">
+        <img
+          class="site-veterinarians__select-image"
+          src="./img/icon-seek.svg"
+          alt="seek"
+        />
+        <select class="site-veterinarians__select-item" name="" id="">
+          <option value="">Most active</option>
+          <option value="">topic 1</option>
+          <option value="">topic 2</option>
+          <option value="">topic 3</option>
+          <option value="">topic 4</option>
+        </select>
+      </div>
+      <div class="site-veterinarians__cards wrap">
+        <div class="cards-item">
+          <img
+            class="cards-item__image"
+            src="./img/foto-veterinarians/Samuel_Gonsalez.png"
+            alt="Samuel Gonsalez"
+          />
+          <span class="cards-item__name">Samuel Gonsalez</span>
+          <span class="cards-item__speciality">
+            Ophthalmologist
+            <span class="cards-item__speciality-stars">
+              <img
+                class="cards-item__speciality-img"
+                src="./img/star.svg"
+                alt="star"
+              />
+              5.0
+            </span>
+          </span>
+          <span class="cards-item__experience">
+            Experience
+            <span class="">9 y</span>
+          </span>
+          <span class="cards-item__consultations">
+            Consultations
+            <span class="">4353</span>
+          </span>
+          <span class="cards-item__price">
+            Price
+            <span class="">€5</span>
+          </span>
+        </div>
+
+        <div class="cards-item">
+          <img
+            class="cards-item__image"
+            src="./img/foto-veterinarians/Matthew_Long.png"
+            alt="Matthew Long"
+          />
+          <span class="cards-item__name">Matthew Long</span>
+          <span class="cards-item__speciality">
+            Ophthalmologist
+            <span class="cards-item__speciality-stars">
+              <img
+                class="cards-item__speciality-img"
+                src="./img/star.svg"
+                alt="star"
+              />
+              5.0
+            </span>
+          </span>
+          <span class="cards-item__experience">
+            Experience
+            <span class="">9 y</span>
+          </span>
+          <span class="cards-item__consultations">
+            Consultations
+            <span class="">3455</span>
+          </span>
+          <span class="cards-item__price">
+            Price
+            <span class="">€5</span>
+          </span>
+        </div>
+
+        <div class="cards-item">
+          <img
+            class="cards-item__image"
+            src="./img/foto-veterinarians/Irene_Martinez.png"
+            alt="Irene Martinez"
+          />
+          <span class="cards-item__name">Irene Martinez</span>
+          <span class="cards-item__speciality">
+            Ophthalmologist
+            <span class="cards-item__speciality-stars">
+              <img
+                class="cards-item__speciality-img"
+                src="./img/star.svg"
+                alt="star"
+              />
+              5.0
+            </span>
+          </span>
+          <span class="cards-item__experience">
+            Experience
+            <span class="">9 y</span>
+          </span>
+          <span class="cards-item__consultations">
+            Consultations
+            <span class="">2785</span>
+          </span>
+          <span class="cards-item__price">
+            Price
+            <span class="">€5</span>
+          </span>
+        </div>
+
+        <div class="cards-item">
+          <img
+            class="cards-item__image"
+            src="./img/foto-veterinarians/Michael_Stewart.png"
+            alt="Michael Stewart"
+          />
+          <span class="cards-item__name">Michael Stewart</span>
+          <span class="cards-item__speciality">
+            Ophthalmologist
+            <span class="cards-item__speciality-stars">
+              <img
+                class="cards-item__speciality-img"
+                src="./img/star.svg"
+                alt="star"
+              />
+              5.0
+            </span>
+          </span>
+          <span class="cards-item__experience">
+            Experience
+            <span class="">9 y</span>
+          </span>
+          <span class="cards-item__consultations">
+            Consultations
+            <span class="">2234</span>
+          </span>
+          <span class="cards-item__price">
+            Price
+            <span class="">€5</span>
+          </span>
+        </div>
+
+        <div class="cards-item">
+          <img
+            class="cards-item__image"
+            src="./img/foto-veterinarians/Howard_Howard.png"
+            alt="Howard Howard"
+          />
+          <span class="cards-item__name">Howard Howard</span>
+          <span class="cards-item__speciality">
+            Ophthalmologist
+            <span class="cards-item__speciality-stars">
+              <img
+                class="cards-item__speciality-img"
+                src="./img/star.svg"
+                alt="star"
+              />
+              5.0
+            </span>
+          </span>
+          <span class="cards-item__experience">
+            Experience
+            <span class="">9 y</span>
+          </span>
+          <span class="cards-item__consultations">
+            Consultations
+            <span class="">1554</span>
+          </span>
+          <span class="cards-item__price">
+            Price
+            <span class="">€5</span>
+          </span>
+        </div>
+
+        <div class="cards-item">
+          <img
+            class="cards-item__image"
+            src="./img/foto-veterinarians/Andreas_Moen.png"
+            alt="Andreas Moen"
+          />
+          <span class="cards-item__name">Andreas Moen</span>
+          <span class="cards-item__speciality">
+            Ophthalmologist
+            <span class="cards-item__speciality-stars">
+              <img
+                class="cards-item__speciality-img"
+                src="./img/star.svg"
+                alt="star"
+              />
+              5.0
+            </span>
+          </span>
+          <span class="cards-item__experience">
+            Experience
+            <span class="">9 y</span>
+          </span>
+          <span class="cards-item__consultations">
+            Consultations
+            <span class="">953</span>
+          </span>
+          <span class="cards-item__price">
+            Price
+            <span class="">€5</span>
+          </span>
+        </div>
+
+        <div class="cards-item">
+          <img
+            class="cards-item__image"
+            src="./img/foto-veterinarians/Wan_Stratton.png"
+            alt="Wan Stratton"
+          />
+          <span class="cards-item__name">Wan Stratton</span>
+          <span class="cards-item__speciality">
+            Ophthalmologist
+            <span class="cards-item__speciality-stars">
+              <img
+                class="cards-item__speciality-img"
+                src="./img/star.svg"
+                alt="star"
+              />
+              5.0
+            </span>
+          </span>
+          <span class="cards-item__experience">
+            Experience
+            <span class="">9 y</span>
+          </span>
+          <span class="cards-item__consultations">
+            Consultations
+            <span class="">944</span>
+          </span>
+          <span class="cards-item__price">
+            Price
+            <span class="">€5</span>
+          </span>
+        </div>
+
+        <div class="cards-item">
+          <img
+            class="cards-item__image"
+            src="./img/foto-veterinarians/Garfield_Ames.png"
+            alt="Garfield Ames"
+          />
+          <span class="cards-item__name">Garfield Ames</span>
+          <span class="cards-item__speciality">
+            Ophthalmologist
+            <span class="cards-item__speciality-stars">
+              <img
+                class="cards-item__speciality-img"
+                src="./img/star.svg"
+                alt="star"
+              />
+              5.0
+            </span>
+          </span>
+          <span class="cards-item__experience">
+            Experience
+            <span class="">9 y</span>
+          </span>
+          <span class="cards-item__consultations">
+            Consultations
+            <span class="">566</span>
+          </span>
+          <span class="cards-item__price">
+            Price
+            <span class="">€5</span>
+          </span>
+        </div>
+
+        <div class="cards-item">
+          <img
+            class="cards-item__image"
+            src="./img/foto-veterinarians/Susie_Manning.png"
+            alt="Susie Manning"
+          />
+          <span class="cards-item__name">Susie Manning</span>
+          <span class="cards-item__speciality">
+            Ophthalmologist
+            <span class="cards-item__speciality-stars">
+              <img
+                class="cards-item__speciality-img"
+                src="./img/star.svg"
+                alt="star"
+              />
+              5.0
+            </span>
+          </span>
+          <span class="cards-item__experience">
+            Experience
+            <span class="">9 y</span>
+          </span>
+          <span class="cards-item__consultations">
+            Consultations
+            <span class="">566</span>
+          </span>
+          <span class="cards-item__price">
+            Price
+            <span class="">€5</span>
+          </span>
+        </div>
+
+        <div class="cards-item">
+          <img
+            class="cards-item__image"
+            src="./img/foto-veterinarians/Lincoln_Gaddy.png"
+            alt="Lincoln Gaddy"
+          />
+          <span class="cards-item__name">Lincoln Gaddy</span>
+          <span class="cards-item__speciality">
+            Ophthalmologist
+            <span class="cards-item__speciality-stars">
+              <img
+                class="cards-item__speciality-img"
+                src="./img/star.svg"
+                alt="star"
+              />
+              5.0
+            </span>
+          </span>
+          <span class="cards-item__experience">
+            Experience
+            <span class="">9 y</span>
+          </span>
+          <span class="cards-item__consultations">
+            Consultations
+            <span class="">322</span>
+          </span>
+          <span class="cards-item__price">
+            Price
+            <span class="">€5</span>
+          </span>
+        </div>
+
+        <div class="cards-item">
+          <img
+            class="cards-item__image"
+            src="./img/foto-veterinarians/Gaston_Roark.png"
+            alt="Gaston Roark"
+          />
+          <span class="cards-item__name">Gaston Roark</span>
+          <span class="cards-item__speciality">
+            Ophthalmologist
+            <span class="cards-item__speciality-stars">
+              <img
+                class="cards-item__speciality-img"
+                src="./img/star.svg"
+                alt="star"
+              />
+              5.0
+            </span>
+          </span>
+          <span class="cards-item__experience">
+            Experience
+            <span class="">9 y</span>
+          </span>
+          <span class="cards-item__consultations">
+            Consultations
+            <span class="">312</span>
+          </span>
+          <span class="cards-item__price">
+            Price
+            <span class="">€5</span>
+          </span>
+        </div>
+
+        <div class="cards-item">
+          <img
+            class="cards-item__image"
+            src="./img/foto-veterinarians/Gaston_Roark.png"
+            alt="Kathleen Barnes"
+          />
+          <span class="cards-item__name">Kathleen Barnes</span>
+          <span class="cards-item__speciality">
+            Ophthalmologist
+            <span class="cards-item__speciality-stars">
+              <img
+                class="cards-item__speciality-img"
+                src="./img/star.svg"
+                alt="star"
+              />
+              5.0
+            </span>
+          </span>
+          <span class="cards-item__experience">
+            Experience
+            <span class="">9 y</span>
+          </span>
+          <span class="cards-item__consultations">
+            Consultations
+            <span class="">286</span>
+          </span>
+          <span class="cards-item__price">
+            Price
+            <span class="">€5</span>
+          </span>
+        </div>
+
+        <div class="cards-item">
+          <img
+            class="cards-item__image"
+            src="./img/foto-veterinarians/Minnie_Mason.png"
+            alt="Minnie Mason"
+          />
+          <span class="cards-item__name">Minnie Mason</span>
+          <span class="cards-item__speciality">
+            Ophthalmologist
+            <span class="cards-item__speciality-stars">
+              <img
+                class="cards-item__speciality-img"
+                src="./img/star.svg"
+                alt="star"
+              />
+              5.0
+            </span>
+          </span>
+          <span class="cards-item__experience">
+            Experience
+            <span class="">9 y</span>
+          </span>
+          <span class="cards-item__consultations">
+            Consultations
+            <span class="">264</span>
+          </span>
+          <span class="cards-item__price">
+            Price
+            <span class="">€5</span>
+          </span>
+        </div>
+
+        <div class="cards-item">
+          <img
+            class="cards-item__image"
+            src="./img/foto-veterinarians/Michael_Stewart.png"
+            alt="Anthony Sanders"
+          />
+          <span class="cards-item__name">Anthony Sanders</span>
+          <span class="cards-item__speciality">
+            Ophthalmologist
+            <span class="cards-item__speciality-stars">
+              <img
+                class="cards-item__speciality-img"
+                src="./img/star.svg"
+                alt="star"
+              />
+              5.0
+            </span>
+          </span>
+          <span class="cards-item__experience">
+            Experience
+            <span class="">9 y</span>
+          </span>
+          <span class="cards-item__consultations">
+            Consultations
+            <span class="">211</span>
+          </span>
+          <span class="cards-item__price">
+            Price
+            <span class="">€5</span>
+          </span>
+        </div>
+
+        <div class="cards-item">
+          <img
+            class="cards-item__image"
+            src="./img/foto-veterinarians/Nelson_Gardner.png"
+            alt="Nelson Gardner"
+          />
+          <span class="cards-item__name">Nelson Gardner</span>
+          <span class="cards-item__speciality">
+            Ophthalmologist
+            <span class="cards-item__speciality-stars">
+              <img
+                class="cards-item__speciality-img"
+                src="./img/star.svg"
+                alt="star"
+              />
+              5.0
+            </span>
+          </span>
+          <span class="cards-item__experience">
+            Experience
+            <span class="">9 y</span>
+          </span>
+          <span class="cards-item__consultations">
+            Consultations
+            <span class="">178</span>
+          </span>
+          <span class="cards-item__price">
+            Price
+            <span class="">€5</span>
+          </span>
+        </div>
+        <div class="cards-item">
+          <img
+            class="cards-item__image"
+            src="./img/foto-veterinarians/Justin_Gross.png"
+            alt="Justin Gross"
+          />
+          <span class="cards-item__name">Justin Gross</span>
+          <span class="cards-item__speciality">
+            Ophthalmologist
+            <span class="cards-item__speciality-stars">
+              <img
+                class="cards-item__speciality-img"
+                src="./img/star.svg"
+                alt="star"
+              />
+              5.0
+            </span>
+          </span>
+          <span class="cards-item__experience">
+            Experience
+            <span class="">9 y</span>
+          </span>
+          <span class="cards-item__consultations">
+            Consultations
+            <span class="">123</span>
+          </span>
+          <span class="cards-item__price">
+            Price
+            <span class="">€5</span>
+          </span>
+        </div>
+      </div>
+      <button class="site-veterinarians__button">Load more</button>
+    </section>
+    <!-- /end veterinarians -->
+
+    <!-- section clients say -->
+    <section class="site-clients-say">
+      <div class="site-clients-say__header wrap">
+        <img
+          class="site-clients-say__header-icon"
+          src="./img/icon-track-animal.svg"
+          alt="icon-track-animal"
+        />
+        <div class="site-clients-say__header-inner">
+          <h1 class="site-clients-say__header-title">What our clients say</h1>
+          <p class="site-clients-say__header-text">
+            Find out what our clients have to say about their
+            <br />
+            experience at PetCare Online Consultations.
+          </p>
+        </div>
+        <div class="site-clients-say__header-buttons">
+          <img src="./img/button-turn-left.svg" alt="" />
+          <img src="./img/Button.svg" alt="" />
+        </div>
+      </div>
+      <div class="site-clients-say__carousel">
+        <div class="cart-item">
+          <div class="cart-item__inner">
+            <h3 class="cart-item__name">Dianne Russell</h3>
+            <img class="cart-item__star-img" src="/img/star.svg" alt="" />
+            <span class="cart-item__points">5.0</span>
+          </div>
+          <p class="cart-item__text">
+            To boots on the ground venture philanthropy thought partnership,
+            optimism but capacity building social enterprise justice effective
+            altruism emerging our work.
+          </p>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item__inner">
+            <h3 class="cart-item__name">Marvin McKinney</h3>
+            <img class="cart-item__star-img" src="/img/star.svg" alt="" />
+            <span class="cart-item__points">5.0</span>
+          </div>
+          <p class="cart-item__text">
+            Strategize social return on investment benefit corporation engaging
+            paradigm systems thinking. Capacity building boots on the ground
+            thought partnership low-hanging fruit society preliminary...
+          </p>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item__inner">
+            <h3 class="cart-item__name">Ronald Richards</h3>
+            <img class="cart-item__star-img" src="/img/star.svg" alt="" />
+            <span class="cart-item__points">5.0</span>
+          </div>
+          <p class="cart-item__text">
+            Citizen-centered youth benefit corporation movements, strengthening
+            infrastructure segmentation social entrepreneurship equal
+            opportunity green space when peaceful paradigm...
+          </p>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item__inner">
+            <h3 class="cart-item__name">Robert Fox</h3>
+            <img class="cart-item__star-img" src="/img/star.svg" alt="" />
+            <span class="cart-item__points">5.0</span>
+          </div>
+          <p class="cart-item__text">
+            Preliminary thinking, co-creation philanthropy, natural resources
+            communities humanitarian correlation families; and emerging,
+            inspiring inspire social enterprise thought leader.
+          </p>
+        </div>
+        <div class="cart-item">
+          <div class="cart-item__inner">
+            <h3 class="cart-item__name">Darlene Robertson</h3>
+            <img class="cart-item__star-img" src="/img/star.svg" alt="" />
+            <span class="cart-item__points">5.0</span>
+          </div>
+          <p class="cart-item__text">
+            Co-create think tank LGBTQ+ overcome injustice social entrepreneur
+            social capital inclusion social intrapreneurship framework silo
+            humanitarian rubric. Policymaker, we must stand up rubric white
+            paper...
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- /end section clienrs say -->
+    <!-- subscribe -->
+    <div class="subscribe wrap">
+      <span class="subscribe-text">
+        Join our newsletters to stay update
+        <br />
+        on promotions ond offers
+      </span>
+      <form class="subscribe-form" action="" method="post">
+        <img src="./img/icon-email.svg" alt="e-mail" />
+        <input
+          class="subscribe-input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your e-mail"
+        />
+        <input class="subscribe-submit" type="submit" value="Let's go!" />
+      </form>
+    </div>
+    <!-- /end subscribe -->
+
+    <footer class="site-footer">
+      <div class="site-footer__container wrap">
+        <div class="site-footer__social-icons">
+          <img src="./img/Logo-footer.svg" alt="PetCare" />
+          <span class="site-footer__text">
+            Find local specialist online or visit real clinic
+          </span>
+          <div class="social-icons">
+            <a href="https://www.facebook.com" class="">
+              <img src="./img/FB-icon.svg" alt="facebook" />
+            </a>
+            <a href="https://www.twitter.com" class="">
+              <img src="./img/TWITTER-icon.svg" alt="twitter" />
+            </a>
+            <a href="https://www.youtube.com" class="">
+              <img src="./img/YOUTUBE-icon.svg" alt="youtube" />
+            </a>
+            <a href="https://www.instagram.com" class="">
+              <img src="./img/instagram-black-icon.svg" alt="instagram" />
+            </a>
+          </div>
+        </div>
+        <ul class="site-footer__list">
+          <li class="site-footer__list_strong">Quick links</li>
+          <li><a class="site-footer__list_link" href="#">Find a doctor</a></li>
+          <li><a class="site-footer__list_link" href="#">Marketplace</a></li>
+          <li><a class="site-footer__list_link" href="#">How it works</a></li>
+          <li><a class="site-footer__list_link" href="#">About</a></li>
+        </ul>
+        <ul class="site-footer__list">
+          <li class="site-footer__list_strong">More info</li>
+          <li><a class="site-footer__list_link" href="#">Privacy policy</a></li>
+          <li><a class="site-footer__list_link" href="#">Terms of Use</a></li>
+          <li><a class="site-footer__list_link" href="#">Accessibility</a></li>
+          <li><a class="site-footer__list_link" href="#">Search</a></li>
+        </ul>
+        <ul class="site-footer__list">
+          <li class="site-footer__list_strong">Additional</li>
+          <li><a class="site-footer__list_link" href="#">Privacy policy</a></li>
+          <li><a class="site-footer__list_link" href="#">Terms of Use</a></li>
+          <li><a class="site-footer__list_link" href="#">Accessibility</a></li>
+          <li><a class="site-footer__list_link" href="#">Search</a></li>
+        </ul>
+      </div>
+    </footer>
+    <div class="copyright">
+      <span class="copyright-text wrap">
+        Copyright © 2021. All Rights Reserved.
+      </span>
+    </div>
+  </body>
+</html>
