@@ -1,11 +1,7 @@
+/* section */
 .what-todo {
-  height: 700px;
   background-color: #cce4ff;
   width: 100%;
-  display: flex;
-  align-items: baseline;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 .what-todo__title {
   font-family: 'IBM Plex Sans';
@@ -15,20 +11,18 @@
   line-height: 52px;
 
   text-align: center;
+  margin-top: 50px;
 
   color: #002855;
-  flex-basis: 100%;
-  margin-top: 50px;
 }
-.what-todo__left {
-  /* flex-basis: 40%; */
-  width: 388px;
+.what-todo__inner {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+
+  margin: 65px auto;
 }
-.what-todo__right {
-  /* flex-basis: 60%; */
-  width: 762px;
-  margin-left: 130px;
-}
+
 .what-todo__left-title {
   font-family: 'Roboto';
   font-style: normal;
@@ -41,14 +35,21 @@
 }
 .what-todo__left-image {
   margin-top: 113px;
+  max-width: 388px;
+}
+.what-todo__right {
+  max-width: 762px;
 }
 .what-todo__right-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
   margin-bottom: 100px;
 }
 .applicants-btn {
   width: 207px;
   height: 39px;
-  margin-right: 134px;
   background: none;
   border: none;
 
@@ -83,7 +84,17 @@
   color: #0466c8;
   cursor: pointer;
 }
-
+.step-img {
+  width: 87px;
+  height: 39px;
+  vertical-align: middle;
+}
+.circle-img {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  margin: 0 25px;
+}
 .what-todo__right-text {
   font-family: 'PT Sans';
   font-style: normal;
@@ -95,27 +106,290 @@
   margin-bottom: 50px;
 
   white-space: nowrap;
-  overflow: hidden;
 }
-.what-todo__right-text svg {
-  vertical-align: middle;
+
+.what-todo__right-btns {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
 }
 .registration-btn,
 .entrance-btn {
+  display: block;
+
+  text-decoration: none;
+
+  text-align: center;
+
   background: #0466c8;
   border-radius: 100px;
   border: none;
   width: 189px;
-  height: 35px;
 
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  line-height: 21px;
+  line-height: 35px;
   color: #ffffff;
   cursor: pointer;
 }
-.registration-btn {
-  margin-right: 40px;
+
+/* media */
+@media (min-width: 1024px) and (max-width: 1259px) {
+  .what-todo__title {
+    font-size: 34px;
+    line-height: 44px;
+
+    margin-top: 37px;
+  }
+  .what-todo__inner {
+    margin: 50px auto;
+  }
+
+  .what-todo__left-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .what-todo__left-image {
+    margin-top: 108px;
+    max-width: 298px;
+  }
+  .what-todo__right {
+    max-width: 526px;
+  }
+  .what-todo__right-buttons {
+    margin-bottom: 66px;
+  }
+  .applicants-btn {
+    width: 195px;
+    height: 40px;
+
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .employers-btn {
+    width: 195px;
+    height: 40px;
+    font-size: 24px;
+    line-height: 26px;
+  }
+  .step-img {
+    width: 87px;
+    height: 39px;
+  }
+  .circle-img {
+    width: 28px;
+    height: 28px;
+    margin: 0 10px;
+  }
+  .what-todo__right-text {
+    font-size: 22px;
+    line-height: 28px;
+
+    margin-bottom: 50px;
+  }
+  .what-todo__right-text svg {
+    vertical-align: middle;
+  }
+  .what-todo__right-btns {
+    display: flex;
+    align-items: flex-start;
+  }
+  .registration-btn,
+  .entrance-btn {
+    width: 189px;
+
+    font-size: 16px;
+    line-height: 35px;
+  }
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .what-todo__title {
+    font-size: 32px;
+    line-height: 42px;
+
+    margin-top: 37px;
+  }
+  .what-todo__inner {
+    margin: 50px auto;
+  }
+
+  .what-todo__left-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .what-todo__left-image {
+    margin-top: 129px;
+    max-width: 206px;
+  }
+  .what-todo__right {
+    max-width: 437px;
+  }
+  .what-todo__right-buttons {
+    margin-bottom: 56px;
+  }
+  .applicants-btn {
+    width: 192px;
+    height: 36px;
+
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .employers-btn {
+    width: 192px;
+    height: 36px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+  .step-img {
+    width: 70px;
+    height: 31px;
+  }
+  .circle-img {
+    width: 28px;
+    height: 28px;
+    margin: 0 10px;
+  }
+  .what-todo__right-text {
+    font-size: 18px;
+    line-height: 23px;
+
+    margin-bottom: 50px;
+  }
+  .what-todo__right-text svg {
+    vertical-align: middle;
+  }
+  .what-todo__right-btns {
+    display: flex;
+    align-items: flex-start;
+  }
+  .registration-btn,
+  .entrance-btn {
+    width: 152px;
+
+    font-size: 16px;
+    line-height: 27px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .what-todo__title {
+    font-size: 19px;
+    line-height: 25px;
+
+    margin-top: 36px;
+  }
+  .what-todo__inner {
+    justify-content: center;
+    margin: 50px auto;
+  }
+
+  .what-todo__left {
+    display: none;
+  }
+  .what-todo__right {
+    width: calc(100% - 10%);
+  }
+  .what-todo__right-buttons {
+    margin-bottom: 56px;
+  }
+  .applicants-btn {
+    width: 138px;
+    height: 24px;
+
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .employers-btn {
+    width: 138px;
+    height: 24px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .step-img {
+    width: 47px;
+    height: 20px;
+  }
+  .circle-img {
+    width: 22px;
+    height: 22px;
+    margin: 0 15px;
+  }
+  .what-todo__right-text {
+    font-size: 16px;
+    line-height: 21px;
+
+    margin-bottom: 50px;
+  }
+  .what-todo__right-text svg {
+    vertical-align: middle;
+  }
+
+  .registration-btn,
+  .entrance-btn {
+    width: 125px;
+
+    font-size: 14px;
+    line-height: 27px;
+  }
+}
+@media (max-width: 479px) {
+  .what-todo__title {
+    font-size: 16px;
+    line-height: 21px;
+
+    margin-top: 33px;
+  }
+  .what-todo__inner {
+    justify-content: center;
+    margin: 40px auto;
+  }
+
+  .what-todo__left {
+    display: none;
+  }
+  .what-todo__right {
+    width: calc(100% - 10%);
+  }
+  .what-todo__right-buttons {
+    margin-bottom: 44px;
+  }
+  .applicants-btn {
+    width: 104px;
+    height: 22px;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .employers-btn {
+    width: 104px;
+    height: 22px;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .step-img {
+    width: 47px;
+    height: 20px;
+  }
+  .circle-img {
+    width: 18px;
+    height: 18px;
+    margin: 0 10px;
+  }
+  .what-todo__right-text {
+    font-size: 13px;
+    line-height: 17px;
+
+    margin-bottom: 40px;
+  }
+
+  .registration-btn,
+  .entrance-btn {
+    width: 104px;
+
+    font-size: 12px;
+    line-height: 22px;
+  }
+}
+/* end section */

@@ -1,13 +1,4 @@
-.advantage-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 26px;
-  margin-bottom: 80px;
-}
+/* section */
 .advantage-title {
   font-family: 'IBM Plex Sans';
   font-style: normal;
@@ -17,13 +8,26 @@
   text-align: center;
   color: #002855;
 }
+.advantage-inner {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 30px auto;
+  gap: 3%;
+}
+
 .advantage-title > span {
   color: #0466c8;
 }
 /* блок 1 */
 .advantage-item__convenience {
   width: 413px;
-  height: 395px;
+}
+.advantage-item__convenience-image {
+  width: 280px;
 }
 .advantage-item__convenience-title {
   font-family: 'IBM Plex Sans';
@@ -47,8 +51,10 @@
 
 /* блок 2 */
 .advantage-item__base {
-  width: 413px;
-  height: 395px;
+  width: 370px;
+}
+.advantage-item__base-image {
+  width: 286px;
 }
 .advantage-item__base-title {
   font-family: 'IBM Plex Sans';
@@ -72,10 +78,11 @@
 
 /* блок 3 */
 .advantage-item__command {
-  width: 413px;
-  height: 395px;
+  width: 370px;
 }
-
+.advantage-item__command-image {
+  width: 360px;
+}
 .advantage-item__command-title {
   font-family: 'IBM Plex Sans';
   font-style: normal;
@@ -98,8 +105,10 @@
 /* блок 4 */
 
 .advantage-item__intuitiveness {
-  width: 413px;
-  height: 395px;
+  width: 370px;
+}
+.advantage-item__intuitiveness-image {
+  width: 272px;
 }
 .advantage-item__intuitiveness-title {
   font-family: 'IBM Plex Sans';
@@ -123,8 +132,10 @@
 
 /* блок 5 */
 .advantage-item__reliability {
-  width: 413px;
-  height: 395px;
+  width: 404px;
+}
+.advantage-item__reliability-image {
+  width: 304px;
 }
 .advantage-item__reliability-title {
   font-family: 'IBM Plex Sans';
@@ -145,3 +156,463 @@
 
   color: #000000;
 }
+/* media */
+@media (min-width: 1024px) and (max-width: 1259px) {
+  .advantage-title {
+    font-size: 36px;
+    line-height: 47px;
+  }
+  .advantage-inner {
+    margin: 30px auto;
+  }
+
+  /* блок 1 */
+  .advantage-item__convenience {
+    width: 319px;
+  }
+  .advantage-item__convenience-image {
+    width: 206px;
+  }
+  .advantage-item__convenience-title {
+    font-size: 28px;
+    line-height: 36px;
+
+    margin-bottom: 12px;
+  }
+  .advantage-item__convenience-description {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  /* блок 2 */
+  .advantage-item__base {
+    width: 273px;
+  }
+  .advantage-item__base-image {
+    width: 212px;
+  }
+  .advantage-item__base-title {
+    font-size: 28px;
+    line-height: 36px;
+
+    margin-bottom: 12px;
+  }
+  .advantage-item__base-description {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  /* блок 3 */
+  .advantage-item__command {
+    width: 273px;
+  }
+  .advantage-item__command-image {
+    width: 266px;
+  }
+  .advantage-item__command-title {
+    font-size: 28px;
+    line-height: 36px;
+
+    margin-bottom: 12px;
+  }
+  .advantage-item__command-description {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  /* блок 4 */
+
+  .advantage-item__intuitiveness {
+    width: 301px;
+  }
+  .advantage-item__intuitiveness-image {
+    width: 202px;
+  }
+  .advantage-item__intuitiveness-title {
+    font-size: 28px;
+    line-height: 36px;
+
+    margin-bottom: 12px;
+  }
+  .advantage-item__intuitiveness-description {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  /* блок 5 */
+  .advantage-item__reliability {
+    width: 362px;
+  }
+  .advantage-item__reliability-image {
+    width: 224px;
+  }
+  .advantage-item__reliability-title {
+    font-size: 28px;
+    line-height: 36px;
+
+    margin-bottom: 20px;
+  }
+  .advantage-item__reliability-description {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .advantage-title {
+    font-size: 34px;
+    line-height: 44px;
+  }
+  .advantage-inner {
+    margin: 30px auto;
+  }
+  /* блок 1 */
+  .advantage-item__convenience {
+    width: 199px;
+  }
+  .advantage-item__convenience-image {
+    width: 199px;
+  }
+  .advantage-item__convenience-title {
+    font-size: 18px;
+    line-height: 23px;
+
+    margin-bottom: 5px;
+  }
+  .advantage-item__convenience-description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  /* блок 2 */
+  .advantage-item__base {
+    width: 214px;
+  }
+  .advantage-item__base-image {
+    width: 203px;
+  }
+  .advantage-item__base-title {
+    font-size: 18px;
+    line-height: 23px;
+
+    margin-bottom: 5px;
+  }
+  .advantage-item__base-description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  /* блок 3 */
+  .advantage-item__command {
+    width: 207px;
+  }
+  .advantage-item__command-image {
+    width: 207px;
+  }
+  .advantage-item__command-title {
+    font-size: 18px;
+    line-height: 23px;
+
+    margin-bottom: 5px;
+  }
+  .advantage-item__command-description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  /* блок 4 */
+  .advantage-item__intuitiveness {
+    width: 201px;
+  }
+  .advantage-item__intuitiveness-image {
+    width: 201px;
+  }
+  .advantage-item__intuitiveness-title {
+    font-size: 18px;
+    line-height: 23px;
+
+    margin-bottom: 5px;
+  }
+  .advantage-item__intuitiveness-description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  /* блок 5 */
+  .advantage-item__reliability {
+    width: 255px;
+  }
+  .advantage-item__reliability-image {
+    width: 224px;
+  }
+  .advantage-item__reliability-title {
+    font-size: 18px;
+    line-height: 23px;
+
+    margin-bottom: 5px;
+  }
+  .advantage-item__reliability-description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .advantage-title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .advantage-inner {
+    margin: 30px auto;
+  }
+  /* блок 1 */
+  .advantage-item__convenience {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+    padding: 5px;
+    margin-top: 15px;
+  }
+  .advantage-item__convenience-image {
+    width: 176px;
+    height: 108px;
+    margin: 15px;
+  }
+  .advantage-item__convenience-title {
+    font-size: 16px;
+    line-height: 21px;
+
+    margin-bottom: 5px;
+  }
+  .advantage-item__convenience-description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  /* блок 2 */
+  .advantage-item__base {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+
+    width: 100%;
+    margin-top: 15px;
+  }
+  .advantage-item__base-image {
+    width: 165px;
+    height: 110px;
+    margin: 15px;
+  }
+  .advantage-item__base-title {
+    font-size: 16px;
+    line-height: 21px;
+
+    margin-bottom: 5px;
+  }
+  .advantage-item__base-description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  /* блок 3 */
+  .advantage-item__command {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+    margin-top: 15px;
+  }
+  .advantage-item__command-image {
+    width: 177px;
+    height: 110px;
+    margin: 15px;
+  }
+  .advantage-item__command-title {
+    font-size: 16px;
+    line-height: 21px;
+
+    margin-bottom: 5px;
+  }
+  .advantage-item__command-description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  /* блок 4 */
+  .advantage-item__intuitiveness {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+
+    width: 100%;
+    margin-top: 15px;
+  }
+  .advantage-item__intuitiveness-image {
+    width: 170px;
+    height: 120px;
+    margin: 15px;
+  }
+  .advantage-item__intuitiveness-title {
+    font-size: 16px;
+    line-height: 21px;
+
+    margin-bottom: 5px;
+  }
+  .advantage-item__intuitiveness-description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  /* блок 5 */
+  .advantage-item__reliability {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+    margin-top: 15px;
+  }
+  .advantage-item__reliability-image {
+    width: 170px;
+    height: 120px;
+    margin: 15px;
+  }
+  .advantage-item__reliability-title {
+    font-size: 16px;
+    line-height: 21px;
+
+    margin-bottom: 5px;
+  }
+  .advantage-item__reliability-description {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media (max-width: 479px) {
+  .advantage-title {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .advantage-inner {
+    margin: 30px auto;
+  }
+  /* блок 1 */
+  .advantage-item__convenience {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+    padding: 5px;
+    margin-top: 15px;
+  }
+  .advantage-item__convenience-image {
+    width: 120px;
+    height: 88px;
+    margin: 15px;
+  }
+  .advantage-item__convenience-title {
+    font-size: 12px;
+    line-height: 16px;
+
+    margin-bottom: 5px;
+  }
+  .advantage-item__convenience-description {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  /* блок 2 */
+  .advantage-item__base {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+
+    width: 100%;
+    margin-top: 15px;
+  }
+  .advantage-item__base-image {
+    width: 112px;
+    height: 90px;
+    margin: 15px;
+  }
+  .advantage-item__base-title {
+    font-size: 12px;
+    line-height: 16px;
+
+    margin-bottom: 5px;
+  }
+  .advantage-item__base-description {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  /* блок 3 */
+  .advantage-item__command {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+    margin-top: 15px;
+  }
+  .advantage-item__command-image {
+    width: 120px;
+    height: 90px;
+    margin: 15px;
+  }
+  .advantage-item__command-title {
+    font-size: 12px;
+    line-height: 16px;
+
+    margin-bottom: 5px;
+  }
+  .advantage-item__command-description {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  /* блок 4 */
+  .advantage-item__intuitiveness {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+
+    width: 100%;
+    margin-top: 15px;
+  }
+  .advantage-item__intuitiveness-image {
+    width: 116px;
+    height: 99px;
+    margin: 15px;
+  }
+  .advantage-item__intuitiveness-title {
+    font-size: 12px;
+    line-height: 16px;
+
+    margin-bottom: 5px;
+  }
+  .advantage-item__intuitiveness-description {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  /* блок 5 */
+  .advantage-item__reliability {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+    margin-top: 15px;
+  }
+  .advantage-item__reliability-image {
+    width: 116px;
+    height: 98px;
+    margin: 15px;
+  }
+  .advantage-item__reliability-title {
+    font-size: 12px;
+    line-height: 16px;
+
+    margin-bottom: 5px;
+  }
+  .advantage-item__reliability-description {
+    font-size: 10px;
+    line-height: 13px;
+  }
+}
+/* end section */

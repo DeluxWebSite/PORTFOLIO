@@ -1,113 +1,170 @@
+/* header */
 .site-header {
   height: 50px;
-  max-width: 1250px;
-  width: 100%;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: relative;
+}
+.logo-main_hidden {
+  display: none;
+}
+/* навигация */
+.topmenu {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-
-/* навигация */
-
 .topmenu,
-.submenu {
+.dropdown {
   list-style: none;
 }
-.site-header__navigation {
-  display: table;
-  margin: 0 auto;
-}
-.topmenu:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.topmenu a {
-  text-decoration: none;
-}
-.topmenu > li {
-  width: 194px;
-  float: left;
-  position: relative;
-  font-family: "PT Sans";
-}
-.topmenu > li > a {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 21px;
-  color: #000000;
-  /* padding: 0 30px; */
-}
-.topmenu li a:hover {
-  color: #d5b45b;
-}
-/* .submenu-link:after {
-  content: "\f107";
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 21px;
-  color: #000000;
-  margin-left: 10px;
-} */
-.submenu {
-  background: #ffffff;
+.dropdown {
+  display: none;
+
   position: absolute;
-  left: 0;
-  top: 100%;
-  z-index: 5;
-  width: 194px;
+  max-width: max-content;
+  max-height: max-content;
+  padding: 16px;
+
+  background: #ffffff;
   border-radius: 6px;
-  opacity: 0;
-  transform: scaleY(0);
-  transform-origin: 0 0;
-  transition: 0.5s ease-in-out;
 }
-.submenu li {
-  margin: 15px 0;
+.site-header__navigation {
+  width: 100%;
 }
-.submenu a {
-  color: white;
-  text-align: left;
-  padding: 15px 0;
-  font-family: "PT Sans";
+.link {
+  text-decoration: none;
+
+  font-family: 'PT Sans';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 21px;
+
   color: #000000;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
-.submenu li:last-child a {
-  border-bottom: none;
+.dropdown li + li {
+  margin-top: 15px;
 }
-.topmenu > li:hover .submenu {
-  opacity: 1;
-  transform: scaleY(1);
+.link:hover {
+  font-weight: bold;
+}
+
+.topmenu__list:hover .dropdown {
+  display: block;
 }
 /* кнопки */
-
+.site-header__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
 .site-header__button-resume {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+
+  text-decoration: none;
+
+  text-align: center;
+
   border-radius: 100px;
   background-color: #0466c8;
   color: #ffffff;
   border: none;
-  height: 35px;
-  width: 231px;
+  padding: 7px 20px;
   margin-right: 20px;
   cursor: pointer;
 }
 
 .site-header__button-login {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+
+  color: #000000;
+  text-decoration: none;
+
   border-color: #cce4ff;
+  background: #cce4ff;
   border-radius: 100px;
-  height: 35px;
-  width: 86px;
+  padding: 7px 22px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border: none;
   cursor: pointer;
+}
+.site-header__button-burger_hidden {
+  display: none;
+
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+/* media */
+@media (min-width: 1024px) and (max-width: 1259px) {
+  .services_visible {
+    display: none;
+  }
+  .help_visible {
+    display: none;
+  }
+  .link {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .site-header__button-resume,
+  .site-header__button-login {
+    font-size: 13px;
+    line-height: 17px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .site-header__navigation {
+    display: none;
+  }
+  .link {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .site-header__button-resume,
+  .site-header__button-login {
+    font-size: 13px;
+    line-height: 17px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .site-header__navigation {
+    display: none;
+  }
+  .site-header__button-resume {
+    display: none;
+  }
+
+  .site-header__button-login {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 479px) {
+  .logo-main {
+    display: none;
+  }
+  .site-header__navigation {
+    display: none;
+  }
+  .site-header__buttons {
+    display: none;
+  }
+  .logo-main_hidden {
+    display: block;
+  }
+  .site-header__button-burger_hidden {
+    display: block;
+  }
 }

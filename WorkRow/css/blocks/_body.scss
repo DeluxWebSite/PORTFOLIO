@@ -5,7 +5,11 @@
   flex-direction: column;
   margin: 0 auto;
   max-width: 1440px;
-  min-width: 1250px;
+  min-width: 320px;
 
-  font-family: "PT Sans", sans-serif;
+  font-family: 'PT Sans', sans-serif;
+}
+.wrap {
+  width: calc(100% - 10%);
+  margin: 0 auto;
 }

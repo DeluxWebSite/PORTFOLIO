@@ -1,51 +1,65 @@
+/* main */
 .site-main {
-  background-image: url("/img/foto-main.jpg");
+  background-image: url('/img/foto-main.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+
   height: 650px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+}
+.site-main__inner {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
 }
 .site-main__title,
 .site-main__slogan {
-  font-family: "IBM Plex Sans";
+  font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: normal;
   font-size: 48px;
   line-height: 62px;
   color: #ffffff;
+}
 
-  margin-left: 201px;
-}
-.site-main__title {
-  margin-top: 185px;
-}
 .site-main__form {
-  position: relative;
-  width: 1006px;
-  height: 84px;
-  margin-left: 201px;
+  width: 100%;
+
   margin-top: 27px;
+
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.icon-search {
-  position: absolute;
-  margin: 15px;
-  top: 5%;
-}
 .site-main__search {
-  width: 827px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.site-main__search-input {
+  background-image: url('/img/Iconsearch.svg');
+  background-repeat: no-repeat;
+  background-position: 2%;
+  background-color: #ffffff;
+
+  width: 100%;
   height: 50px;
-  background: #ffffff;
+  padding-left: 6%;
+
   border-radius: 6px 0px 0px 6px;
   border: none;
-  padding-left: 50px;
+  outline: none;
+
   cursor: pointer;
 
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -53,22 +67,32 @@
   color: #858585;
 }
 .site-main__find {
-  width: 179px;
+  max-width: 179px;
+  width: 100%;
   height: 50px;
+
   background: #0466c8;
   border-radius: 0px 6px 6px 0px;
   border: none;
   cursor: pointer;
 
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
 }
+.site-main__additional-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  margin-top: 15px;
+}
 .site-main__popular-queries {
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -77,7 +101,7 @@
   color: #ffffff;
 }
 .site-main__advanced-search {
-  font-family: "PT Sans";
+  font-family: 'PT Sans';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -86,27 +110,207 @@
   text-decoration: none;
   border-bottom: 1px dashed #ffffff;
 }
-
 .site-main__buttons {
-  margin-left: 201px;
-  margin-top: 5px;
+  width: 100%;
 }
 .site-main__buttons button {
-  width: 163px;
-  height: 35px;
+  width: max-content;
+  padding: 7px 12px;
+
   cursor: pointer;
+  margin-top: 15px;
+  margin-right: 15px;
 
   background: rgba(255, 255, 255, 0.15);
   border: 1px solid #ffffff;
   border-radius: 100px;
 
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
 }
-.site-main__buttons button + button {
-  margin-left: 15px;
+/* media */
+@media (min-width: 1024px) and (max-width: 1259px) {
+  .site-main {
+    height: 480px;
+  }
+  .site-main__title,
+  .site-main__slogan {
+    font-size: 48px;
+    line-height: 62px;
+  }
+  .site-main__form {
+    margin-top: 15px;
+  }
+  .site-main__search-input {
+    background-size: 16px;
+    height: 31px;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .site-main__find {
+    height: 31px;
+
+    font-size: 15px;
+    line-height: 19px;
+  }
+  .site-main__additional-options {
+    margin-top: 10px;
+  }
+  .site-main__popular-queries {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .site-main__advanced-search {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .site-main__buttons button {
+    margin-top: 15px;
+    margin-right: 15px;
+
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
+@media (min-width: 768px) and (max-width: 1023px) {
+  .site-main {
+    height: 428px;
+  }
+  .site-main__title,
+  .site-main__slogan {
+    font-size: 44px;
+    line-height: 57px;
+  }
+  .site-main__form {
+    margin-top: 27px;
+  }
+  .site-main__search-input {
+    background-size: 14px;
+    height: 27px;
+
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .site-main__find {
+    max-width: 102px;
+    height: 27px;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .site-main__additional-options {
+    margin-top: 10px;
+  }
+  .site-main__popular-queries {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .site-main__advanced-search {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  .site-main__buttons button {
+    margin-top: 15px;
+    margin-right: 15px;
+
+    font-size: 9px;
+    line-height: 11px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .site-main {
+    height: 273px;
+  }
+  .site-main__title,
+  .site-main__slogan {
+    font-size: 26px;
+    line-height: 34px;
+  }
+  .site-main__form {
+    margin-top: 13px;
+  }
+  .site-main__search-input {
+    background-size: 12px;
+    height: 27px;
+
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .site-main__find {
+    max-width: 83px;
+    height: 27px;
+
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .site-main__additional-options {
+    margin-top: 10px;
+  }
+  .site-main__popular-queries {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .site-main__advanced-search {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .site-main__buttons button {
+    margin-top: 10px;
+    margin-right: 10px;
+
+    font-size: 11px;
+    line-height: 14px;
+  }
+}
+@media (max-width: 479px) {
+  .site-main {
+    height: 212px;
+  }
+  .site-main__title,
+  .site-main__slogan {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .site-main__form {
+    margin-top: 13px;
+  }
+  .site-main__search-input {
+    background-size: 11px;
+    height: 25px;
+
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .site-main__find {
+    max-width: 72px;
+    height: 25px;
+
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .site-main__additional-options {
+    margin-top: 10px;
+  }
+  .site-main__popular-queries {
+    font-size: 9px;
+    line-height: 12px;
+  }
+  .site-main__advanced-search {
+    font-size: 9px;
+    line-height: 12px;
+  }
+  .site-main__buttons button {
+    margin-top: 7px;
+    margin-right: 7px;
+
+    font-size: 9px;
+    line-height: 12px;
+  }
+}
+/* end main */

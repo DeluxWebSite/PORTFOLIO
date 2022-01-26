@@ -1,5 +1,5 @@
+/* section */
 .job-overview {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,17 +44,16 @@
   margin-left: 15px;
 }
 .job-overview__wrap {
-  width: 1250px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 20px;
 }
 .job-overview__card {
   width: 394px;
-  height: 170px;
+  /* height: 170px; */
   padding: 10px;
 
   background: #eaf4ff;
@@ -159,3 +158,260 @@
 
   color: #000000;
 }
+/* media */
+@media (min-width: 1024px) and (max-width: 1259px) {
+  .job-overview__title {
+    font-size: 36px;
+    line-height: 47px;
+  }
+  .job-overview__buttons-wrap {
+    margin: 30px auto;
+  }
+
+  .job-overview__button-item {
+    height: 35px;
+    padding: 0 15px;
+
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  .job-overview__button-item + .job-overview__button-item {
+    margin-left: 12px;
+  }
+  .job-overview__wrap {
+    gap: 20px;
+  }
+  .job-overview__card {
+    width: 292px;
+    padding: 10px;
+  }
+
+  .job-overview__card-img {
+    width: 36px;
+  }
+  .job-overview__card-city {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .job-overview__card-vacancy {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .job-overview__card-price {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .job-overview__card-description {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .job-overview__card-button {
+    width: 88px;
+    height: 20px;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .job-overview__card-data {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .job-overview__button {
+    width: 192px;
+    height: 50px;
+
+    margin: 30px auto;
+
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .job-overview__title {
+    font-size: 36px;
+    line-height: 47px;
+  }
+  .job-overview__buttons-wrap {
+    margin: 30px auto;
+  }
+
+  .job-overview__button-item {
+    height: 35px;
+    padding: 0 15px;
+
+    font-size: 13px;
+    line-height: 15px;
+  }
+
+  .job-overview__button-item + .job-overview__button-item {
+    margin-left: 12px;
+  }
+  .job-overview__wrap {
+    gap: 20px;
+  }
+  .job-overview__card {
+    width: 204px;
+    padding: 10px;
+  }
+
+  .job-overview__card-img {
+    width: 28px;
+  }
+  .job-overview__card-city {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .job-overview__card-vacancy {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .job-overview__card-price {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .job-overview__card-description {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .job-overview__card-button {
+    width: 68px;
+    height: 18px;
+
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .job-overview__card-data {
+    font-size: 9px;
+    line-height: 12px;
+  }
+
+  .job-overview__button {
+    width: 160px;
+    height: 50px;
+
+    margin: 30px auto;
+
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+  .job-overview__title {
+    font-size: 36px;
+    line-height: 47px;
+  }
+  .job-overview__buttons-wrap {
+    display: none;
+  }
+  .job-overview__wrap {
+    margin: 30px auto;
+    gap: 20px;
+  }
+  .job-overview__card {
+    width: 204px;
+    padding: 6px;
+  }
+
+  .job-overview__card-img {
+    width: 28px;
+    height: 28px;
+  }
+  .job-overview__card-city {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .job-overview__card-vacancy {
+    font-size: 13px;
+    line-height: 17px;
+  }
+  .job-overview__card-price {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .job-overview__card-description {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .job-overview__card-button {
+    width: 68px;
+    height: 18px;
+
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .job-overview__card-data {
+    font-size: 9px;
+    line-height: 12px;
+  }
+
+  .job-overview__button {
+    width: 160px;
+    height: 50px;
+
+    margin: 30px auto;
+
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+@media (max-width: 479px) {
+  .job-overview__title {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .job-overview__buttons-wrap {
+    display: none;
+  }
+  .job-overview__wrap {
+    margin: 30px auto;
+    gap: 20px;
+  }
+  .job-overview__card {
+    width: 292px;
+    padding: 6px;
+  }
+  .job-overview__card-img {
+    width: 36px;
+    height: 36px;
+  }
+  .job-overview__card-city {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .job-overview__card-vacancy {
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .job-overview__card-price {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .job-overview__card-description {
+    font-size: 10px;
+    line-height: 13px;
+  }
+  .job-overview__card-button {
+    width: 88px;
+    height: 20px;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .job-overview__card-data {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .job-overview__button {
+    width: 130px;
+    height: 35px;
+
+    margin: 30px auto;
+
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+/* end section */
