@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workplace</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body class="site-body">
+    <!-- header -->
+    <header class="site-header wrap">
+      <a class="logo-main" href="index.html">
+        <img class="logo-main__img" src="/img/logo-main.svg" alt="Workplace" />
+      </a>
+      <a class="logo-main_hidden" href="index.html">
+        <img
+          class="logo-main_hidden__img"
+          src="/img/icon-logo-main.svg"
+          alt="Workplace"
+        />
+      </a>
+      <nav class="site-header__navigation">
+        <ul class="topmenu">
+          <li class="topmenu__list applicants_visible">
+            <a class="topmenu__applicants link" href="#">Соискателям</a>
+            <ul class="dropdown">
+              <li><a class="link" href="#">Создать резюме</a></li>
+              <li><a class="link" href="#">Найти работу</a></li>
+              <li><a class="link" href="#">Создать команду</a></li>
+              <li><a class="link" href="#">Вступить в команду</a></li>
+            </ul>
+          </li>
+          <li class="topmenu__list employers_visible">
+            <a class="topmenu__employers link" href="#">Работодателям</a>
+            <ul class="dropdown">
+              <li>
+                <a class="link" href="#">Разместить вакансию/&nbsp;проект</a>
+              </li>
+              <li><a class="link" href="#">Найти сотрудника</a></li>
+              <li><a class="link" href="#">Найти команду</a></li>
+            </ul>
+          </li>
+          <li class="topmenu__list services_visible">
+            <a class="topmenu__services link" href="#">Сервисы</a>
+            <ul class="dropdown">
+              <li><a class="link" href="#">Реклама вакансий</a></li>
+              <li><a class="link" href="#">Услуги и цены</a></li>
+            </ul>
+          </li>
+          <li class="topmenu__list help_visible">
+            <a class="topmenu__help link" href="#">Помощь</a>
+            <ul class="dropdown">
+              <li><a class="link" href="#">Техническая поддержка</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="site-header__buttons">
+        <a class="site-header__button-resume" href="#">
+          Создать&nbsp;резюме/вакансии
+        </a>
+        <a class="site-header__button-login" href="#">Войти</a>
+      </div>
+      <button class="site-header__button-burger_hidden">
+        <img src="./img/icon-burger.svg" alt="menu burger" />
+      </button>
+    </header>
+    <!-- /end header -->
+    <!-- section admittance -->
+    <section class="admittance">
+      <header class="admittance-header">
+        <button class="admittance-header__button-entrance">Вход</button>
+        <button class="admittance-header__button-registration">
+          Регистрация
+        </button>
+      </header>
+      <main class="admittance-main">
+        <form class="admittance-main__form" action="#">
+          <h1 class="form-title">Авторизация</h1>
+
+          <label for="email"><b>Почта</b></label>
+          <input
+            type="text"
+            placeholder="Введите вашу почту"
+            name="email"
+            required
+          />
+
+          <label for="psw"><b>Пароль</b></label>
+          <input
+            type="password"
+            placeholder="Введите пароль"
+            name="psw"
+            required
+          />
+
+          <label for="psw-repeat"><b>Повторить пароль</b></label>
+          <input
+            type="password"
+            placeholder="Повторите пароль"
+            name="psw-repeat"
+            required
+          />
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember" />
+            Запомнить меня
+          </label>
+
+          <button type="submit" class="form-btn__submit">Войти</button>
+        </form>
+      </main>
+      <footer class="admittance-footer">
+        <hr />
+        <p>Войти с помощью соц. сетей:</p>
+        <div class="admittance-footer__icons">
+          <a href="#" target="_blank">
+            <img
+              class="social-icon__img"
+              src="./img/icon-facebook-circle.svg"
+              alt="facebook"
+            />
+          </a>
+          <a href="#" target="_blank">
+            <img
+              class="social-icon__img"
+              src="./img/icon-vk-circle.svg"
+              alt="vk"
+            />
+          </a>
+          <a href="#" target="_blank">
+            <img
+              class="social-icon__img"
+              src="./img/icon-instagram-circle.svg"
+              alt="instagram"
+            />
+          </a>
+          <a href="#" target="_blank">
+            <img
+              class="social-icon__img"
+              src="./img/icon-twitter-circle.svg"
+              alt="twitter"
+            />
+          </a>
+        </div>
+        <p>
+          Нажимая на кнопку «Войти», Вы полностью соглашаетесь с
+          <br />
+          <a href="#">пользовательским соглашением.</a>
+        </p>
+      </footer>
+    </section>
+    <!--/end section admittance -->
+    <!-- footer -->
+    <footer class="site-footer">
+      <div class="footer-wrap wrap">
+        <div class="footer-menu">
+          <div class="footer-employers">
+            <ul>
+              <li><h3 class="footer-menu__title">Работодателям</h3></li>
+              <li>
+                <a class="footer-menu__link" href="#">
+                  Разместить&nbsp;вакансию
+                </a>
+              </li>
+              <li>
+                <a class="footer-menu__link" href="#">Разместить проект</a>
+              </li>
+              <li>
+                <a class="footer-menu__link" href="#">Найти сотрудника</a>
+              </li>
+              <li><a class="footer-menu__link" href="#">Найти команду</a></li>
+            </ul>
+          </div>
+          <div class="footer-applicants">
+            <ul>
+              <li><h3 class="footer-menu__title">Соискателям</h3></li>
+              <li><a class="footer-menu__link" href="#">Создать резюме</a></li>
+              <li><a class="footer-menu__link" href="#">Найти работу</a></li>
+              <li><a class="footer-menu__link" href="#">Создать команду</a></li>
+              <li>
+                <a class="footer-menu__link" href="#">
+                  Вступить&nbsp;в&nbsp;команду
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-servises">
+            <ul>
+              <li><h3 class="footer-menu__title">Сервисы</h3></li>
+              <li>
+                <a class="footer-menu__link" href="#">Реклама вакансий</a>
+              </li>
+              <li><a class="footer-menu__link" href="#">Услуги и цены</a></li>
+            </ul>
+          </div>
+          <div class="footer-help">
+            <ul>
+              <li><h3 class="footer-menu__title">Помощь</h3></li>
+              <li><a class="footer-menu__link" href="#">Контакты</a></li>
+              <li>
+                <a class="footer-menu__link" href="#">Политика соглашения</a>
+              </li>
+              <li>
+                <a class="footer-menu__link" href="#">Конфиденциальность</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="social-icon">
+          <a href="#" target="_blank">
+            <img
+              class="social-icon__img"
+              src="./img/icon-facebook.svg"
+              alt="facebook"
+            />
+          </a>
+          <a href="#" target="_blank">
+            <img class="social-icon__img" src="./img/icon-vk.svg" alt="vk" />
+          </a>
+          <a href="#" target="_blank">
+            <img
+              class="social-icon__img"
+              src="./img/icon-instagram.svg"
+              alt="instagram"
+            />
+          </a>
+          <a href="#" target="_blank">
+            <img
+              class="social-icon__img"
+              src="./img/icon-twitter.svg"
+              alt="twitter"
+            />
+          </a>
+        </div>
+        <!-- <div class="footer-data">
+            <span>Сегодня на сайте 4 237 239 вакансий, 118 402 резюме</span>
+          </div> -->
+        <div class="footer-copyright">&copy; WorkPlace 2021</div>
+      </div>
+    </footer>
+    <!-- /end footer -->
+  </body>
+</html>

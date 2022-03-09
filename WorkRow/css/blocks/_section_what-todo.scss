@@ -105,7 +105,10 @@
   color: #0466c8;
   margin-bottom: 50px;
 
-  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
 }
 
 .what-todo__right-btns {
