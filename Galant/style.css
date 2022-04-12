@@ -18,9 +18,13 @@
 root {
   display: block;
 }
+@font-face {
+  font-family: 'Lato-Semibold';
 
+  src: url(./fonts/Lato-Semibold.ttf);
+}
 html {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato-Semibold', sans-serif;
   font-size: 16px;
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -75,7 +79,7 @@ a {
 }
 .location__adress,
 .location__work-time {
-  font-family: 'Lato';
+  font-family: 'Lato-Semibold';
   font-style: normal;
   font-weight: normal;
   font-size: 0.875rem;
@@ -141,7 +145,7 @@ a {
 }
 .contact__tel,
 .contact__email {
-  font-family: 'Lato';
+  font-family: 'Lato-Semibold';
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
@@ -159,7 +163,7 @@ a {
   margin-top: 1.8%;
   margin-bottom: 2.1%;
 
-  font-family: 'Lato';
+  font-family: 'Lato-Semibold';
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
@@ -215,7 +219,7 @@ a {
   z-index: 1;
 }
 .banner-description__title {
-  font-family: 'Lato';
+  font-family: 'Lato-Semibold';
   font-style: normal;
   font-weight: 600;
   font-size: 1.625rem;
@@ -226,7 +230,7 @@ a {
   color: #1f1f1f;
 }
 .description__text {
-  font-family: 'Lato';
+  font-family: 'Lato-Semibold';
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
@@ -236,7 +240,7 @@ a {
 }
 /* end main */
 .back-to-list {
-  font-family: 'Lato';
+  font-family: 'Lato-Semibold';
   font-style: normal;
   font-weight: 600;
   font-size: 1rem;
