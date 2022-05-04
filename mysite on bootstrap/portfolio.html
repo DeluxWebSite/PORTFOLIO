@@ -60,11 +60,7 @@
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="webdeveloper" />
-    <link
-      rel="icon"
-      href="https://delux.website/favicon.png"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -82,47 +78,8 @@
     ></script>
 
     <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Yandex.Metrika counter -->
-    <script>
-      ;(function (m, e, t, r, i, k, a) {
-        m[i] =
-          m[i] ||
-          function () {
-            ;(m[i].a = m[i].a || []).push(arguments)
-          }
-        m[i].l = 1 * new Date()
-        ;(k = e.createElement(t)),
-          (a = e.getElementsByTagName(t)[0]),
-          (k.async = 1),
-          (k.src = r),
-          a.parentNode.insertBefore(k, a)
-      })(
-        window,
-        document,
-        'script',
-        'https://mc.yandex.ru/metrika/tag.js',
-        'ym',
-      )
-      ym(88329021, 'init', {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        webvisor: true,
-      })
-    </script>
   </head>
   <body>
-    <noscript>
-      <div>
-        <img
-          src="https://mc.yandex.ru/watch/88329021"
-          style="position: absolute; left: -9999px;"
-          alt=""
-        />
-      </div>
-    </noscript>
-    <!-- /Yandex.Metrika counter -->
     <nav class="navbar navbar-expand-md text-white navbar-dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">-=WebDev=-</a>
@@ -275,7 +232,7 @@
                       autocomplete="off"
                       id="inputPhone"
                       placeholder="+7 000 000 00 00"
-                      pattern="^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$"
+                      pattern="^(\+)([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$"
                       required
                       form="form-contact"
                       maxlength="14"
@@ -424,29 +381,156 @@
         <div
           class="col-10 col-lg-6 col-xl-7 d-flex flex-column flex-nowrap text-white"
         >
-          <p class="h3 mt-sm-5 text-center">
-            Бодрого времени суток! Приятно познакомиться!
-          </p>
-          <p class="description-text mt-sm-3">
-            Я Серж, веб-разработчик. Создаю в интернете ваши мечты.
-            Специализируюсь на front-end разработке и продвижении в сети
-            интернет сайтов, лендингов, интернет-магазинов. Обеспечиваю:
-            размещение в сети интернет; корректное и одинаковое отображение
-            веб-ресурсов во всех основных браузерах. Проверяю бесперебойную
-            работу интерактивных и динамических элементов сайта. Для проверки
-            провожу тестирование с учетом возможных отличий по цвету и
-            разрешению на различных мониторах. Креативность совместно с
-            творчеством в сочетании с необычными элементами помогают привнести в
-            каждый проект свою неповторимость. Основа моей работы- современные
-            тенденции. Я всегда в курсе новинок в сфере фронтенд-разработок, что
-            помогает создавать необычные и стильные сайты.
-            <br />
-            <br />
-            Приглашаю Веб- дизайнеров к плодотворному сотрудничеству.
-            <br />
-            <br />
-            P.S. У меня есть то, что нужно именно вам)
-          </p>
+          <!-- slider -->
+          <div
+            id="carouselExampleCaptions"
+            class="carousel carousel-dark slide"
+            data-interval="false"
+          >
+            <p class="h4 text-center"><em>Портфолио</em></p>
+
+            <div class="carousel-inner">
+              <div class="carousel-item">
+                <img
+                  src="/img/portfolio/brand.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-sm-block">
+                  <h5>Стэк: HTML CSS JS</h5>
+                  <p>
+                    Интернет-магазин одежды. Реализовано: - Пагинация и
+                    фильтрация по категориям без обновления страницы - Выбор
+                    параметров товара (цвет, размер) и вывод стоимости на
+                    карточке товара - Добавление в корзину и дальнейший расчёт
+                    стоимости всех товаров.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/img/portfolio/cleanguru.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-sm-block">
+                  <h5>Стэк: HTML CSS JS</h5>
+                  <p>
+                    Верстка личного кабинета заказчика и юридического лица.
+                    Расчет стоимости.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <img
+                  src="/img/portfolio/galant.png"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-sm-block">
+                  <h5>Стэк: HTML CSS JS PHP SQL Wordpress</h5>
+                  <p>
+                    Верстка по макету Figma.Создание темы в Wordpress на основе
+                    верстки.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/img/portfolio/patcare.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-sm-block">
+                  <h5>Стэк: HTML CSS</h5>
+                  <p>
+                    Верстка по макету Figma. Адаптивная и кроссбраузерная
+                    верстка с семантической разметкой.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/img/portfolio/stagirovka.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-sm-block">
+                  <h5>Стэк: HTML CSS</h5>
+                  <p>
+                    Верстка по макету Figma. Адаптивная и кроссбраузерная
+                    верстка с семантической разметкой.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/img/portfolio/abito.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-sm-block">
+                  <h5>Стэк: HTML CSS</h5>
+                  <p>
+                    Верстка сайта на курсе front-end разработчика.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/img/portfolio/test.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-sm-block">
+                  <h5>Стэк: HTML CSS</h5>
+                  <p>
+                    Верстка по макету Figma. Адаптивная и кроссбраузерная
+                    верстка с семантической разметкой.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="/img/portfolio/workplace.jpg"
+                  class="d-block w-100"
+                  alt="..."
+                />
+                <div class="carousel-caption d-none d-sm-block">
+                  <h5>Стэк: HTML CSS</h5>
+                  <p>
+                    Верстка по макету Figma. Адаптивная и кроссбраузерная
+                    верстка с семантической разметкой.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Предыдущий</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Следующий</span>
+            </button>
+          </div>
+          <!-- end slider -->
           <footer class="footer mt-auto">
             <div class="container text-center">
               <p class="text-muted small mb-0">
