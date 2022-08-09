@@ -1,0 +1,39 @@
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.wrapper {
+  padding: 0 165px;
+  margin-bottom: 112px;
+}
+/* section Hero */
+.nav-link:hover {
+  color: orange;
+}
+.nav-item + .nav-item {
+  margin-left: 40px;
+}
+.line {
+  width: 73px;
+  height: 2px;
+  color: #000;
+}
+.firstWorld {
+  color: #dd2c00;
+}
+.image__title {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 67px;
+}
+.image__subtitle {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #6a6a6a;
+}
+/* end section Hero */

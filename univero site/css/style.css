@@ -1,0 +1,261 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  scroll-behavior: smooth;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 16px;
+
+  background-color: #ebfdff;
+}
+.wrapper {
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.menu {
+  list-style-type: none;
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+li {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+li a {
+  padding: 10px;
+  color: #206b91;
+  text-decoration: none;
+
+  font-weight: 700;
+  font-size: large;
+}
+a:hover {
+  border-radius: 5px;
+  color: white;
+  background-color: #206b91;
+}
+.icon__phone,
+.icon__mail {
+  max-width: 30px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+.link__phone,
+.link__mail {
+  display: flex;
+  align-items: center;
+}
+/* end nav */
+/* main */
+.main-logo {
+  width: 100%;
+  background-color: white;
+}
+/* end main */
+/* section about */
+.about {
+  margin-top: 50px;
+}
+.about__title {
+  text-align: center;
+  color: #206b91;
+
+  margin-bottom: 30px;
+}
+.about__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.about__image {
+  max-width: 200px;
+}
+.about__text {
+  padding: 10px;
+  text-indent: 1.5rem;
+  flex-basis: 60%;
+  color: #206b91;
+  text-align: justify;
+  text-align-last: justify;
+
+  border: 2px solid #206b91;
+  border-radius: 7px;
+}
+.about__mail,
+.about__phone {
+  color: #206b91;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+/* end section about */
+/* section services */
+.serviсes {
+  padding: 10px;
+  margin-top: 50px;
+}
+.services__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin-top: 25px;
+}
+.services__title {
+  text-align: center;
+  color: #206b91;
+}
+.services__image {
+  max-width: 200px;
+}
+.service__desc-title {
+  text-align: center;
+  margin: 20px auto;
+  color: #206b91;
+}
+.service__desc {
+  flex-basis: 60%;
+
+  border: 2px solid #206b91;
+  border-radius: 7px;
+}
+.service__desc p {
+  padding: 10px;
+  text-indent: 1.5rem;
+  color: #206b91;
+  text-align: justify;
+  text-align-last: justify;
+}
+/* end section services  */
+/* section portfolio */
+.portfolio {
+  margin-top: 50px;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  background-image: url(/img/portfolio-img.svg);
+  background-repeat: repeat-x;
+  background-position: center;
+  background-size: contain;
+}
+.portfolio__title {
+  text-align: center;
+  flex-basis: 100%;
+  margin-bottom: 25px;
+  color: #206b91;
+  background-color: #ebfdff;
+  opacity: 0.8;
+}
+.portfolio__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 10px;
+}
+.portfolio__image {
+  max-height: 300px;
+}
+.portfolio__desc {
+  margin-right: 20px;
+  color: #206b91;
+  font-weight: 700;
+
+  background-color: #ebfdff;
+  opacity: 0.8;
+  border-radius: 5px;
+}
+/* end section portfolio */
+/* footer */
+.footer {
+  margin-top: 50px;
+
+  text-align: center;
+  color: #206b91;
+}
+/* end footer */
+/* media */
+/* max-width 992px */
+@media (max-width: 991.98px) {
+  .contact {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+  }
+  .link__phone,
+  .link__mail {
+    display: flex;
+    align-items: center;
+    flex-basis: 35%;
+    justify-content: center;
+  }
+}
+/* max-width 768px */
+@media (max-width: 767.98px) {
+  .link__phone,
+  .link__mail {
+    flex-basis: 50%;
+  }
+  .about__image {
+    display: none;
+  }
+  .about__text {
+    flex-basis: 100%;
+  }
+  .services__image {
+    max-width: 100px;
+  }
+  .service__desc {
+    flex-basis: 80%;
+  }
+  .portfolio__desc {
+    display: none;
+  }
+}
+/* max-width 576px */
+@media (max-width: 575.98px) {
+  .about__text {
+    border: none;
+  }
+  .contact {
+    flex-direction: column;
+    flex-basis: 100%;
+  }
+  .link__phone,
+  .link__mail {
+    flex-basis: 100%;
+  }
+  .services__item {
+    flex-direction: column;
+  }
+
+  .services__image {
+    max-width: 200px;
+  }
+
+  .service__desc {
+    flex-basis: 100%;
+
+    border: none;
+  }
+  .item-mob {
+    flex-direction: column-reverse;
+  }
+}

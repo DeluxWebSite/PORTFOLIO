@@ -2,3 +2,4 @@ User-agent: *
 Crawl-delay: 1
 Host: delux.website
 Sitemap: http://delux.website
+
