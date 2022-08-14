@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test site Global</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="site">
+    <!-------------- header ------------------------------------------>
+    <header class="header">
+        <a class="logo__link" href="#"><img class="logo__img" src="img/Logo.svg" alt="logo Global"></a>
+        <input type="checkbox" id="checkbox">
+        <ul class="nav">
+            <li class="nav__item"><a class="nav__item-link" href="#">Mobile Top Up</a></li>
+            <li class="nav__item"><a class="nav__item-link" href="#">About</a></li>
+            <li class="nav__item"><a class="nav__item-link" href="#">Rate</a></li>
+            <li class="nav__item"><a class="nav__item-link" href="#">Help</a></li>
+        </ul>
+        <label class="label-checkbox" for="checkbox">
+            <i class="fa fa-bars menu-icon fa-2xl"></i>
+        </label>
+
+        <input class="button__sign-up" type="button" value="Sign Up">
+    </header>
+    <!-------------- end header ------------------------------------------->
+    <!-------------- main----------------------------------------------- -->
+    <main class="main">
+        <!-- section-left -->
+        <section class="section-left">
+            <h1 class="section-left__title">Now Buy Your <br> PIN or <span class="title-color"> Top Up </span> <br> With
+                Bank Transfer
+            </h1>
+            <p class="section-left__description">We Make international calling simple, relible, and cheap <br> basedon
+                your
+                unique calling behavior.</p>
+            <input class="button__get-started" type="button" value="Get Started">
+            <form class="form-search" action="" method="get">
+                <input class="search-box" name="s" placeholder="Where do you want to call?" type="search" minlength="4"
+                    maxlength="12" required pattern="^[^!@#$%^&*()]{4,12}$"
+                    data-tooltip="Символы !@#$%^&*() запрещены, количество вводимых символов от 4 до 12"><button
+                    class="button-search " type="submit"><i class="fa fa-search fa-2xl"></i></button>
+            </form>
+            <div class="users">
+                <img class="icon-user-1" src="img/icon-user-1.png" alt="">
+                <img class="icon-user-2" src="img/icon-user-2.png" alt="">
+                <img class="icon-user-3" src="img/icon-user-3.png" alt="">
+                <img class="icon-plus" src="img/icon-plus.svg" alt="">
+                <p class="text-users">45k+ Regular User. <a class="text-users__color" href="#">View Price Plan</a></p>
+            </div>
+        </section>
+        <!-- end section-left -->
+        <!-- section-right -->
+        <section class="section-right">
+            <img class="section-right__img" src="img/1.png" alt="">
+
+            <img class="flag-india position-flag drive" src="img/flag-india.png" alt="">
+
+            <img class="flag-english position-flag drive" src="img/flag-english.svg" alt="">
+
+            <img class="flag-itali position-flag drive" src="img/flag-itali.svg" alt="">
+
+            <img class="flag-india-2 position-flag drive" src="img/flag-india-2.png" alt="">
+            <img class="flag-india-3 position-flag drive" src="img/flag-india-3.png" alt="">
+
+        </section>
+        <!-- end section-right -->
+    </main>
+
+</body>
+
+</html>
