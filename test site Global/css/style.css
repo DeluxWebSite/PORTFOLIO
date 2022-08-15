@@ -251,46 +251,211 @@
   top: 40%;
   /* z-index: 101; */
 }
+/* ******************************* */
 .flag-india {
-  transform: translate(-225px, 10px);
-  transition-delay: 3s;
-  transition-duration: 1s;
-  transition-timing-function: linear;
+  height: 50px;
+
+  transform-origin: 50% 35% 0;
+  animation-name: moving-india, go-india;
+  animation-duration: 1s, 10s;
+  animation-delay: 3s, 7.4s;
+  /* animation-play-state: running, paused; */
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, forwards;
 }
+@keyframes moving-india {
+  to {
+    transform: translate(-215px, 70px);
+  }
+}
+@keyframes go-india {
+  0% {
+    transform: rotate(-18deg) translate(-225px) rotate(18deg);
+  }
+
+  20% {
+    transform: rotate(28deg) translate(-225px) rotate(-28deg) scale(1.44);
+  }
+  40% {
+    transform: rotate(90deg) translate(-225px) rotate(-90deg) scale(1.1);
+  }
+  60% {
+    transform: rotate(152deg) translate(-225px) rotate(-152deg) scale(1.3);
+  }
+
+  80% {
+    transform: rotate(196deg) translate(-225px) rotate(-196deg);
+  }
+
+  100% {
+    transform: rotate(342deg) translate(-225px) rotate(-342deg);
+  }
+}
+/* ******************************** */
 .flag-english {
-  transform: translate(-190px, -150px);
-  transition-delay: 3400ms;
-  transition-duration: 1s;
-  transition-timing-function: linear;
+  height: 70px;
+
+  transform-origin: 50% 35% 0;
+  animation-name: moving-english, go-english;
+  animation-duration: 1s, 10s;
+  animation-delay: 3.4s, 7.4s;
+  /* animation-play-state: running, paused; */
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, forwards;
 }
-.flag-itali {
-  transform: translate(10px, -240px);
-  transition-delay: 3800ms;
-  transition-duration: 1s;
-  transition-timing-function: linear;
+@keyframes moving-english {
+  to {
+    transform: translate(-200px, -100px);
+  }
 }
-.flag-india-2 {
-  transform: translate(190px, -150px);
-  transition-delay: 4200ms;
-  transition-duration: 1s;
-  transition-timing-function: linear;
-}
-.flag-india-3 {
-  transform: translate(225px, 10px);
-  transition-delay: 4600ms;
-  transition-duration: 1s;
-  transition-timing-function: linear;
+@keyframes go-english {
+  0% {
+    transform: rotate(28deg) translate(-225px) rotate(-28deg);
+  }
+  20% {
+    transform: rotate(90deg) translate(-225px) rotate(-90deg) scale(0.7);
+  }
+  40% {
+    transform: rotate(152deg) translate(-225px) rotate(-152deg) scale(0.86);
+  }
+
+  60% {
+    transform: rotate(196deg) translate(-225px) rotate(-196deg) scale(0.65);
+  }
+
+  80% {
+    transform: rotate(342deg) translate(-225px) rotate(-342deg) scale(0.65);
+  }
+
+  100% {
+    transform: rotate(388deg) translate(-225px) rotate(-388deg);
+  }
 }
 
-/* .drive {
-  animation: moving 10s infinite linear;
-  transform-origin: -100px 0;
+/* ******************************** */
+.flag-itali {
+  height: 50px;
+
+  transform-origin: 50% 35% 0;
+  animation-name: moving-itali, go-itali;
+  animation-duration: 1s, 10s;
+  animation-delay: 3.8s, 7.4s;
+  /* animation-play-state: running, paused; */
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, forwards;
 }
-@keyframes moving {
-  100% {
-    transform: rotate(360deg);
+@keyframes moving-itali {
+  to {
+    transform: translate(0, -225px);
   }
-} */
+}
+@keyframes go-itali {
+  0% {
+    transform: rotate(90deg) translate(-225px) rotate(-90deg);
+  }
+  20% {
+    transform: rotate(152deg) translate(-225px) rotate(-152deg) scale(1.2);
+  }
+
+  40% {
+    transform: rotate(196deg) translate(-225px) rotate(-196deg) scale(0.9);
+  }
+
+  60% {
+    transform: rotate(342deg) translate(-225px) rotate(-342deg) scale(0.9);
+  }
+
+  80% {
+    transform: rotate(388deg) translate(-225px) rotate(-388deg) scale(1.35);
+  }
+  100% {
+    transform: rotate(450deg) translate(-225px) rotate(-450deg);
+  }
+}
+/* ******************************** */
+.flag-india-2 {
+  height: 60px;
+
+  transform-origin: 50% 35% 0;
+  animation-name: moving-india-2, go-india-2;
+  animation-duration: 1s, 10s;
+  animation-delay: 4.2s, 7.4s;
+  /* animation-play-state: running, paused; */
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, forwards;
+}
+@keyframes moving-india-2 {
+  to {
+    transform: translate(199px, -106px);
+  }
+}
+@keyframes go-india-2 {
+  0% {
+    transform: rotate(152deg) translate(-225px) rotate(-152deg);
+  }
+
+  20% {
+    transform: rotate(196deg) translate(-225px) rotate(-196deg) scale(0.8);
+  }
+
+  40% {
+    transform: rotate(342deg) translate(-225px) rotate(-342deg) scale(0.8);
+  }
+
+  60% {
+    transform: rotate(388deg) translate(-225px) rotate(-388deg) scale(1.15);
+  }
+  80% {
+    transform: rotate(450deg) translate(-225px) rotate(-450deg) scale(0.9);
+  }
+  100% {
+    transform: rotate(512deg) translate(-225px) rotate(-512deg);
+  }
+}
+/* ******************************** */
+.flag-india-3 {
+  height: 50px;
+
+  transform-origin: 50% 35% 0;
+  animation-name: moving-india-3, go-india-3;
+  animation-duration: 1s, 10s;
+  animation-delay: 4.6s, 7.4s;
+  /* animation-play-state: running, paused; */
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, forwards;
+}
+@keyframes moving-india-3 {
+  to {
+    transform: translate(215px, 70px);
+  }
+}
+@keyframes go-india-3 {
+  0% {
+    transform: rotate(198deg) translate(-225px) rotate(-198deg);
+  }
+
+  20% {
+    transform: rotate(342deg) translate(-225px) rotate(-342deg);
+  }
+
+  40% {
+    transform: rotate(388deg) translate(-225px) rotate(-388deg) scale(1.44);
+  }
+  60% {
+    transform: rotate(450deg) translate(-225px) rotate(-450deg) scale(1.1);
+  }
+  80% {
+    transform: rotate(512deg) translate(-225px) rotate(-512deg) scale(1.3);
+  }
+  100% {
+    transform: rotate(558deg) translate(-225px) rotate(-558deg);
+  }
+}
 /* ===== end section-rigth===== */
 /* ===== media ================ */
 @media (max-width: 1200px) {
@@ -310,7 +475,7 @@
   .section-left,
   .section-right {
     flex-basis: auto;
-    margin-top: auto;
+    margin-top: 1rem;
   }
 }
 @media (max-width: 769px) {
@@ -320,6 +485,7 @@
   }
   .nav {
     position: absolute;
+    z-index: 102;
     top: -200%;
     overflow: auto;
     margin: auto;
@@ -333,13 +499,14 @@
     display: block;
     cursor: pointer;
   }
+
   #checkbox:checked ~ ul {
-    top: 4rem;
+    top: 3.5rem;
     transition: all 0.5s;
   }
   /* ===== end header =========== */
 }
-@media (max-width: 769px) {
+@media (max-width: 576px) {
   .section-right {
     background-image: none;
   }
