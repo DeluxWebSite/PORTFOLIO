@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEDGEHOGS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@400;700&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="site">
+    <header class="header">
+        <section class="header__top">
+            <img src="img/Logo.svg" alt="HEDHEGOGS" class="header__logo">
+            <ul class="menu">
+                <li class="menu__on-submenu"><img src="img/arrow-right.svg" alt=""
+                        class="menu__img-arrow">&nbsp;&nbsp;<a href="" class="">КАТАЛОГ</a>
+                    <ul class="submenu">
+                        <li><a href="#">ЁЖИКИ</a></li>
+                        <li><a href="#">ПИТАНИЕ</a></li>
+                        <li><a href="#">ПЕРЕНОСКИ</a></li>
+                        <li><a href="#">ЛЕКАРСТВА</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">О НАС</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+                <li><a href="#">ГАЛЕРЕЯ</a></li>
+            </ul>
+            <div class="phone">
+                <img src="img/phone-filled.svg" alt="" class="phone__img"><a class="phone__number"
+                    href="tel:+7965569-89-98">+7&nbsp;(965)&nbsp;569-89-98</a>
+            </div>
+            <img src="img/basket.svg" alt="" class="header__basket">
+        </section>
+        <section class="header__title">
+            <img src="img/title-img.svg" alt="" class="title__img">
+            <h1 class="title__h1">ТОЖЕ ЛЮБЯТ МОЛОКО</h1>
+            <p class="title__desc">Заведите себе ёжика. Он всегда выслушает, не будет мяукать в 5 утра и царапать вашу
+                мебель.</p>
+            <button class="title__btn">Купить ёжика</button>
+        </section>
+        <section class="header__centr-icons">
+            <div class="centr-icons__hedgehog">
+                <img class="centr-icons__hedgehog-svg" src="img/icon-hedgehog.svg" alt="">
+                <p class="centr-icons__title">РАЗВЕДЕНИЕ ЁЖИКОВ</p>
+                <p class="centr-icons__text">Собственная ферма, уход и содержание</p>
+            </div>
+            <div class="centr-icons__syringe">
+                <img class="centr-icons__syringe-svg" src="img/icon-syringe.svg" alt="">
+                <p class="centr-icons__title">ЗДОРОВЬЕ</p>
+                <p class="centr-icons__text">Всегда прививаем и вовремя обследуем ваших будущих питомцев</p>
+            </div>
+            <div class="centr-icons__heart">
+                <img class="centr-icons__heart-svg" src="img/icon-heart.svg" alt="">
+                <p class="centr-icons__title">ЛЮБОВЬ И ЗАБОТА</p>
+                <p class="centr-icons__text">Каждому ежику мы дарим много внимания</p>
+            </div>
+        </section>
+        <img class="hedgehog-header-left" src="img/hedgehog-header-left.svg" alt="">
+        <img class="hedgehog-header-right" src="img/hedgehog-header-right.svg" alt="">
+    </header>
+    <section class="carousel">
+        <img class="carousel-arrow" src="img/icon-arrow-left.svg" alt="">
+        <img class="carousel-img" src="img/card 2.png" alt="">
+        <img class="carousel-img" src="img/card 1.png" alt="">
+        <img class="carousel-arrow" src="img/icon-arrow-right.svg" alt="">
+    </section>
+    <form action="" class="form">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">Заполните заявку и мы забронируем для Вас нового друга</legend>
+            <div class="form__row-1">
+                <button class="form__button active">хочу ёжика для себя</button>
+                <button class="form__button">хочу ёжика для детей</button>
+                <button class="form__button">хочу ёжика для разведения</button>
+                <div class="checkbox">
+                    <label class="checkbox__label" for="checkbox-1">
+                        <nobr><input type="radio" name="checkbox-hedgehogs" id="checkbox-1" value="1"
+                                checked>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Мне нужен 1-2 ёжика</nobr>
+                    </label>
+                    <label class="checkbox__label" for="checkbox-2">
+                        <nobr><input type="radio" name="checkbox-hedgehogs" id="checkbox-2"
+                                value="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Мне
+                            нужны 3 и
+                            более ёжиков</nobr>
+                    </label>
+                    <label class="checkbox__label" for="checkbox-3">
+                        <nobr><input type="radio" name="checkbox-hedgehogs" id="checkbox-3"
+                                value="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Мне нужны 3-4
+                            ёжика</nobr>
+                    </label>
+                    <label class="checkbox__label" for="checkbox-4">
+                        <nobr><input type="radio" name="checkbox-hedgehogs" id="checkbox-4"
+                                value="0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Пока присматриваюсь</nobr>
+                    </label>
+                </div>
+            </div>
+            <div class="form-row-2">
+                <input class="form__input" type="text" name="" id="" placeholder="Ваше имя">
+                <input class="form__input" type="tel" name="" id="" placeholder="Ваш телефон">
+                <input class="form__input" type="email" name="" id="" placeholder="Ваш e-mail">
+            </div>
+            <textarea class="from___input-text" type="text" name="" id="" placeholder="Комментарий к заявке"
+                maxlength="400"></textarea>
+            <button class="form__button-submit" type="submit">Купить ёжика</button>
+        </fieldset>
+    </form>
+    <section class="stock">
+        <img class="stock__icon" src="img/icon-hedgehog-stock.svg" alt="">
+        <p class="stock__sklad">У на осталось еще:&nbsp; </p>
+        <a class="stock__link" href="#"> 25 ёжиков</a>
+        <p class="stock__text">Торопитесь! Акция <br> действует до 26. 02. 2023</p>
+    </section>
+    <footer class="footer">
+        <nav class="footer__nav">
+            <img class="footer__logo" src="img/logo-footer.svg" alt="">
+            <ul class="footer__menu">
+                <li><a href="#">КАТАЛОГ</a></li>
+                <li><a href="#">О НАС</a></li>
+                <li><a href="#">КОНТАКТЫ</a></li>
+                <li><a href="#">ГАЛЕРЕЯ</a></li>
+            </ul>
+            <ul class="footer__icons">
+                <li><a href="#"><img src="img/icon-social-instagram-circular.svg" alt=""></a></li>
+                <li><a href="#"><img src="img/icon-social-facebook-circular.svg" alt=""></a></li>
+                <li><a href="#"><img src="img/icon-social-twitter-circular.svg" alt=""></a></li>
+            </ul>
+            <a class="footer__phone-number" href="tel:+7965569-89-98">+7&nbsp;(965)&nbsp;569-89-98</a>
+        </nav>
+        <p class="footer__text">Все права защищены. <br>
+            Указанная стоимость товаров и условия их приобретения действительны на текущую дату.</p>
+    </footer>
+
+</body>
+
+</html>
