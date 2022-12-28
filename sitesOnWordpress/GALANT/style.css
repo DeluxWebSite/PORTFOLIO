@@ -1,0 +1,329 @@
+/**
+ * Theme Name:  Galant
+ * Description: Тестовое задание
+ * 
+ * Theme URI:   URL темы. Пр: http://wordpress.org/themes/galant
+ * Author:      Serg
+ * Author URI:  https://delux.website
+ *
+ * Tags:        black, brown, orange
+ * Text Domain: Домен перевода темы. Пр: twentythirteen
+ *
+ * License:     Лицензия. Пр: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Version:     1.0
+ */
+
+root {
+  display: block;
+}
+@font-face {
+  font-family: 'Lato-Semibold';
+
+  src: url(<?php echo get_stylesheet_directory_uri();?>/fonts/Lato-Semibold.ttf);
+}
+html {
+  font-family: 'Lato-Semibold', sans-serif;
+  font-size: 16px;
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+  font: inherit;
+  /* vertical-align: baseline; */
+}
+body {
+  max-width: 1920px;
+  min-width: 320px;
+
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1420px;
+
+  margin: 0 auto;
+  padding: 0 10px;
+}
+/* top-header */
+.top-header {
+  min-height: 54px;
+  background: #eef5fa;
+  display: flex;
+  align-items: center;
+}
+.top-header__wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* width: 100%; */
+}
+.location__adress,
+.location__work-time {
+  font-family: 'Lato-Semibold';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+
+  color: #1f1f1f;
+
+  white-space: nowrap;
+
+  display: flex;
+  align-items: center;
+}
+.location__work-time {
+  margin-left: 4.3%;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+.social-icon img + img {
+  margin-left: 1vw;
+}
+/* end top-header */
+/* header */
+.main-header {
+  width: 100%;
+  min-height: 103px;
+
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  list-style-type: none;
+
+  width: 100%;
+  text-align: center;
+}
+.navigation li {
+  display: inline-block;
+  cursor: pointer;
+}
+.nav-link {
+font-family: 'Lato-Semibold';
+  font-style: normal;
+  font-weight: normal;
+font-size: 1rem;
+line-height: 1.1875rem;
+letter-spacing: 0.05em;
+
+color: #1F1F1F;
+}
+.nav-link:hover {
+  color: #7e9b49;
+}
+.navigation li + li {
+  margin-left: 2.15%;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.contact__email {
+  margin-left: 2.15%;
+}
+.contact__tel,
+.contact__email {
+  font-family: 'Lato-Semibold';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+
+  color: #1f1f1f;
+
+  display: flex;
+  align-items: center;
+
+  white-space: nowrap;
+}
+/* end main-header */
+.bread-crumbs {
+  margin-top: 1.8%;
+  margin-bottom: 2.1%;
+
+  font-family: 'Lato-Semibold';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.1875rem;
+
+  color: #1f1f1f;
+}
+.bread-crumbs span {
+  color: #164194;
+}
+/* main */
+
+.main-banner {
+  display: flex;
+  align-items: center;
+}
+.main-banner__wrap-img {
+  flex-shrink: 3;
+  flex-basis: content;
+}
+.main-banner__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  /* flex-shrink: 3;
+  flex-basis: content; */
+}
+.banner-description {
+  width: 586px;
+  flex-shrink: 2;
+  margin-left: -120px;
+}
+
+.banner-skincare {
+  display: flex;
+  align-items: center;
+
+  margin-top: 3.125%;
+}
+.banner-skincare__wrap-img {
+  flex-shrink: 3;
+  flex-basis: content;
+}
+.banner-skincare__img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.skincare-description {
+  width: 586px;
+  flex-shrink: 2;
+  margin-right: -120px;
+  z-index: 1;
+}
+.banner-description__title {
+  font-family: 'Lato-Semibold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.625rem;
+  line-height: 2.125rem;
+
+  letter-spacing: 0.05em;
+
+  color: #1f1f1f;
+}
+.description__text {
+  font-family: 'Lato-Semibold';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  color: #1f1f1f;
+}
+/* end main */
+.back-to-list {
+  font-family: 'Lato-Semibold';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  color: #7e9b49;
+
+  margin-top: 2.1%;
+  margin-bottom: 5.2%;
+}
+/* footer */
+.footer {
+  background: #f2f2f2;
+}
+.footer-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-height: 121px;
+}
+
+/* end footer */
+/* media */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .main-banner {
+    flex-direction: column;
+  }
+  .banner-description {
+    width: 100%;
+    margin-left: auto;
+  }
+  .banner-skincare {
+    flex-direction: column;
+  }
+  .skincare-description {
+    width: 100%;
+    margin-right: auto;
+  }
+  .contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact__email {
+    margin-left: auto;
+  }
+}
+@media (max-width: 819px) {
+  .location {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 767px) {
+  .main-header,
+  .footer-wrap {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .contact {
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-end;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 12px;
+  }
+  .top-header__wrap {
+    flex-wrap: wrap;
+  }
+  .location__work-time {
+    margin-left: 0;
+  }
+}
