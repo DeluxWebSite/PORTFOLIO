@@ -12,7 +12,7 @@
 }
 .wrap {
   max-width: 804px;
-  height: 164px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,22 +40,22 @@
 
   color: #49495a;
 
-  margin-bottom: auto;
+  margin-bottom: 33px;
 }
 
 .main__inputs {
-  border: 1px solid #275e76;
-  border-radius: 13px;
+  border: 3px solid #275e76;
+  border-radius: 4px;
 }
 .main__input-text {
   padding: 16px;
   max-width: 355px;
   height: 48px;
   background: #ffffff;
-  border-top-left-radius: 13px;
-  border-bottom-left-radius: 13px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
   border: none;
-  border-right: 1px solid;
+  border-right: 1px solid #9198ab;
 
   font-family: "Open Sans";
   font-style: normal;
@@ -94,8 +94,8 @@
 
   background: #275e76;
   border: none;
-  border-top-right-radius: 13px;
-  border-bottom-right-radius: 13px;
+  /* border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px; */
 
   font-family: "Open Sans";
   font-style: normal;

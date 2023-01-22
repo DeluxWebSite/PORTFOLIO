@@ -1,0 +1,60 @@
+/* ------- section category ------- */
+
+.category__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.category__title {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 140%;
+  text-align: center;
+
+  color: #11112d;
+}
+.category__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  column-gap: 23px;
+}
+.category__item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
+
+  align-items: center;
+  padding: 20px 26px;
+  width: 370px;
+  height: 89px;
+
+  background: linear-gradient(0deg, #fafafa, #fafafa), #ffffff;
+  border-radius: 4px;
+}
+.category__item-img {
+  margin-right: 24px;
+}
+.category__item-title {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 130%;
+
+  color: #11112d;
+}
+.category__item-tacks {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+
+  color: #49495a;
+}
+/* ------- media section category ----- */
+/* ------- end section category ------- */
