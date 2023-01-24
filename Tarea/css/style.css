@@ -32,7 +32,11 @@ body {
 }
 /* ------- header ------- */
 .header {
-  height: 100px;
+  height: 105px;
+}
+
+header svg {
+  width: 140px;
 }
 
 .header__container {
@@ -103,7 +107,7 @@ body {
 /* ------- media ------ */
 @media (max-width: 920px) {
   .header {
-    height: 72px;
+    height: 105px;
   }
   .header__burger-link {
     display: block;
@@ -312,6 +316,11 @@ body {
   padding-bottom: 50px;
 }
 
+#map {
+  height: 400px;
+  width: 100%;
+}
+
 .map__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -488,8 +497,9 @@ body {
   margin-right: 60px;
 }
 
-.footer__logo {
+footer svg {
   margin-bottom: 16px;
+  width: 140px;
 }
 
 .footer__title {

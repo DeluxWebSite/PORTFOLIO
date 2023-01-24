@@ -1,6 +1,9 @@
 /* ------- header ------- */
 .header {
-  height: 100px;
+  height: 105px;
+}
+header svg {
+  width: 140px;
 }
 .header__container {
   display: flex;
@@ -53,7 +56,7 @@
 /* ------- media ------ */
 @media (max-width: 920px) {
   .header {
-    height: 72px;
+    height: 105px;
   }
   .header__burger-link {
     display: block;
