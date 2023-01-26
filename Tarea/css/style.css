@@ -321,6 +321,65 @@ header svg {
   width: 100%;
 }
 
+#content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  /* flex-wrap: wrap; */
+}
+
+#content > p {
+  padding: 10px;
+  min-width: 150px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+#map-marker-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 150px;
+  margin-right: 10px;
+}
+
+#map-marker-title > h2 {
+  margin-bottom: 30px;
+}
+
+#map-marker-img {
+  max-width: 150px;
+}
+
+#map-marker-button {
+  padding: 10px;
+  background: #275e76;
+  border: none;
+  border-radius: 20px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  color: #f5f6f7;
+  text-align: center;
+  cursor: pointer;
+}
+
 .map__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -369,7 +428,19 @@ header svg {
 }
 
 /* ------- media section map */
-@media (max-width: 719px) {
+@media (max-width: 970px) {
+  #content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+@media (max-width: 853px) {
   .map__wrap {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -378,6 +449,15 @@ header svg {
   }
   .map__pointer {
     padding: 20px;
+  }
+  #map-marker-title > h2 {
+    margin-bottom: 20px;
+  }
+  #map-marker-img {
+    max-width: 150px;
+  }
+  #map-marker-button {
+    margin-bottom: 20px;
   }
 }
 /* ------- end section map */
