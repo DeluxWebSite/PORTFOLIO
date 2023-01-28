@@ -20,9 +20,9 @@
 
   margin-right: 60px;
 }
-footer svg {
+.footer__logo {
   margin-bottom: 16px;
-  width: 140px;
+  height: 80px;
 }
 .footer__title {
   width: 195px;
@@ -98,12 +98,12 @@ footer svg {
     margin-right: 0;
     margin-bottom: 52px;
   }
-  .footer__logo {
+  /* .footer__logo {
     margin-bottom: 0;
     width: 105px;
     height: 32px;
     fill: #858585;
-  }
+  } */
   .footer__menu {
     margin-right: 0;
   }

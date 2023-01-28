@@ -41,45 +41,35 @@
         </div>
     </header>
     <!-- end header -->
-    <!-- section main -->
-    <main class="main">
-        <div class="main__container container">
-            <div class="wrap">
-                <h1 class="main__title">Найти работу рядом с домом</h1>
-                <span class="main__subtitle">любая квалификация, опыт и специализация</span>
-                <div class="main__inputs"><input class="main__input-text" type="search" name="" id=""
-                        placeholder="Сфера деятельности"><input class="main__input-city" type="search"
-                        placeholder="Место поиска"><button class="main__button-submint" type="submit"> <img
-                            src="img/search-icon.svg" alt="">&nbsp;Найти</button>
+    <!-- section logIn -->
+    <section class="login">
+        <div class="login__container container">
+            <div class="login__account">
+                <h1 class="login__title">Вход в аккаунт</h1>
+                <p class="login__desc">Для создания задач и доступа к персональным разделам необходимо пройти быструю
+                    регистрацию через сервисы авторизации.</p>
+                <div class="login__buttons">
+                    <button class="button-apple"><img src="img/icon-apple.svg" alt="Apple"> Apple</button>
+                    <button class="button-gogle"><img src="img/icon-google-plus.svg" alt="Gogle+"> Google</button>
+                    <button class="button-fb"><img src="img/icon-facebook.svg" alt="Facebook"> Facebook</button>
                 </div>
+                <p class="login__help-tel">Или при <a class="help-tel__link" href="#">помощи телефона</a></p>
+                <div class="login__phone">
+                    <input class="login__input-phone" type="tel" name="" id="" placeholder="Номер телефона"><button
+                        class="login__button-submit">Получить
+                        код</button>
+                </div>
+                <p class="login__agreement">Нажимая кнопку «Получить код», вы соглашаетесь на обработку своих
+                    персональных данных
+                    в
+                    соответствии с Соглашением.</p>
             </div>
-        </div>
-    </main>
-    <!-- end section main -->
-    <!-- section map -->
-    <section class="map">
-        <div class="map__container container">
-            <h2 class="map__title">Нарисуй на карте</h2>
-            <div class="map__wrap">
-                <div id="map"></div>
-                <div class="map__pointer">
-                    <div class="map__pointer-item">
-                        <nobr><img src="img/icon-point-green.svg" alt="">Без опыта и дипломов</nobr>
-                    </div>
-                    <div class="map__pointer-item">
-                        <nobr><img src="img/icon-point-violet.svg" alt="">С опытом без дипломов</nobr>
-                    </div>
-                    <div class="map__pointer-item">
-                        <nobr><img src="img/icon-point-orange.svg" alt="">С дипломами и квалификацией</nobr>
-                    </div>
-                    <div class="map__pointer-item">
-                        <nobr><img src="img/icon-point.svg" alt="">Красткосрочная работа</nobr>
-                    </div>
-                </div>
+            <div class="login__img">
+                <img src="img/girl.svg" alt="image">
             </div>
         </div>
     </section>
-    <!-- end section map -->
+    <!-- end section logIn -->
     <!-- footer -->
     <footer class="footer">
         <div class="footer__container container">
@@ -114,8 +104,6 @@
         </div>
     </footer>
     <!-- end footer -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA62POV5iAV5b1CqmZPBb1MJy1L0H3VTA&callback=initMap"
-        defer></script>
 </body>
 
 </html>

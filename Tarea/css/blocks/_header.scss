@@ -2,8 +2,8 @@
 .header {
   height: 105px;
 }
-header svg {
-  width: 140px;
+.header__logo {
+  max-height: 80px;
 }
 .header__container {
   display: flex;
