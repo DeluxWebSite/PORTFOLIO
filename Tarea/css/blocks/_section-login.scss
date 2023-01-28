@@ -40,9 +40,8 @@
 .login__buttons {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 421px;
-
+    justify-content: flex-start;
+    gap: 10px;
     margin-bottom: 36px;
 }
 .button-apple {
