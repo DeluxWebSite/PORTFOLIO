@@ -11,7 +11,7 @@ body {
     display: none !important;
 }
 .translater {
-    padding: 15px;
+    padding: 10px;
 }
 /* Убираем подсветку ссылок */
 
@@ -20,17 +20,12 @@ body {
     box-shadow: none;
     box-sizing: inherit;
 }
-
-/* language */
-
 .language {
-    transform: translateY(-50%);
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
     gap: 10px;
 }
-
 .language__img {
     width: 30px;
     cursor: pointer;
