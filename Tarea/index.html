@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="css/style.css">
     <script type="module" src="js/map-gogle.js"></script>
     <!--  google-translate -->
-    <link rel="stylesheet" href="css/google-translate.css">
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script src="js/google-translate.js"></script>
     <!--  END google-translate -->
@@ -32,17 +31,10 @@
 <body>
     <section class="translater container">
         <div class="language">
-            <img src="img/lang/lang__ru.png" alt="ru" data-google-lang="ru" class="language__img">
             <img src="img/lang/lang__en.png" alt="en" data-google-lang="en" class="language__img">
-            <img src="img/lang/lang__de.png" alt="de" data-google-lang="de" class="language__img">
             <img src="img/lang/lang__fr.png" alt="fr" data-google-lang="fr" class="language__img">
-            <img src="img/lang/lang__pt.png" alt="pt" data-google-lang="pt" class="language__img">
             <img src="img/lang/lang__es.png" alt="es" data-google-lang="es" class="language__img">
-            <img src="img/lang/lang__it.png" alt="it" data-google-lang="it" class="language__img">
-            <img src="img/lang/lang__zh.png" alt="zh" data-google-lang="zh-CN" class="language__img">
             <img src="img/lang/lang__ar.png" alt="ar" data-google-lang="ar" class="language__img">
-            <img src="img/lang/lang__nl.png" alt="nl" data-google-lang="nl" class="language__img">
-            <img src="img/lang/lang__sv.png" alt="sv" data-google-lang="sv" class="language__img">
         </div>
     </section>
 
@@ -53,11 +45,12 @@
                     class="header__burger-img"></a>
             <a href="index.html"><img src="img/logo2.png" alt="EMPLEO" class="header__logo"></a>
             <ul class="header__menu menu">
-                <li class="menu__item"><a class="menu__item-link" href="#">Категории услуг</a></li>
-                <li class="menu__item"><a class="menu__item-link" href="#">Все исполнители</a></li>
-                <li class="menu__item"><a class="menu__item-link" href="#">Мои задачи</a></li>
-                <li class="menu__item"><a class="menu__item-link" href="#">Войти</a></li>
-                <li class="menu__item"><button class="menu__item-button" type="button">Стать специалистом</button></li>
+                <li class="menu__item"><a class="menu__item-link" href="#">Categories of employment</a></li>
+                <!-- <li class="menu__item"><a class="menu__item-link" href="#">Все исполнители</a></li> -->
+                <!-- <li class="menu__item"><a class="menu__item-link" href="#">Мои задачи</a></li> -->
+                <li class="menu__item"><a class="menu__item-link" href="#">Entrar</a></li>
+                <li class="menu__item"><button class="menu__item-button" type="button">Conviértete en un
+                        empleado</button></li>
             </ul>
             <a href="#" class="header_sign-link"><img src="img/sign-in-icon.svg" alt="войти" class="header_sign-in"></a>
         </div>
@@ -68,12 +61,12 @@
     <main class="main">
         <div class="main__container container">
             <div class="wrap">
-                <h1 class="main__title">Найти работу рядом с домом</h1>
-                <span class="main__subtitle">любая квалификация, опыт и специализация</span>
+                <h1 class="main__title">Encuentra tu trabajo cerca de casa</h1>
+                <span class="main__subtitle">Cualquier titulación, experiencia y especialización</span>
                 <div class="main__inputs"><input class="main__input-text" type="search" name="" id=""
-                        placeholder="Сфера деятельности"><input class="main__input-city" type="search"
-                        placeholder="Место поиска"><button class="main__button-submint" type="submit"> <img
-                            src="img/search-icon.svg" alt="">&nbsp;Найти</button>
+                        placeholder="Campo de actividad"><input class="main__input-city" type="search"
+                        placeholder="Área de búsqueda"><button class="main__button-submint" type="submit"> <img
+                            src="img/search-icon.svg" alt="">&nbsp;Hallar</button>
                 </div>
             </div>
         </div>
@@ -82,21 +75,21 @@
     <!-- section map -->
     <section class="map">
         <div class="map__container container">
-            <h2 class="map__title">Нарисуй на карте</h2>
+            <h2 class="map__title">Dibujar en el mapa</h2>
             <div class="map__wrap">
                 <div id="map"></div>
                 <div class="map__pointer">
                     <div class="map__pointer-item">
-                        <nobr><img src="img/icon-point-green.svg" alt="">Без опыта и дипломов</nobr>
+                        <nobr><img src="img/icon-point-green.svg" alt="">Sin experiencia ni diploma</nobr>
                     </div>
                     <div class="map__pointer-item">
-                        <nobr><img src="img/icon-point-violet.svg" alt="">С опытом без дипломов</nobr>
+                        <nobr><img src="img/icon-point-violet.svg" alt="">Con experiencia y sin diplomas</nobr>
                     </div>
                     <div class="map__pointer-item">
-                        <nobr><img src="img/icon-point-orange.svg" alt="">С дипломами и квалификацией</nobr>
+                        <nobr><img src="img/icon-point-orange.svg" alt="">Con diplomas y títulos</nobr>
                     </div>
                     <div class="map__pointer-item">
-                        <nobr><img src="img/icon-point.svg" alt="">Красткосрочная работа</nobr>
+                        <nobr><img src="img/icon-point.svg" alt="">Empleo temporal </nobr>
                     </div>
                 </div>
             </div>
@@ -109,22 +102,27 @@
             <div class="footer__header">
                 <div class="footer__heading">
                     <img src="img/logo2.png" alt="EMPLEO" class="footer__logo">
-                    <div class="footer__title">Сервис подбора работы возле дома и не только</div>
+                    <div class="footer__title">Servicio de selección de trabajo cerca de casa y no solo</div>
                 </div>
                 <ul class="footer__menu">
-                    <li class="footer__menu-item"><a href="#" class="footer__menu-link">Как стать исполнителем</a></li>
-                    <li class="footer__menu-item"><a href="#" class="footer__menu-link">Частые вопросы</a></li>
-                    <li class="footer__menu-item"><a href="#" class="footer__menu-link">Контакты</a></li>
+                    <li class="footer__menu-item"><a href="#" class="footer__menu-link">Cómo convertirse en un
+                            empleado</a></li>
+                    <li class="footer__menu-item"><a href="#" class="footer__menu-link">Preguntas más frecuentes</a>
+                    </li>
+                    <li class="footer__menu-item"><a href="#" class="footer__menu-link">Contactos</a></li>
                 </ul>
                 <ul class="footer__menu ">
-                    <li class="footer__menu-item"><a href="#" class="footer__menu-link">Отзывы заказчиков</a></li>
-                    <li class="footer__menu-item"><a href="#" class="footer__menu-link">Наш блог</a></li>
-                    <li class="footer__menu-item"><a href="#" class="footer__menu-link">Служба поддержки</a></li>
+                    <li class="footer__menu-item"><a href="#" class="footer__menu-link">Opiniones de los usuarios</a>
+                    </li>
+                    <li class="footer__menu-item"><a href="#" class="footer__menu-link">Nuestro blog</a></li>
+                    <li class="footer__menu-item"><a href="#" class="footer__menu-link">Servicio de soporte</a></li>
                 </ul>
             </div>
             <div class="footer__footer">
-                <div class="footer__copyright">
-                    <nobr>&copy; 2021 EMPLEO.today - <a href="#">Правила сервиса</a></nobr>
+                <div class="footer__copyright ">
+                    <nobr>&copy; 2021 &nbsp;<span class="notranslate">EMPLEO</span>.hoy día - <a href="#">Reglas de
+                            servicio</a>
+                    </nobr>
                 </div>
                 <div class="footer__icons">
                     <img src="img/fb.svg" alt="" class="">
@@ -137,7 +135,8 @@
         </div>
     </footer>
     <!-- end footer -->
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA62POV5iAV5b1CqmZPBb1MJy1L0H3VTA&callback=initMap"
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA62POV5iAV5b1CqmZPBb1MJy1L0H3VTA&region=ES&language=es&callback=initMap"
         defer></script>
 
 </body>

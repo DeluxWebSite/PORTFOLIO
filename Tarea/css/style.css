@@ -292,8 +292,10 @@ body {
 /* ------- media section main ------- */
 @media (max-width: 719px) {
   .main {
-    height: 483px;
-    background-image: url("/img/main-media-s.png");
+    height: auto;
+    /* height: 483px; */
+    /* background-image: url("/img/main-media-s.png"); */
+    background-image: none;
     background-repeat: no-repeat;
     background-position: bottom center;
   }

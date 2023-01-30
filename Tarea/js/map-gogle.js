@@ -42,7 +42,7 @@ function initMap() {
         '<div id="content">' +
         "<div id='map-marker-title'>" +
         "<h2>Cámara de Comercio de Motril</h2>" +
-        "<a id='map-marker-button' href='login.html'>Откликнуться</a>" +
+        "<a id='map-marker-button' href='login.html'>Respond</a>" +
         "</div>" +
         "<a href='https://goo.gl/maps/fdSuK3xx8MHhTcBz6' target='_blank'>" +
         "<img id='map-marker-img' src='/img/Cámara de Comercio de Motril.jpg'/></a>" +
@@ -52,7 +52,7 @@ function initMap() {
         '<div id="content">' +
         "<div id='map-marker-title'>" +
         "<h2>Saliplant Garden</h2>" +
-        "<a id='map-marker-button' href='login.html'>Откликнуться</a>" +
+        "<a id='map-marker-button' href='login.html'>Respond</a>" +
         "</div>" +
         "<a href='https://goo.gl/maps/VWggm2VvKgqQfW5t6' target='_blank'>" +
         "<img id='map-marker-img' src='/img/Saliplant Garden.jpg'/></a>" +
@@ -62,7 +62,7 @@ function initMap() {
         '<div id="content">' +
         "<div id='map-marker-title'>" +
         "<h2>Multiservicios Gonzagerr</h2>" +
-        "<a id='map-marker-button' href='login.html'>Откликнуться</a>" +
+        "<a id='map-marker-button' href='login.html'>Respond</a>" +
         "</div>" +
         "<a href='https://goo.gl/maps/vyDiFRx242GCTHoLA' target='_blank'>" +
         "<img id='map-marker-img' src='/img/gonzager.jpg'/></a>" +
@@ -72,7 +72,7 @@ function initMap() {
         '<div id="content">' +
         "<div id='map-marker-title'>" +
         "<h2>Orgiva</h2>" +
-        "<a id='map-marker-button' href='login.html'>Откликнуться</a>" +
+        "<a id='map-marker-button' href='login.html'>Respond</a>" +
         "</div>" +
         "<a href='https://goo.gl/maps/JF1s9rQr55veL9729' target='_blank'>" +
         "<img id='map-marker-img' src='/img/orgiva.jpg'/></a>" +
@@ -82,7 +82,7 @@ function initMap() {
         '<div id="content">' +
         "<div id='map-marker-title'>" +
         "<h2>La Huerta Xpaña</h2>" +
-        "<a id='map-marker-button' href='login.html'>Откликнуться</a>" +
+        "<a id='map-marker-button' href='login.html'>Respond</a>" +
         "</div>" +
         "<a href='https://goo.gl/maps/6c5WjsTFLu3RbGf99' target='_blank'>" +
         "<img id='map-marker-img' src='/img/la.jpg'/></a>" +
@@ -92,7 +92,7 @@ function initMap() {
         '<div id="content">' +
         "<div id='map-marker-title'>" +
         "<h2>La Nube</h2>" +
-        "<a id='map-marker-button' href='login.html'>Откликнуться</a>" +
+        "<a id='map-marker-button' href='login.html'>Respond</a>" +
         "</div>" +
         "<a href='https://goo.gl/maps/7YNvErBK6WAJhWvbA' target='_blank'>" +
         "<img id='map-marker-img' src='/img/nube.jpg'/></a>" +
@@ -102,7 +102,7 @@ function initMap() {
         '<div id="content">' +
         "<div id='map-marker-title'>" +
         "<h2>Se Busca</h2>" +
-        "<a id='map-marker-button' href='login.html'>Откликнуться</a>" +
+        "<a id='map-marker-button' href='login.html'>Respond</a>" +
         "</div>" +
         "<a href='https://goo.gl/maps/toAa3JPnUthckqML6' target='_blank'>" +
         "<img id='map-marker-img' src='/img/busca.jpg'/></a>" +
@@ -112,7 +112,7 @@ function initMap() {
         '<div id="content">' +
         "<div id='map-marker-title'>" +
         "<h2>Bar Época</h2>" +
-        "<a id='map-marker-button' href='login.html'>Откликнуться</a>" +
+        "<a id='map-marker-button' href='login.html'>Respond</a>" +
         "</div>" +
         "<a href='https://goo.gl/maps/FkHG7j8tP9oB97kj6' target='_blank'>" +
         "<img id='map-marker-img' src='/img/bar.jpg'/></a>" +
