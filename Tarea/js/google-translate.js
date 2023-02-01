@@ -4,7 +4,7 @@ const googleTranslateConfig = {
 	/* Язык, на который переводим при первом посещении */
 	// langFirstVisit: 'es',
 	/* Если скрипт не работает или работает неправильно, раскомментируйте и укажите основной домен в свойстве domain */
-	// domain: "empleo.delux.website"
+	domain: "empleo.delux.website"
 };
 
 document.addEventListener("DOMContentLoaded", (event) => {
@@ -19,19 +19,18 @@ function TranslateWidgetIsLoaded() {
 }
 
 function TranslateInit(config) {
-	if (config.langFirstVisit && !Cookies.get("googtrans")) {
-		/* Если установлен язык перевода для первого посещения и куки не назначены */
-		TranslateCookieHandler(config.lang);
-	}
+	// if (config.langFirstVisit && !Cookies.get("googtrans")) {
+	// 	/* Если установлен язык перевода для первого посещения и куки не назначены */
+	// 	TranslateCookieHandler(config.lang);
+	// }
 
 	let code = TranslateGetCode(config);
-	console.log(code)
+	// console.log(code)
 	TranslateHtmlHandler(code);
-	if (code == config.lang) {
+	if (code === config.lang && Cookies.get("googtrans")) {
 		/* Если язык по умолчанию, совпадает с языком на который переводим, то очищаем куки */
-		TranslateCookieHandler(null, config.domain);
+		TranslateCookieHandler(null, null);
 	}
-
 	/* Инициализируем виджет с языком по умолчанию */
 	new google.translate.TranslateElement({
 		pageLanguage: config.lang,
@@ -54,25 +53,25 @@ function TranslateGetCode(config) {
 		Cookies.get("googtrans") != undefined && Cookies.get("googtrans") != "null"
 			? Cookies.get("googtrans")
 			: config.lang;
+	// console.log(lang);
 	return lang.match(/(?!^\/)[^\/]*$/gm)[0];
 }
 
 function TranslateCookieHandler(val, domain) {
 	/* Записываем куки /язык_который_переводим/язык_на_который_переводим */
-	// Cookies.set("googtrans", val);
+	Cookies.set("googtrans", val);
 	// Cookies.set("googtrans", val, {
 	// 	domain: "." + document.domain,
 	// });
 
 	if (domain == "undefined") return;
 	/* записываем куки для домена, если он назначен в конфиге */
-	Cookies.set("googtrans", val, {
-		domain: domain,
-	});
-
-	Cookies.set("googtrans", val, {
-		domain: "." + domain,
-	});
+	// Cookies.set("googtrans", val, {
+	// 	domain: domain,
+	// });
+	// Cookies.set("googtrans", val, {
+	// 	domain: "." + domain,
+	// });
 }
 
 function TranslateEventHandler(event, selector, handler) {
