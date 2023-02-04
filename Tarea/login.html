@@ -18,14 +18,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- end fonts -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="js/map-gogle.js"></script>
+
     <!--  google-translate -->
+    <link rel="stylesheet" href="css/google-translate.css">
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script src="js/google-translate.js"></script>
     <!--  END google-translate -->
-
 </head>
 
 <body>
@@ -37,7 +36,6 @@
             <img src="img/lang/lang__ar.png" alt="ar" data-google-lang="ar" class="language__img">
         </div>
     </section>
-
     <!-- header -->
     <header class="header">
         <div class="header__container container">
@@ -56,46 +54,34 @@
         </div>
     </header>
     <!-- end header -->
-
-    <!-- section main -->
-    <main class="main">
-        <div class="main__container container">
-            <div class="wrap">
-                <h1 class="main__title">Encuentra tu trabajo cerca de casa</h1>
-                <span class="main__subtitle">Cualquier titulación, experiencia y especialización</span>
-                <div class="main__inputs"><input class="main__input-text" type="search" name="" id=""
-                        placeholder="Campo de actividad"><input class="main__input-city" type="search"
-                        placeholder="Área de búsqueda"><button class="main__button-submint" type="submit"> <img
-                            src="img/search-icon.svg" alt="">&nbsp;Buscar</button>
+    <!-- section logIn -->
+    <section class="login">
+        <div class="login__container container">
+            <div class="login__account">
+                <h1 class="login__title"><a href="performer.html">Acceso</a></h1>
+                <p class="login__desc">Para crear tareas y acceder a secciones personales, debe pasar por un rápido
+                    registro a través de servicios de autorización.</p>
+                <div class="login__buttons">
+                    <button class="button-apple notranslate"><img src="img/icon-apple.svg" alt="Apple"> Apple</button>
+                    <button class="button-gogle notranslate"><img src="img/icon-google-plus.svg" alt="Gogle+">
+                        Google</button>
+                    <button class="button-fb notranslate"><img src="img/icon-facebook.svg" alt="Facebook">
+                        Facebook</button>
                 </div>
+                <p class="login__help-tel">O cuando <a class="help-tel__link" href="#">asistencia telefónica</a></p>
+                <div class="login__phone">
+                    <input class="login__input-phone" type="tel" name="" id="" placeholder="Número de teléfono"><button
+                        class="login__button-submit">para obtener el código</button>
+                </div>
+                <p class="login__agreement">Al hacer clic en el botón "Obtener código", acepta el procesamiento de su
+                    información personal en de conformidad con el Acuerdo.</p>
             </div>
-        </div>
-    </main>
-    <!-- end section main -->
-    <!-- section map -->
-    <section class="map">
-        <div class="map__container container">
-            <h2 class="map__title">Dibujar en el mapa</h2>
-            <div class="map__wrap">
-                <div id="map"></div>
-                <div class="map__pointer">
-                    <div class="map__pointer-item">
-                        <nobr><img src="img/icon-point-green.svg" alt="">Sin experiencia ni diploma</nobr>
-                    </div>
-                    <div class="map__pointer-item">
-                        <nobr><img src="img/icon-point-violet.svg" alt="">Con experiencia y sin diplomas</nobr>
-                    </div>
-                    <div class="map__pointer-item">
-                        <nobr><img src="img/icon-point-orange.svg" alt="">Con diplomas y títulos</nobr>
-                    </div>
-                    <div class="map__pointer-item">
-                        <nobr><img src="img/icon-point.svg" alt="">Empleo temporal </nobr>
-                    </div>
-                </div>
+            <div class="login__img">
+                <img src="img/girl.svg" alt="image">
             </div>
         </div>
     </section>
-    <!-- end section map -->
+    <!-- end section logIn -->
     <!-- footer -->
     <footer class="footer">
         <div class="footer__container container">
@@ -135,10 +121,6 @@
         </div>
     </footer>
     <!-- end footer -->
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA62POV5iAV5b1CqmZPBb1MJy1L0H3VTA&region=ES&language=es&callback=initMap"
-        defer></script>
-
 </body>
 
 </html>
