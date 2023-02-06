@@ -1,3 +1,4 @@
+/* ------- section account ------ */
 .account {
     position: relative;
     height: 640px;
@@ -6,7 +7,7 @@
     background-position: center center;
     border-top: 1px solid #fafafa;
 
-    margin-bottom: 600px;
+    margin-bottom: 888px;
 }
 .account__title {
     font-family: "Commissioner";
@@ -100,7 +101,40 @@
     text-align: center;
 
     color: #11112d;
+    margin-bottom: 20px;
 }
 .vacancies {
     align-self: center;
 }
+/* calendar */
+.record {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.calendar:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.85);
+    z-index: 2;
+    border-radius: 5px;
+}
+.record__inner {
+    position: absolute;
+    z-index: 3;
+    color: #000;
+    opacity: 0.7;
+    text-align: center;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: auto;
+}
+/* end calendar */
