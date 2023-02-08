@@ -23,7 +23,12 @@
 </head>
 
 <body>
-
+    <section class="translater container">
+        <div class="language">
+            <img src="img/lang/lang__en.png" alt="en" data-google-lang="en" class="language__img">
+            <img src="img/lang/lang__es.png" alt="es" data-google-lang="es" class="language__img">
+        </div>
+    </section>
 
     <!-- header -->
     <header class="header">
@@ -32,9 +37,7 @@
                     class="header__burger-img"></a>
             <a href="index.html"><img src="img/logo2.png" alt="EMPLEO" class="header__logo"></a>
             <ul class="header__menu menu">
-                <li class="menu__item"><a class="menu__item-link" href="#">Categories of employment</a></li>
-                <!-- <li class="menu__item"><a class="menu__item-link" href="#">Все исполнители</a></li> -->
-                <!-- <li class="menu__item"><a class="menu__item-link" href="#">Мои задачи</a></li> -->
+                <li class="menu__item"><a class="menu__item-link" href="#">Categorías de empleo</a></li>
                 <li class="menu__item"><a class="menu__item-link" href="#">Entrar</a></li>
                 <li class="menu__item"><button class="menu__item-button" type="button">Conviértete en un
                         empleado</button></li>
@@ -46,64 +49,64 @@
 
     <!-- section registration -->
     <section class="registration">
-        <h1 class="registration__title">Регистрация</h1>
+        <h1 class="registration__title">Registro de perfil</h1>
         <div class="registration__container container">
             <div class="registration__profiler-wrap">
                 <figure class="registration__profiler-img">
                     <img src="img/foto-profile.jpg" alt="">
-                    <figcaption><a href="#">Изменить фото</a></figcaption>
+                    <figcaption><a href="#">Sube una foto</a></figcaption>
                 </figure>
                 <div class="profile">
-                    <div class="profile__placeholder ">Имя: <span class="profile__firstname">Марина</span></div>
-                    <div class="profile__placeholder">Фамилия: <span class="profiler__secondname">Нестерова</span></div>
-                    <div class="profile__placeholder">Телефон для контакта: <span class="">+7 (___)___-__-__</span>
+                    <div class="profile__placeholder ">Nombre : <span class="profile__firstname">Марина</span></div>
+                    <div class="profile__placeholder">Apellidos: <span class="profiler__secondname">Нестерова</span>
                     </div>
-                    <span class="profile__info-phone">Заказчики увидят ваш номер и смогут с вами связаться.</span>
-                    <div class="profile__placeholder">Электронная почта: <span class=""> marinanesterova@mail.ru</span>
+                    <div class="profile__placeholder">Teléfono de contacto: <span class="">+7 (___)___-__-__</span>
                     </div>
-                    <span class="profile__email-verified">Адрес почты подтверждён</span>
+                    <span class="profile__info-phone">los empleadores verán su número y podrán contactarlo.</span>
+                    <div class="profile__placeholder">Correo electrónico: <span class=""> marinanesterova@mail.ru</span>
+                    </div>
+                    <span class="profile__email-verified">Dirección de correo electrónico confirmada</span>
                     <div class="profile-btns">
-                        <button class="profile__btn-save">Сохранить и продолжить</button>
-                        <button class="profile__btn-exit">Назад</button>
+                        <button class="profile__btn-save">Guardar y continuar</button>
+                        <button class="profile__btn-exit">Atrás</button>
                     </div>
                 </div>
             </div>
             <div class="load-file">
-                <h3 class="load-video__title">Загрузить видео</h3>
+                <h3 class="load-video__title">Qrabar o subir un video</h3>
                 <div class="load-video__area">
                     <img src="img/load-icon.svg" alt="load" class="">
-                    <p class="load-video__area-text">Нажмите или перетащите видео</p>
+                    <p class="load-video__area-text">Haga clic o arrastrar el vídeo</p>
                 </div>
-                <span class="load-video__desc">Запишите короткую видеопрезентацию, поприветствуйте заказчиков. Видео
-                    отобразится в публичном
-                    профиле.
-                    <br>
-                    Снимайте при естественном освещении и держите камеру горизонтально</span>
-            </div>
-            <div class="load-file">
-                <h3 class="load-audio__title">Загрузить аудио</h3>
-                <div class="load-audio__area">
-                    <img src="img/load-icon.svg" alt="load" class="">
-                    <p class="load-audio__area-text">Нажмите или перетащите аудио</p>
-                </div>
-                <span class="load-audio__desc">Запишите короткую аудиопрезентацию, поприветствуйте заказчиков. Аудио
-                    отобразится в публичном
-                    профиле.
+                <span class="load-video__desc">Grabe una breve presentación. Siga las instrucciones en la ventana.
+                    dispare con luz natural y sostenga la cámara horizontalmente. El video aparecerá en tu perfil
+                    público.
                 </span>
             </div>
-            <div class="load-resume">Загрузить резюме: <span class=""></span></div>
-            <div class="load-scial-link">Вставить ссылку на страничку в соц сетях: <span class=""></span><img
-                    src="img/question-icon.svg" alt="" class=""></div>
+            <div class="load-file">
+                <h3 class="load-audio__title">Descargar audio</h3>
+                <div class="load-audio__area">
+                    <img src="img/load-icon.svg" alt="load" class="">
+                    <p class="load-audio__area-text">Hacer clic o arrastrar audio</p>
+                </div>
+                <span class="load-audio__desc">Grabe una breve presentación de audio, salude a los clientes. Audio
+                    exhibido en público
+                    perfil.
+                </span>
+            </div>
+            <div class="load-resume">Subir currículum: <span class=""></span></div>
+            <div class="load-scial-link">Insertar un enlace a una página en las redes sociales: <span
+                    class=""></span><img src="img/question-icon.svg" alt="" class=""></div>
             <div class="notifications">
-                <h3 class="notifications__title">Уведомления по заказам</h3>
+                <h3 class="notifications__title">Alertas de trabajo</h3>
                 <input type="checkbox" name="" id="notifications-email">
-                <label for="notifications-email">Получать уведомления на электронную почту</label>
+                <label for="notifications-email">Recibir notificaciones por correo electrónico</label>
                 <br>
                 <br>
                 <input type="checkbox" name="" id="notifications-sms">
-                <label for="notifications-sms">Получать уведомления по SMS</label>
+                <label for="notifications-sms">Recibir notificaciones por SMS</label>
             </div>
-            <button class="profile__btn-save"><a href="account.html">Сохранить&nbsp;и&nbsp;продолжить</a></button>
+            <a class="profile__btn-save" href="account.html">Guardar&nbsp;y&nbsp;continuar</a>
         </div>
     </section>
     <!-- end section registration -->
@@ -114,7 +117,7 @@
             <div class="footer__header">
                 <div class="footer__heading">
                     <img src="img/logo2.png" alt="EMPLEO" class="footer__logo">
-                    <div class="footer__title">Servicio de selección de trabajo cerca de casa y no solo</div>
+                    <div class="footer__title">Servicio de selección de trabajo cerca de casa y más</div>
                 </div>
                 <ul class="footer__menu">
                     <li class="footer__menu-item"><a href="#" class="footer__menu-link">Cómo convertirse en un

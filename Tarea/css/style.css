@@ -529,6 +529,7 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1;
   max-width: 220px;
+  text-decoration: none;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
@@ -788,7 +789,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   border-top: 1px solid #fafafa;
-  margin-bottom: 888px;
+  margin-bottom: 780px;
 }
 
 .account__title {
@@ -822,6 +823,7 @@ body {
   padding: 40px;
   gap: 20px;
   max-width: 770px;
+  min-width: 375px;
   background: #ffffff;
   -webkit-box-shadow: 0px 12px 40px rgba(17, 17, 45, 0.07);
           box-shadow: 0px 12px 40px rgba(17, 17, 45, 0.07);
@@ -914,11 +916,6 @@ body {
   margin-bottom: 20px;
 }
 
-.vacancies {
-  -ms-flex-item-align: center;
-      align-self: center;
-}
-
 /* calendar */
 .record {
   position: relative;
@@ -963,6 +960,120 @@ body {
 }
 
 /* end calendar */
+.vacancies {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  row-gap: 10px;
+}
+
+.vacancies__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.vacancies__item-title {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: #11112d;
+  margin-bottom: 5px;
+}
+
+.vacancies__item-response {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: #757582;
+  margin-bottom: 5px;
+}
+
+.vacancies__item-published {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  color: #757582;
+}
+
+.vacancies__item-price {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 100%;
+  color: #275e76;
+  padding: 10px;
+}
+
+/* ------- media ------- */
+@media (max-width: 601px) {
+  .account {
+    height: auto;
+    margin-bottom: auto;
+  }
+  .account__title {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  .account__container {
+    position: static;
+    padding: 20px;
+    gap: 10px;
+  }
+  .account__profiler-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    gap: 20px;
+  }
+  .vacancies__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+} /* ------- end section account ------- */
 /* ------- section login ------- */
 .login {
   padding-top: 72px;
