@@ -50,7 +50,7 @@
   line-height: 100%;
   color: #275e76;
 }
-.header_sign-link {
+.header__sign-link {
   display: none;
 }
 /* ------- media ------ */
@@ -69,7 +69,7 @@
   .header__menu {
     display: none;
   }
-  .header_sign-link {
+  .header__sign-link {
     display: block;
   }
 }

@@ -1,0 +1,19 @@
+.translater {
+    padding: 10px;
+}
+.language {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.language__img {
+    width: 30px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.language__img:hover,
+.language__img_active {
+    opacity: 1;
+}

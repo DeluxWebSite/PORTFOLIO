@@ -9,6 +9,9 @@ body {
   min-height: 100%;
   margin: 0 auto;
 }
+.hiden {
+  display: none !important;
+}
 
 @media (max-width: 1199px) {
   .container {

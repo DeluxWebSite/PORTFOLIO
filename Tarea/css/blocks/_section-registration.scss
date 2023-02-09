@@ -7,7 +7,7 @@
     background-position: center center;
     border-top: 1px solid #fafafa;
 
-    margin-bottom: 600px;
+    margin-bottom: 650px;
 }
 .registration__title {
     font-family: "Commissioner";
@@ -74,6 +74,7 @@
     color: #000000;
 
     padding: 14px 16px;
+    margin-bottom: 10px;
 
     width: 100%;
     background: #ffffff;
@@ -88,20 +89,6 @@
     line-height: 100%;
     color: #11112d;
 }
-.profile__placeholder:nth-child(-n + 2) {
-    padding: 14px 16px;
-
-    flex-basis: 48%;
-
-    background: #ffffff;
-    border: 1px solid #bcc1d2;
-    border-radius: 4px;
-}
-.profile__placeholder:nth-child(3),
-.profile__placeholder:nth-child(5) {
-    margin-top: 20px;
-    margin-bottom: 8px;
-}
 .profile__info-phone {
     font-family: "Open Sans";
     font-style: normal;
@@ -109,6 +96,7 @@
     font-size: 13px;
     line-height: 130%;
     color: #757582;
+    margin-bottom: 10px;
 }
 .profile__email-verified {
     font-family: "Open Sans";
@@ -153,6 +141,9 @@
     font-size: 14px;
     line-height: 100%;
     color: #11112d;
+}
+.load__file {
+    width: 100%;
 }
 .load-video__title,
 .load-audio__title {
@@ -245,7 +236,7 @@
         flex-wrap: wrap;
         align-items: flex-start;
         padding: 20px;
-        gap: 20px;
+        gap: 10px;
 
         max-width: 770px;
     }
@@ -261,23 +252,23 @@
         justify-content: space-between;
         flex-direction: column;
         flex-wrap: nowrap;
-        gap: 20px;
         max-width: 522px;
+        width: 100%;
     }
     .profile__placeholder {
         width: 100%;
     }
-    .profile__placeholder:nth-child(-n + 2) {
+    /* .profile__placeholder:nth-child(-n + 2) {
         flex-basis: 100%;
     }
     .profile__placeholder:nth-child(3),
     .profile__placeholder:nth-child(5) {
         margin-top: auto;
         margin-bottom: auto;
-    }
-    .profile__email-verified {
+    } */
+    /* .profile__email-verified {
         margin-bottom: auto;
-    }
+    } */
     .profile__btn-save {
         /* align-self: flex-start; */
         flex-basis: 50%;
@@ -291,14 +282,6 @@
     }
     .load-video__title,
     .load-audio__title {
-        font-family: "Open Sans";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 100%;
-        text-align: left;
-        color: #000000;
-
         margin-bottom: 16px;
     }
     .load-video__area,
@@ -310,16 +293,6 @@
         border: 1.5px dashed #e0e0e0;
         border-radius: 8px;
         text-align: center;
-    }
-    .load-video__area-text,
-    .load-audio__area-text {
-        font-family: "Open Sans";
-        font-style: normal;
-        font-weight: 600;
-        font-size: 13px;
-        line-height: 130%;
-        text-align: center;
-        color: #000000;
     }
     .load-video__desc,
     .load-audio__desc {
