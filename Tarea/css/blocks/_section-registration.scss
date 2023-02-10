@@ -142,7 +142,7 @@
     line-height: 100%;
     color: #11112d;
 }
-.load__file {
+.load-files {
     width: 100%;
 }
 .load-video__title,
@@ -160,12 +160,13 @@
 .load-video__area,
 .load-audio__area {
     padding: 30px;
-    max-width: 690px;
+    /* max-width: 690px; */
     max-height: 100px;
     background: #ffffff;
     border: 1.5px dashed #e0e0e0;
     border-radius: 8px;
     text-align: center;
+    width: 100%;
 }
 .load-video__area-text,
 .load-audio__area-text {
