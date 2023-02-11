@@ -143,10 +143,10 @@ body {
   }
   .header__burger-link {
     display: block;
+    margin-right: auto;
+    margin-left: 20px;
   }
   .header__logo {
-    margin-left: 20px;
-    margin-right: auto;
     height: 45px;
   }
   .header__menu {
@@ -455,6 +455,23 @@ body {
   font-size: 15px;
   line-height: 100%;
   color: #11112d;
+}
+
+.profile__placeholder input {
+  max-width: 100%;
+  max-height: 100%;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  color: #000000;
+  border: none;
+  background: #ffffff;
+}
+
+.profile__placeholder select {
+  vertical-align: text-bottom;
 }
 
 .profile__info-phone {
