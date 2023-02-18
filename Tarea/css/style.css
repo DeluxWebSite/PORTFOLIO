@@ -344,6 +344,160 @@ body {
   }
 }
 /* ------- end section main ------- */
+/* ------- section authorization ------- */
+.authorization {
+  padding-top: 72px;
+  padding-bottom: 120px;
+}
+
+.authorization__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.authorization__img > img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.authorization__title {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 140%;
+  color: #11112d;
+  margin-bottom: 16px;
+}
+
+.authorization__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  max-width: 570px;
+}
+
+.authorization__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.authorization__form label,
+.authorization__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #44415c;
+}
+
+.authorization__checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.authorization__form-submit {
+  padding: 12px 24px;
+  text-decoration: none;
+  background: #275e76;
+  border-radius: 13px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  color: #ffffff;
+  border: none;
+}
+
+.authorization__input {
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 13px;
+}
+
+.authorization__text {
+  margin-bottom: 10px;
+}
+
+.authorization__form-link {
+  display: inline-block;
+  padding: 12px 24px;
+  text-decoration: none;
+  background: #275e76;
+  border-radius: 13px;
+  border: none;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* ------- media ------- */
+@media (max-width: 920px) {
+  .authorization {
+    padding-top: 52px;
+    padding-bottom: 72px;
+  }
+  .authorization__img {
+    display: none;
+  }
+  .authorization__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media (max-width: 550px) {
+  .authorization__title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 16px;
+  }
+  .authorization__input,
+  .authorization__form label {
+    width: 100%;
+  }
+}
+/* ------- end section authorization ------- */
 /* ------- section registration ------- */
 .registration {
   position: relative;
@@ -1048,286 +1202,6 @@ body {
         flex-wrap: wrap;
   }
 } /* ------- end section account ------- */
-/* ------- section login ------- */
-.login {
-  padding-top: 72px;
-  padding-bottom: 120px;
-}
-
-.login__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.login__img > img {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.login__account {
-  max-width: 570px;
-}
-
-.login__title {
-  font-family: "Commissioner";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 140%;
-  color: #11112d;
-  margin-bottom: 16px;
-}
-
-.login__desc {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: #44415c;
-  margin-bottom: 24px;
-}
-
-.login__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  gap: 10px;
-  margin-bottom: 36px;
-}
-
-.button-apple {
-  height: 46px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 13px 24px;
-  gap: 10px;
-  background: #11112d;
-  border-radius: 4px;
-  border: none;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 100%;
-  color: #ffffff;
-}
-
-.button-gogle {
-  height: 46px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 13px 24px;
-  gap: 10px;
-  background: #ea4335;
-  border-radius: 4px;
-  border: none;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 100%;
-  color: #ffffff;
-}
-
-.button-fb {
-  height: 46px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 13px 24px;
-  gap: 10px;
-  background: #2d79ed;
-  border-radius: 4px;
-  border: none;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 100%;
-  color: #ffffff;
-}
-
-.login__help-tel {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: #11112d;
-  margin-bottom: 16px;
-}
-
-.login__phone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 4px;
-  max-width: 516px;
-  height: 56px;
-  background: #275e76;
-  -webkit-box-shadow: 0px 12px 32px rgba(17, 17, 45, 0.17);
-          box-shadow: 0px 12px 32px rgba(17, 17, 45, 0.17);
-  border-radius: 4px;
-  margin-bottom: 11px;
-}
-
-.login__input-phone {
-  padding: 16px;
-  gap: 10px;
-  max-width: 355px;
-  width: 100%;
-  height: 48px;
-  background: #ffffff;
-  border-radius: 3px;
-  border: none;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 16px;
-  letter-spacing: -0.01em;
-  color: #11112d;
-}
-
-.login__button-submit {
-  padding: 0px 24px;
-  gap: 10px;
-  max-width: 153px;
-  width: 100%;
-  height: 48px;
-  background: #275e76;
-  border-radius: 13px;
-  border: none;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 100%;
-  color: #ffffff;
-}
-
-.login__agreement {
-  max-width: 511px;
-  width: 100%;
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 140%;
-  color: #44415c;
-}
-
-/* ------- media ------- */
-@media (max-width: 920px) {
-  .login__img {
-    display: none;
-  }
-  .login__container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-@media (max-width: 550px) {
-  .login {
-    padding-top: 52px;
-    padding-bottom: 72px;
-  }
-  .login__title {
-    font-family: "Commissioner";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 32px;
-    color: #11112d;
-    margin-bottom: 16px;
-  }
-  .login__desc {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 150%;
-    color: #44415c;
-    margin-bottom: 24px;
-  }
-  .login__buttons {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 10px;
-    width: 100%;
-    margin-bottom: 36px;
-  }
-  .button-apple {
-    width: 100%;
-  }
-  .button-gogle {
-    width: 100%;
-  }
-  .button-fb {
-    width: 100%;
-  }
-}
-/* ------- end section login ------- */
 /* ------- section map */
 .map {
   padding-bottom: 50px;
