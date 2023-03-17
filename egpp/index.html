@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сервис фиксации ТС с закрытыми ГРЗ в зоне ЕГПП </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header container">
+        <div class="header__logo"><img class="header__logo-img" src="img/logo.png" alt=""></div>
+        <h1 class="header__title">Сервис фиксации транспортных средств <br> с закрытыми ГРЗ в зоне ЕГПП</h1>
+    </header>
+    <main class="main container">
+        <div class="main__area">
+            <h2 class="main__title">Центральный район<br>Санкт-Петербурга</h2>
+            <div class="main__image"><img src="img/c.jpg" alt="Центральный район" class=""></div>
+        </div>
+        <div class="main__area">
+            <h2 class="main__title">Адмиралтейский район<br> Санкт-Петербурга</h2>
+            <div class="main__image"><img src="img/a.jpg" alt="Адмиралтейский район" class=""></div>
+        </div>
+        <div class="main__area">
+            <h2 class="main__title">Администрирование мест<br>для инвалидов</h2>
+            <div class="main__image"><img src="img/p.jpg" alt="парковка" class=""></div>
+        </div>
+        <div class="main__area">
+            <h2 class="main__title">Проверить ТС<br>ГИС ФРИ</h2>
+            <div class="main__image"><img src="img/fri.png" alt="" class=""></div>
+        </div>
+    </main>
+    <!-- modal -->
+    <div class="modal container">
+        <div class="modal__title">Центральный район. Фиксация транспортных средств <br>с закрытыми ГРЗ в зоне ЕГПП</div>
+
+        <form class="form" action="">
+            <div class="form__input">
+                <label class="form__input-title"> 1. ФИО сотрудника ГЦУП</label>
+                <select class="form__select" name=" 1. ФИО сотрудника ГЦУП" class="">
+                    <option value="">-</option>
+                    <option value="Маслов Алексей Васильевич">Маслов Алексей Васильевич</option>
+                    <option value="Балашов Алексей Игоревич">Балашов Алексей Игоревич</option>
+                    <option value="Жариков Игорь Анатольевич">Жариков Игорь Анатольевич</option>
+                    <option value="Костыльков Игорь Валентинович">Костыльков Игорь Валентинович</option>
+                    <option value="Мольво Дмитрий Сергеевич">Мольво Дмитрий Сергеевич</option>
+                    <option value="Раскатов Станислав Владимирович">Раскатов Станислав Владимирович</option>
+                    <option value="Чёмин Евгений Алексеевич">Чёмин Евгений Алексеевич</option>
+                    <option value="Чурсин Егор Николаевич">Чурсин Егор Николаевич</option>
+                </select>
+            </div>
+            <div class="form__input">
+                <label for="second__select" class="form__input-title">2. Государственный
+                    регистрационный номер ТС </label>
+                <input class="form__input-btn" type="text" name="2. Государственный регистрационный номер ТС " value=""
+                    placeholder="А001АА178">
+            </div>
+            <div class="form__input">
+                <label class="form__input-title">3. Адрес места фиксации</label>
+                <select name="3. Адрес места фиксации" class="form__select">
+                    <option value="">-</option>
+                    <option value="1-я Советская ул. ">1-я Советская ул. </option>
+                    <option value="2-я Советская ул. ">2-я Советская ул. </option>
+                    <option value="3-я Советская ул. ">3-я Советская ул. </option>
+                    <option value="4-я Советская ул. ">4-я Советская ул. </option>
+                    <option value="5-я Советская ул. ">5-я Советская ул. </option>
+                    <option value="6-я Советская ул. ">6-я Советская ул. </option>
+                    <option value="7-я Советская ул.">7-я Советская ул.</option>
+                    <option value="8-я Советская ул. ">8-я Советская ул. </option>
+                    <option value="9-я Советская ул. ">9-я Советская ул. </option>
+                    <option value="10-я Советская ул. ">10-я Советская ул. </option>
+                    <option value="Адмиралтейский пр. ">Адмиралтейский пр. </option>
+                    <option value="Александра Невского ул.">Александра Невского ул.</option>
+                    <option value="Александра Невского пл.">Александра Невского пл.</option>
+                    <option value="Амбарная ул. ">Амбарная ул. </option>
+                    <option value="Апраксин пер. ">Апраксин пер. </option>
+                    <option value="Аптекарский пер. ">Аптекарский пер. </option>
+                    <option value="Артиллерийская ул. ">Артиллерийская ул. </option>
+                    <option value="Артиллерийский пер. ">Артиллерийский пер. </option>
+                    <option value="Атаманская ул. ">Атаманская ул. </option>
+                    <option value="Бакунина пр.">Бакунина пр.</option>
+                    <option value="Банковский пер. ">Банковский пер. </option>
+                    <option value="Басков пер. ">Басков пер. </option>
+                    <option value="Белинского ул.">Белинского ул.</option>
+                    <option value="Белинского пл.">Белинского пл.</option>
+                    <option value="Бонч-Бруевича ул.">Бонч-Бруевича ул.</option>
+                    <option value="Большая Конюшенная ул. ">Большая Конюшенная ул. </option>
+                    <option value="Большая Морская ул. ">Большая Морская ул. </option>
+                    <option value="Большая Московская ул. ">Большая Московская ул. </option>
+                    <option value="Боровая ул. ">Боровая ул. </option>
+                    <option value="Бородинская ул. ">Бородинская ул. </option>
+                    <option value="Владимирский пр.">Владимирский пр.</option>
+                    <option value="Водопроводный пер. ">Водопроводный пер. </option>
+                    <option value="Робеспьера наб.">Робеспьера наб.</option>
+                    <option value="Виленский пер. ">Виленский пер. </option>
+                    <option value="Волоколамский пер. ">Волоколамский пер. </option>
+                    <option value="Волынский пер.">Волынский пер.</option>
+                    <option value="Воронежская ул. ">Воронежская ул. </option>
+                    <option value="Восстания ул.">Восстания ул.</option>
+                    <option value="Восстания пл.">Восстания пл.</option>
+                    <option value="Гагаринская ул. ">Гагаринская ул. </option>
+                    <option value="Гангутская ул.">Гангутская ул.</option>
+                    <option value="Гончарная ул. ">Гончарная ул. </option>
+                    <option value="Гороховая ул. ">Гороховая ул. </option>
+                    <option value="Госпитальная ул. ">Госпитальная ул. </option>
+                    <option value="Графский пер. ">Графский пер. </option>
+                    <option value="Греческий пр. ">Греческий пр. </option>
+                    <option value="Грибоедова наб. канала.">Грибоедова наб. канала.</option>
+                    <option value="Гродненский пер.">Гродненский пер.</option>
+                    <option value="Дворцовая наб. ">Дворцовая наб. </option>
+                    <option value="Дворцовая пл. ">Дворцовая пл. </option>
+                    <option value="Дворцовый проезд ">Дворцовый проезд </option>
+                    <option value="Дегтярная ул. ">Дегтярная ул. </option>
+                    <option value="Дегтярный пер. ">Дегтярный пер. </option>
+                    <option value="пер. Джамбула ">пер. Джамбула </option>
+                    <option value="Дмитровский пер. ">Дмитровский пер. </option>
+                    <option value="Днепропетровская ул. ">Днепропетровская ул. </option>
+                    <option value="Достоевского ул.">Достоевского ул.</option>
+                    <option value="Друскеникский пер. ">Друскеникский пер. </option>
+                    <option value="Думская ул. ">Думская ул. </option>
+                    <option value="Евгеньевская ул. ">Евгеньевская ул. </option>
+                    <option value="Жуковского ул.">Жуковского ул.</option>
+                    <option value="Загородный пр. ">Загородный пр. </option>
+                    <option value="Замковая ул. ">Замковая ул. </option>
+                    <option value="Захарьевская ул. ">Захарьевская ул. </option>
+                    <option value="Заячий пер. ">Заячий пер. </option>
+                    <option value="Звенигородская ул. ">Звенигородская ул. </option>
+                    <option value="Зимней канавки наб.">Зимней канавки наб.</option>
+                    <option value="Зодчего Росси ул.">Зодчего Росси ул.</option>
+                    <option value="Инженерная ул. ">Инженерная ул. </option>
+                    <option value="Искусств пл.">Искусств пл.</option>
+                    <option value="Исполкомская ул. ">Исполкомская ул. </option>
+                    <option value="Итальянская ул. ">Итальянская ул. </option>
+                    <option value="Кавалергардская ул. ">Кавалергардская ул. </option>
+                    <option value="Казанская пл. ">Казанская пл. </option>
+                    <option value="Казанская ул. ">Казанская ул. </option>
+                    <option value="Калужский пер. ">Калужский пер. </option>
+                    <option value="Караванная ул. ">Караванная ул. </option>
+                    <option value="Кирилловская ул.">Кирилловская ул.</option>
+                    <option value="Кирочная ул. ">Кирочная ул. </option>
+                    <option value="Кирпичный пер. ">Кирпичный пер. </option>
+                    <option value="Кленовая ул. ">Кленовая ул. </option>
+                    <option value="Ковенский пер.">Ковенский пер.</option>
+                    <option value="Колокольная ул. ">Колокольная ул. </option>
+                    <option value="Коломенская ул. ">Коломенская ул. </option>
+                    <option value="Конная пл. ">Конная пл. </option>
+                    <option value="Конная ул. ">Конная ул. </option>
+                    <option value="Константина Заслонова ул.">Константина Заслонова ул.</option>
+                    <option value="Конюшенная пл. ">Конюшенная пл. </option>
+                    <option value="Конюшенный пер. ">Конюшенный пер. </option>
+                    <option value="Короленко ул.">Короленко ул.</option>
+                    <option value="Костромская ул. ">Костромская ул. </option>
+                    <option value="Красного Текстильщика ул.">Красного Текстильщика ул.</option>
+                    <option value="Красноборский пер. ">Красноборский пер. </option>
+                    <option value="Кременчугская ул. ">Кременчугская ул. </option>
+                    <option value="Кричевский пер. ">Кричевский пер. </option>
+                    <option value="Круглый пер. ">Круглый пер. </option>
+                    <option value="Крылова пер.">Крылова пер.</option>
+                    <option value="Кузнечный пер. ">Кузнечный пер. </option>
+                    <option value="Кутузова наб.">Кутузова наб.</option>
+                    <option value="Лаврский проезд ">Лаврский проезд </option>
+                    <option value="Лебяжьей канавки наб.">Лебяжьей канавки наб.</option>
+                    <option value="Лиговский пр. ">Лиговский пр. </option>
+                    <option value="Лиговский переулок">Лиговский переулок</option>
+                    <option value="Литейный пр. ">Литейный пр. </option>
+                    <option value="Ломоносова пл.">Ломоносова пл.</option>
+                    <option value="Ломоносова ул.">Ломоносова ул.</option>
+                    <option value="Малая Морская ул. ">Малая Морская ул. </option>
+                    <option value="Малая Московская ул. ">Малая Московская ул. </option>
+                    <option value="Манежный пер. ">Манежный пер. </option>
+                    <option value="Манежная пл. ">Манежная пл. </option>
+                    <option value="Марата ул.">Марата ул.</option>
+                    <option value="Мариинский проезд ">Мариинский проезд </option>
+                    <option value="Маяковского ул.">Маяковского ул.</option>
+                    <option value="Мелитопольский пер. ">Мелитопольский пер. </option>
+                    <option value="Миллионная ул. ">Миллионная ул. </option>
+                    <option value="Миргородская ул. ">Миргородская ул. </option>
+                    <option value="Митавский пер. ">Митавский пер. </option>
+                    <option value="Михайловский проезд ">Михайловский проезд </option>
+                    <option value="Михайловская ул. ">Михайловская ул. </option>
+                    <option value="Моисеенко ул.">Моисеенко ул.</option>
+                    <option value="Мойки наб. р.">Мойки наб. р.</option>
+                    <option value="Москательный пер. ">Москательный пер. </option>
+                    <option value="Мошков пер. ">Мошков пер. </option>
+                    <option value="Моховая ул. ">Моховая ул. </option>
+                    <option value="Мраморный пер. ">Мраморный пер. </option>
+                    <option value="Мучной пер. ">Мучной пер. </option>
+                    <option value="Мытнинская ул.">Мытнинская ул.</option>
+                    <option value="Некрасова ул.">Некрасова ул.</option>
+                    <option value="Невский пр. ">Невский пр. </option>
+                    <option value="Новгородская ул.">Новгородская ул.</option>
+                    <option value="Обводного кан. наб.">Обводного кан. наб.</option>
+                    <option value="Обуховской Обороны пр.">Обуховской Обороны пр.</option>
+                    <option value="Озерной пер. ">Озерной пер. </option>
+                    <option value="Одесская ул. ">Одесская ул. </option>
+                    <option value="Орловская ул. ">Орловская ул. </option>
+                    <option value="Орловский пер. ">Орловский пер. </option>
+                    <option value="Оружейника Фёдорова ул.">Оружейника Фёдорова ул.</option>
+                    <option value="Островского пл.">Островского пл.</option>
+                    <option value="Остропольский пер. ">Остропольский пер. </option>
+                    <option value="Очаковская ул. ">Очаковская ул. </option>
+                    <option value="Павлоградский пер. ">Павлоградский пер. </option>
+                    <option value="Парадная ул. ">Парадная ул. </option>
+                    <option value="Перекупной пер. ">Перекупной пер. </option>
+                    <option value="Песковский пер. ">Песковский пер. </option>
+                    <option value="Пестеля ул.">Пестеля ул.</option>
+                    <option value="Печатника Григорьева ул.">Печатника Григорьева ул.</option>
+                    <option value="Поварской пер. ">Поварской пер. </option>
+                    <option value="Полтавский проезд ">Полтавский проезд </option>
+                    <option value="Полтавская ул. ">Полтавская ул. </option>
+                    <option value="Потемкинская ул. ">Потемкинская ул. </option>
+                    <option value="Правды ул.">Правды ул.</option>
+                    <option value="Преображенская пл. ">Преображенская пл. </option>
+                    <option value="Пролетарской Диктатуры ул.">Пролетарской Диктатуры ул.</option>
+                    <option
+                        value="проезд без названия от пр.Бакунина до Херсонского проезда (за перехватывающей парковой)">
+                        проезд без названия от пр.Бакунина до Херсонского проезда (за перехватывающей парковой)
+                    </option>
+                    <option value="Проезд под путепроводом Литейного моста (от наб. Кутузова до наб. Робеспьера)">
+                        Проезд под путепроводом Литейного моста (от наб. Кутузова до наб. Робеспьера)</option>
+                    <option
+                        value="проезд вдоль Марсова поля (между Миллионной ул., наб.Лебяжьей канавки и наб. р. Мойки)">
+                        проезд вдоль Марсова поля (между Миллионной ул., наб.Лебяжьей канавки и наб. р. Мойки)
+                    </option>
+                    <option value="Профессора Ивашенцова ул.">Профессора Ивашенцова ул.</option>
+                    <option value="Прудковский пер. ">Прудковский пер. </option>
+                    <option value="Пушкинская ул. ">Пушкинская ул. </option>
+                    <option value="Радищева пер.">Радищева пер.</option>
+                    <option value="Радищева ул.">Радищева ул.</option>
+                    <option value="Разъезжая ул. ">Разъезжая ул. </option>
+                    <option value="Растрелли пл.">Растрелли пл.</option>
+                    <option value="Робеспьера наб.">Робеспьера наб.</option>
+                    <option value="Роменская ул. ">Роменская ул. </option>
+                    <option value="Рубинштейна ул.">Рубинштейна ул.</option>
+                    <option value="Рылеева ул.">Рылеева ул.</option>
+                    <option value="Рязанский пер. ">Рязанский пер. </option>
+                    <option value="Садовая ул. ">Садовая ул. </option>
+                    <option value="Саперный пер. ">Саперный пер. </option>
+                    <option value="Свечной пер. ">Свечной пер. </option>
+                    <option value="Сергея Тюленина пер.">Сергея Тюленина пер.</option>
+                    <option value="Синопская наб. ">Синопская наб. </option>
+                    <option value="Смольная наб. ">Смольная наб. </option>
+                    <option value="Смольного ул.">Смольного ул.</option>
+                    <option value="Смольный пр. ">Смольный пр. </option>
+                    <option value="Солдатский пер. ">Солдатский пер. </option>
+                    <option value="Соляной пер. ">Соляной пер. </option>
+                    <option value="Социалистическая ул. ">Социалистическая ул. </option>
+                    <option value="Ставропольская ул. ">Ставропольская ул. </option>
+                    <option value="Старорусская ул. ">Старорусская ул. </option>
+                    <option value="Стремянная ул. ">Стремянная ул. </option>
+                    <option value="Суворовский пр. ">Суворовский пр. </option>
+                    <option value="Сухопутный пер. ">Сухопутный пер. </option>
+                    <option value="Суворовская пл. ">Суворовская пл. </option>
+                    <option value="Съезд N 1 (с пр.Обуховской Обороны на наб.Обводного кан., д.3)">Съезд N 1 (с
+                        пр.Обуховской Обороны на наб.Обводного кан., д.3)</option>
+                    <option value="Съезд N 2 (с пр.Обуховской Обороны на наб.Обводного кан., д.3)">Съезд N 2 (с
+                        пр.Обуховской Обороны на наб.Обводного кан., д.3)</option>
+                    <option value="Таврическая ул. ">Таврическая ул. </option>
+                    <option value="Таврический пер. ">Таврический пер. </option>
+                    <option value="Тверская ул. ">Тверская ул. </option>
+                    <option value="Тележный пер. ">Тележный пер. </option>
+                    <option value="Тележная ул. ">Тележная ул. </option>
+                    <option value="Торговый пер.">Торговый пер.</option>
+                    <option value="Транспортный пер. ">Транспортный пер. </option>
+                    <option value="Тульская ул. ">Тульская ул. </option>
+                    <option value="Ульяны Громовой пер.">Ульяны Громовой пер.</option>
+                    <option value="Фонтанки наб. р.">Фонтанки наб. р.</option>
+                    <option value="Фонтанная ул. ">Фонтанная ул. </option>
+                    <option value="Фуражный пер. ">Фуражный пер. </option>
+                    <option value="Фурштатская ул. ">Фурштатская ул. </option>
+                    <option value="Харьковская ул.">Харьковская ул.</option>
+                    <option value="Херсонская ул. ">Херсонская ул. </option>
+                    <option value="Херсонский проезд ">Херсонский проезд </option>
+                    <option value="Хохрякова ул.">Хохрякова ул.</option>
+                    <option value="Чайковского ул.">Чайковского ул.</option>
+                    <option value="Чебоксарский пер. ">Чебоксарский пер. </option>
+                    <option value="Чернорецкий пер. ">Чернорецкий пер. </option>
+                    <option value="Чернышевского пр.">Чернышевского пр.</option>
+                    <option value="Черняховского ул.">Черняховского ул.</option>
+                    <option value="Чехова ул.">Чехова ул.</option>
+                    <option value="Шведский пер.">Шведский пер.</option>
+                    <option value="Шпалерная ул. ">Шпалерная ул. </option>
+                    <option value="Ярославская ул. ">Ярославская ул. </option>
+                    <option value="Тюшина ул.">Тюшина ул.</option>
+                    <option value="Щербаков пер.">Щербаков пер.</option>
+                </select>
+            </div>
+            <div class="form__input">
+                <label class="form__input-title">4. Номер
+                    дома</label>
+                <input type="text" name="4. Номер дома" class="form__input-btn" value="">
+            </div>
+            <div class="form__input">
+                <label class="form__input-title">5. Фото №1 (закрытый ГРЗ)</label>
+                <input type="file" accept="file_extension, image/*" multiple value="" class="form__input-file"
+                    name="5. Фото 1 закрытый ГРЗ" placeholder="Загрузить файл">
+            </div>
+            <div class="form__input">
+                <label class="form__input-title">6. Фото №2 (открытый ГРЗ)</label>
+                <input type="file" accept="file_extension, image/*" multiple value="" class="form__input-file"
+                    name="6. Фото 1 закрытый ГРЗ" placeholder="Загрузить файл">
+            </div>
+            <div class="form__input submit">
+                <button type="submit" class="form__submit">Направить заявку</button>
+            </div>
+        </form>
+
+    </div>
+    <!-- end modal -->
+    <div class="footer">
+        <div class="text-center">
+            <small class="copyright"> &copy; 2023 Copyright</small>
+        </div>
+    </div>
+</body>
+
+</html>
