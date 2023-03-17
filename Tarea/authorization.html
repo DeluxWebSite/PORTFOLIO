@@ -32,9 +32,9 @@
     <!-- header -->
     <header class="header">
         <div class="header__container container">
+            <a href="index.html"><img src="img/logo2.png" alt="EMPLEO" class="header__logo"></a>
             <a href="#" class="header__burger-link"><img src="img/burger-menu.svg" alt="menu"
                     class="header__burger-img"></a>
-            <a href="index.html"><img src="img/logo2.png" alt="EMPLEO" class="header__logo"></a>
             <ul class="header__menu menu">
                 <li class="menu__item lang-es active"><a class="menu__item-link" href="#">Categorías de empleo</a></li>
                 <li class="menu__item  lang-en hiden"><a class="menu__item-link" href="#">Categories of employment</a>
@@ -51,52 +51,61 @@
         </div>
     </header>
     <!-- end header -->
-    <!-- section logIn -->
-    <section class="login">
-        <div class="login__container container">
-            <div class="login__account">
-                <h1 class="login__title lang-es active"><a href="registration.html">Acceso</a></h1>
-                <h1 class="login__title lang-en hiden"><a href="registration.html">Access</a></h1>
-                <p class="login__desc lang-es active">Para crear tareas y acceder a secciones personales, debe pasar por
-                    un rápido
-                    registro a través de servicios de autorización.</p>
-                <p class="login__desc lang-en hiden">To create tasks and access personal sections, you must go through
-                    a quick
-                    registration through authorization services.</p>
-                <div class="login__buttons">
-                    <button class="button-apple notranslate"><img src="img/icon-apple.svg" alt="Apple"> Apple</button>
-                    <button class="button-gogle notranslate"><img src="img/icon-google-plus.svg" alt="Gogle+">
-                        Google</button>
-                    <button class="button-fb notranslate"><img src="img/icon-facebook.svg" alt="Facebook">
-                        Facebook</button>
-                </div>
-                <p class="login__help-tel lang-es active">O cuando <a class="help-tel__link" href="#">asistencia
-                        telefónica</a></p>
-                <p class="login__help-tel lang-en hiden">Or when <a class="help-tel__link" href="#">attendance
-                        telephone</a></p>
-                <div class="login__phone lang-es active">
-                    <input class="login__input-phone lang-es active" type="tel" name="" id=""
-                        placeholder="Número de teléfono"><button class="login__button-submit lang-es active">para
-                        obtener el código</button>
-                </div>
-                <div class="login__phone lang-en hiden">
-                    <input class="login__input-phone lang-en hiden" type="tel" name="" id=""
-                        placeholder="Phone number"><button class="login__button-submit lang-en hiden">to get the
-                        code</button>
-                </div>
-                <p class="login__agreement lang-es active">Al hacer clic en el botón "Obtener código", acepta el
-                    procesamiento de su
-                    información personal en de conformidad con el Acuerdo.</p>
-                <p class="login__agreement lang-en hiden">By clicking the "Get Code" button, you agree to the processing
-                    of your
-                    personal information in accordance with the Agreement.</p>
+    <!-- section authorization -->
+    <section class="authorization">
+        <div class="authorization__container container">
+            <div class="authorization__inner">
+                <h1 class="authorization__title lang-es active">Autorización</h1>
+                <h1 class="authorization__title lang-en hiden">Authorization</h1>
+                <form action="#" class="authorization__form">
+                    <label class="lang-es active" for=""> iniciar de sesión email de acceso<br>
+                        <input class="authorization__input" type="email" name="" id="">
+                    </label>
+                    <label class="lang-en hiden" for=""> log in email address <br>
+                        <input class="authorization__input" type="email" name="" id="">
+                    </label>
+                    <label class="lang-es active" for=""> tu contraseña &nbsp;&nbsp;&nbsp;<a href="#" class="">¿no la
+                            recuerdas?</a><br>
+                        <input class="authorization__input" type="password" name="" id=""></label>
+                    <label class="lang-en hiden" for=""> Your password &nbsp;&nbsp;&nbsp;<a href="#" class="">Forgot
+                            your
+                            password?</a>
+                        <br>
+                        <input class="authorization__input" type="password" name="" id=""></label>
+                    <label class="authorization__checkbox lang-es active" for=""> &nbsp; <input class="" type="checkbox"
+                            name="" id="">
+                        &nbsp;
+                        Recordar tus datos </label>
+                    <label class="authorization__checkbox lang-en hiden" for=""> &nbsp; <input class="" type="checkbox"
+                            name="" id="">
+                        &nbsp;
+                        Remember your details </label>
+                    <button class="authorization__form-submit lang-es active" type="submit">Entrar en EMPLEO</button>
+                    <button class="authorization__form-submit lang-en hiden" type="submit">Enter EMPLEO</button>
+                </form>
+                <p class="authorization__text lang-es active">¿No eres usuario de empleo.today?
+                </p>
+                <p class="authorization__text lang-en hiden">Haven't registered with empleo.today yet? </p>
+                <a class="authorization__form-link lang-es active" href="registration.html">Apúntate como particular
+                </a>
+                <a class="authorization__form-link lang-en hiden" href="registration.html">Sign up as a private user
+                </a>
+                <p class="authorization__text lang-es active">¿Eres un empleador?
+                </p>
+                <p class="authorization__text lang-en hiden">Are you an employer?
+                </p>
+                <a class="authorization__form-link lang-es active" href="#" class="">Consulta los servicios para
+                    profesionales</a>
+                <a class="authorization__form-link lang-en hiden" href="#" class="">Check out our services for
+                    professionals</a>
             </div>
-            <div class="login__img">
+
+            <div class="authorization__img">
                 <img src="img/girl.svg" alt="image">
             </div>
         </div>
     </section>
-    <!-- end section logIn -->
+    <!-- end section authorization -->
     <!-- footer -->
     <footer class="footer">
         <div class="footer__container container">
@@ -104,7 +113,8 @@
                 <div class="footer__heading">
                     <img src="img/logo2.png" alt="EMPLEO" class="footer__logo">
                     <div class="footer__title lang-es active">Servicio de selección de trabajo cerca de casa y más</div>
-                    <div class="footer__title lang-en hiden">Job selection service close to home and more</div>
+                    <div class="footer__title lang-en hiden">Job search service close to home and more
+                    </div>
                 </div>
                 <ul class="footer__menu">
                     <li class="footer__menu-item lang-es active"><a href="#" class="footer__menu-link">Cómo convertirse

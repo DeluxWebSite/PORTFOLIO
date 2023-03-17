@@ -18,9 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;600&display=swap" rel="stylesheet">
     <!-- end fonts -->
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="js/map-gogle.js"></script>
 
 </head>
 
@@ -31,7 +29,6 @@
             <img src="img/lang/lang__en.png" alt="en" data-lang="en" class="language__img language__img-en">
         </div>
     </section>
-
     <!-- header -->
     <header class="header">
         <div class="header__container container">
@@ -54,66 +51,52 @@
         </div>
     </header>
     <!-- end header -->
-
-    <!-- section main -->
-    <main class="main">
-        <div class="main__container container">
-            <div class="wrap">
-                <h1 class="main__title lang-es active">Encuentra tu trabajo cerca de casa</h1>
-                <h1 class="main__title lang-en hiden">Find a job close to home</h1>
-                <span class="main__subtitle lang-es active">Cualquier titulación, experiencia y especialización</span>
-                <span class="main__subtitle lang-en hiden">Any qualification, experience and specialization</span>
-                <div class="main__inputs lang-es active"><input class="main__input-text" type="search" name="" id=""
-                        placeholder="Campo de actividad"><input class="main__input-city" type="search"
-                        placeholder="Área de búsqueda"><button class="main__button-submint" type="submit"> <img
-                            src="img/search-icon.svg" alt="">&nbsp;Buscar</button>
+    <!-- section logIn -->
+    <section class="login">
+        <div class="login__container container">
+            <div class="login__account">
+                <h1 class="login__title lang-es active"><a href="registration.html">Acceso</a></h1>
+                <h1 class="login__title lang-en hiden"><a href="registration.html">Access</a></h1>
+                <p class="login__desc lang-es active">Para crear tareas y acceder a secciones personales, debe pasar por
+                    un rápido
+                    registro a través de servicios de autorización.</p>
+                <p class="login__desc lang-en hiden">To create tasks and access personal sections, you must go through
+                    a quick
+                    registration through authorization services.</p>
+                <div class="login__buttons">
+                    <button class="button-apple notranslate"><img src="img/icon-apple.svg" alt="Apple"> Apple</button>
+                    <button class="button-gogle notranslate"><img src="img/icon-google-plus.svg" alt="Gogle+">
+                        Google</button>
+                    <button class="button-fb notranslate"><img src="img/icon-facebook.svg" alt="Facebook">
+                        Facebook</button>
                 </div>
-                <div class="main__inputs lang-en hiden"><input class="main__input-text" type="search" name="" id=""
-                        placeholder="Field of activity"><input class="main__input-city" type="search"
-                        placeholder="Search area"><button class="main__button-submint" type="submit"> <img
-                            src="img/search-icon.svg" alt="">&nbsp;Find</button>
+                <p class="login__help-tel lang-es active">O cuando <a class="help-tel__link" href="#">asistencia
+                        telefónica</a></p>
+                <p class="login__help-tel lang-en hiden">Or when <a class="help-tel__link" href="#">attendance
+                        telephone</a></p>
+                <div class="login__phone lang-es active">
+                    <input class="login__input-phone lang-es active" type="tel" name="" id=""
+                        placeholder="Número de teléfono"><button class="login__button-submit lang-es active">para
+                        obtener el código</button>
                 </div>
+                <div class="login__phone lang-en hiden">
+                    <input class="login__input-phone lang-en hiden" type="tel" name="" id=""
+                        placeholder="Phone number"><button class="login__button-submit lang-en hiden">to get the
+                        code</button>
+                </div>
+                <p class="login__agreement lang-es active">Al hacer clic en el botón "Obtener código", acepta el
+                    procesamiento de su
+                    información personal en de conformidad con el Acuerdo.</p>
+                <p class="login__agreement lang-en hiden">By clicking the "Get Code" button, you agree to the processing
+                    of your
+                    personal information in accordance with the Agreement.</p>
             </div>
-        </div>
-    </main>
-    <!-- end section main -->
-    <!-- section map -->
-    <section class="map">
-        <div class="map__container container">
-            <h2 class="map__title lang-es active">Dibujar en el mapa</h2>
-            <h2 class="map__title lang-en hiden">Draw on the map</h2>
-            <div class="map__wrap">
-                <div id="map"></div>
-                <div class="map__pointer">
-                    <div class="map__pointer-item lang-es active">
-                        <nobr><img src="img/icon-point-green.svg" alt="">Sin experiencia ni diploma</nobr>
-                    </div>
-                    <div class="map__pointer-item lang-en hiden">
-                        <nobr><img src="img/icon-point-green.svg" alt="">No experience or diploma</nobr>
-                    </div>
-                    <div class="map__pointer-item lang-es active">
-                        <nobr><img src="img/icon-point-violet.svg" alt="">Con experiencia y sin diplomas</nobr>
-                    </div>
-                    <div class="map__pointer-item lang-en hiden">
-                        <nobr><img src="img/icon-point-violet.svg" alt="">With experience and no diplomas</nobr>
-                    </div>
-                    <div class="map__pointer-item lang-es active">
-                        <nobr><img src="img/icon-point-orange.svg" alt="">Con diplomas y títulos</nobr>
-                    </div>
-                    <div class="map__pointer-item lang-en hiden">
-                        <nobr><img src="img/icon-point-orange.svg" alt="">With diplomas and qualifications</nobr>
-                    </div>
-                    <div class="map__pointer-item lang-es active">
-                        <nobr><img src="img/icon-point.svg" alt="">Empleo temporal </nobr>
-                    </div>
-                    <div class="map__pointer-item lang-en hiden">
-                        <nobr><img src="img/icon-point.svg" alt="">Short term work </nobr>
-                    </div>
-                </div>
+            <div class="login__img">
+                <img src="img/girl.svg" alt="image">
             </div>
         </div>
     </section>
-    <!-- end section map -->
+    <!-- end section logIn -->
     <!-- footer -->
     <footer class="footer">
         <div class="footer__container container">
@@ -178,10 +161,6 @@
     </footer>
     <!-- end footer -->
     <script src="js/translate.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA62POV5iAV5b1CqmZPBb1MJy1L0H3VTA&region=ES&language=es&callback=initMap"
-        defer></script>
-
 </body>
 
 </html>

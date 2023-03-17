@@ -33,9 +33,9 @@
     <!-- header -->
     <header class="header">
         <div class="header__container container">
+            <a href="index.html"><img src="img/logo2.png" alt="EMPLEO" class="header__logo"></a>
             <a href="#" class="header__burger-link"><img src="img/burger-menu.svg" alt="menu"
                     class="header__burger-img"></a>
-            <a href="index.html"><img src="img/logo2.png" alt="EMPLEO" class="header__logo"></a>
             <ul class="header__menu menu">
                 <li class="menu__item lang-es active"><a class="menu__item-link" href="#">Categorías de empleo</a></li>
                 <li class="menu__item  lang-en hiden"><a class="menu__item-link" href="#">Categories of employment</a>
@@ -64,16 +64,16 @@
                     <figcaption class="lang-es active"><a href="#">Sube una foto</a></figcaption>
                     <figcaption class="lang-en hiden"><a href="#">Upload photo</a></figcaption>
                 </figure>
-                <div class="profile">
-                    <div class="profile__placeholder lang-es active">Nombre : <span
-                            class="profile__firstname">Марина</span></div>
-                    <div class="profile__placeholder lang-en hiden">First Name : <span
-                            class="profile__firstname">Марина</span></div>
-                    <div class="profile__placeholder lang-es active">Apellidos: <span
-                            class="profiler__secondname">Нестерова</span>
+                <form class="profile" action="#">
+                    <div class="profile__placeholder lang-es active">Nombre : <input class="profile__firstname"
+                            type="text" name="" id="" placeholder="Nombre" required></div>
+                    <div class="profile__placeholder lang-en hiden">First Name : <input class="profile__firstname"
+                            type="text" name="" id="" placeholder="Name" required></div>
+                    <div class="profile__placeholder lang-es active">Apellidos: <input class="profiler__secondname"
+                            type="text" name="" id="" placeholder="Apellidos">
                     </div>
-                    <div class="profile__placeholder lang-en hiden">Last Name: <span
-                            class="profiler__secondname">Нестерова</span>
+                    <div class="profile__placeholder lang-en hiden">Last Name: <input class="profiler__secondname"
+                            class="profiler__secondname" type="text" name="" id="" placeholder="Last Name">
                     </div>
                     <!-- <div class="profile__placeholder lang-es active">Segundo apellidos: <span
                             class="profiler__secondname"></span>
@@ -92,7 +92,7 @@
                             <option value="8">+8</option>
                             <option value="9">+9</option>
                         </select>
-                        <span class="">(___)___-__-__</span>
+                        <input type="tel" placeholder="123-123-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
                     </div>
                     <div class="profile__placeholder lang-en hiden">Contact phone: <select name="number" id="">
                             <option value="1">+1</option>
@@ -104,29 +104,29 @@
                             <option value="7">+7</option>
                             <option value="8">+8</option>
                             <option value="9">+9</option>
-                        </select><span class="">
-                            (___)___-__-__</span>
+                        </select><input type="tel" placeholder="123-123-1234" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            required>
                     </div>
                     <span class="profile__info-phone lang-es active">los empleadores verán su número y podrán
                         contactarlo.</span>
                     <span class="profile__info-phone lang-en hiden">employers will see your number and be able to
                         contact you.</span>
-                    <div class="profile__placeholder lang-es active">Correo electrónico: <span class="">
-                            marinanesterova@mail.ru</span>
+                    <div class="profile__placeholder lang-es active">Correo electrónico:
+                        <input type="email" name="" id="" placeholder="email@mail.com" required>
                     </div>
-                    <div class="profile__placeholder lang-en hiden">Email address: <span class="">
-                            marinanesterova@mail.ru</span>
+                    <div class="profile__placeholder lang-en hiden">Email address: <input type="email" name="" id=""
+                            placeholder="email@mail.com" required>
                     </div>
                     <span class="profile__email-verified lang-es active">Dirección de correo electrónico
                         confirmada</span>
                     <span class="profile__email-verified lang-en hiden">Email address confirmed</span>
                     <div class="profile-btns">
-                        <button class="profile__btn-save lang-es active">Guardar y continuar</button>
-                        <button class="profile__btn-save lang-en hiden">save and continue</button>
+                        <button class="profile__btn-save lang-es active" type="submit">Guardar y continuar</button>
+                        <button class="profile__btn-save lang-en hiden" type="submit">save and continue</button>
                         <button class="profile__btn-exit lang-es active">Atrás</button>
                         <button class="profile__btn-exit lang-en hiden">Back</button>
                     </div>
-                </div>
+                </form>
             </div>
             <div class="load-files">
                 <h2 class="load-video__title lang-es active">Qrabar o subir un video</h2>
@@ -134,7 +134,7 @@
                 <div class="load-video__area">
                     <img src="img/load-icon.svg" alt="load" class="">
                     <p class="load-video__area-text lang-es active">Haga clic o arrastrar el vídeo</p>
-                    <p class="load-video__area-text lang-en hiden">click or drag video</p>
+                    <p class="load-video__area-text lang-en hiden">click or drag the video</p>
                 </div>
                 <span class="load-video__desc lang-es active">Grabe una breve presentación. Siga las instrucciones en la
                     ventana.
@@ -148,11 +148,11 @@
             </div>
             <div class="load-files">
                 <h2 class="load-audio__title lang-es active">Descargar audio</h2>
-                <h2 class="load-audio__title lang-en hiden">Record or upload a audio</h2>
+                <h2 class="load-audio__title lang-en hiden">Record or upload an audio</h2>
                 <div class="load-audio__area">
                     <img src="img/load-icon.svg" alt="load" class="">
                     <p class="load-audio__area-text lang-es active">Hacer clic o arrastrar audio</p>
-                    <p class="load-audio__area-text lang-en hiden">click or drag audio</p>
+                    <p class="load-audio__area-text lang-en hiden">click or drag an audio</p>
                 </div>
                 <span class="load-audio__desc lang-es active">Grabe una breve presentación de audio, salude a al
                     empleador. Audio
@@ -175,14 +175,14 @@
                 <h2 class="notifications__title lang-es active">Alertas de trabajo</h2>
                 <h2 class="notifications__title lang-en hiden">Job alerts</h2>
                 <input type="checkbox" name="" id="notifications-email">
-                <label class="lang-es active" for="notifications-email">Recibir notificaciones por correo
+                <label class="lang-es active" for="notifications-email">recibir notificaciones por correo
                     electrónico</label>
                 <label class="lang-en hiden" for="notifications-email">receive email notifications</label>
                 <br>
                 <br>
                 <input type="checkbox" name="" id="notifications-sms">
-                <label class="lang-es active" for="notifications-sms">Recibir notificaciones por SMS</label>
-                <label class="lang-en hiden" for="notifications-sms">Receive SMS notifications</label>
+                <label class="lang-es active" for="notifications-sms">recibir notificaciones por SMS</label>
+                <label class="lang-en hiden" for="notifications-sms">receive SMS notifications</label>
             </div>
             <a class="profile__btn-save lang-es active" href="account.html">Guardar&nbsp;y&nbsp;continuar</a>
             <a class="profile__btn-save lang-en hiden" href="account.html">Save&nbsp;and&nbsp;continue</a>
@@ -197,7 +197,8 @@
                 <div class="footer__heading">
                     <img src="img/logo2.png" alt="EMPLEO" class="footer__logo">
                     <div class="footer__title lang-es active">Servicio de selección de trabajo cerca de casa y más</div>
-                    <div class="footer__title lang-en hiden">Job selection service close to home and more</div>
+                    <div class="footer__title lang-en hiden">Job search service close to home and more
+                    </div>
                 </div>
                 <ul class="footer__menu">
                     <li class="footer__menu-item lang-es active"><a href="#" class="footer__menu-link">Cómo convertirse
