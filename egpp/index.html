@@ -41,7 +41,7 @@
             enctype="multipart/form-data">
             <div class="form__input">
                 <label class="form__input-title"> 1. ФИО сотрудника ГЦУП</label>
-                <select class="form__select" name="fio" class="">
+                <select class="form__select" name="fio" class="" required>
                     <option value="">-</option>
                     <option value="Маслов Алексей Васильевич">Маслов Алексей Васильевич</option>
                     <option value="Балашов Алексей Игоревич">Балашов Алексей Игоревич</option>
@@ -56,11 +56,11 @@
             <div class="form__input">
                 <label for="second__select" class="form__input-title">2. Государственный
                     регистрационный номер ТС </label>
-                <input class="form__input-btn" type="text" name="grz" placeholder="А001АА178">
+                <input class="form__input-btn" type="text" name="grz" placeholder="А001АА178" required maxlength="11">
             </div>
             <div class="form__input">
                 <label class="form__input-title">3. Адрес места фиксации</label>
-                <select name="adress" class="form__select">
+                <select name="adress" class="form__select" required>
                     <option value="">-</option>
                     <option value="1-я Советская ул. ">1-я Советская ул. </option>
                     <option value="2-я Советская ул. ">2-я Советская ул. </option>
@@ -291,16 +291,16 @@
             <div class="form__input">
                 <label class="form__input-title">4. Номер
                     дома</label>
-                <input type="text" name="numberHome" class="form__input-btn">
+                <input type="text" name="numberHome" class="form__input-btn" required maxlength="11">
             </div>
             <div class="form__input">
                 <label class="form__input-title">5. Фото №1 (закрытый ГРЗ)</label>
-                <input type="file" name="file1" accept="image/*" multiple class="form__input-file"
+                <input required type="file" name="file1" accept="image/*" class="form__input-file"
                     placeholder="Загрузить файл">
             </div>
             <div class="form__input">
                 <label class="form__input-title">6. Фото №2 (открытый ГРЗ)</label>
-                <input type="file" name="file2" accept="image/*" multiple class="form__input-file"
+                <input required type="file" name="file2" accept="image/*" class="form__input-file"
                     placeholder="Загрузить файл">
             </div>
             <div class="form__input submit">
