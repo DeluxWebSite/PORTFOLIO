@@ -1,4 +1,0 @@
-User-agent: *
-Crawl-delay: 1
-Host: umtsk.ru
-Sitemap: http://umtsk.ru
