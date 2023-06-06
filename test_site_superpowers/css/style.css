@@ -1,21 +1,21 @@
 @charset "UTF-8";
 @font-face {
   font-family: "GilroyRegular";
-  src: url("/fonts/GilroyRegular.woff") format("woff");
+  src: url("../fonts/GilroyRegular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
   font-family: "GilroyRegular";
-  src: url("/fonts/GilroyMedium.woff") format("woff");
+  src: url("../fonts/GilroyMedium.woff") format("woff");
   font-style: normal;
   font-weight: 500;
 }
 
 @font-face {
   font-family: "GilroyRegular";
-  src: url("/fonts/GilroyBold.woff") format("woff");
+  src: url("../fonts/GilroyBold.woff") format("woff");
   font-style: normal;
   font-weight: 700;
 }
@@ -24,7 +24,7 @@
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   vertical-align: baseline;
   font-weight: inherit;
   font-family: inherit;
@@ -60,9 +60,9 @@ body {
 }
 
 .site-header {
-  background: url("/img/background-color.png"), no-repeat url("/img/header-background.jpg");
+  background: url("../img/background-color.png"), no-repeat url("../img/header-background.jpg");
   -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   background-position: top;
   display: -webkit-box;
   display: -webkit-flex;
@@ -71,12 +71,12 @@ body {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 /* заголовок */
@@ -87,12 +87,12 @@ body {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   max-width: 920px;
   margin-top: 27px;
 }
@@ -164,22 +164,22 @@ body {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 16px;
   width: 285px;
   height: 125px;
   -webkit-border-radius: 30px;
-          border-radius: 30px;
+  border-radius: 30px;
   background-color: white;
 }
 
@@ -207,8 +207,8 @@ body {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .site-header__calendar p {
@@ -236,15 +236,15 @@ body {
   display: flex;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .btn-e-mail {
   width: 254px;
   height: 56px;
   -webkit-border-radius: 30px;
-          border-radius: 30px;
+  border-radius: 30px;
   border: none;
   margin: 15px;
   background-color: white;
@@ -262,7 +262,7 @@ body {
   width: 254px;
   height: 56px;
   -webkit-border-radius: 30px;
-          border-radius: 30px;
+  border-radius: 30px;
   margin: 15px;
   border: none;
   background-color: #fad264;
@@ -297,8 +297,8 @@ body {
   margin: 39px auto 75px auto;
   -webkit-box-align: center;
   -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   font-family: "GilroyRegular";
   font-style: normal;
   font-weight: normal;
@@ -361,8 +361,8 @@ body {
 @media (min-width: 606px) and (max-width: 991px) {
   .site-header__title {
     -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-top: 34px;
     max-width: 688px;
   }
@@ -383,14 +383,14 @@ body {
   }
   .site-header__items {
     -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     max-width: 618px;
     margin: 72px auto 63px auto;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .item {
     width: 271px;
@@ -412,8 +412,8 @@ body {
 @media (max-width: 605px) {
   .site-header__title {
     -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-top: 34px;
     width: 320px;
   }
@@ -443,14 +443,14 @@ body {
   .site-header__items {
     width: 320px;
     -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin-top: 40px;
     margin-bottom: 41px;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .item {
     width: 320px;
@@ -472,12 +472,12 @@ body {
   .site-header__buttons {
     width: 320px;
     -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     margin-top: 41px;
     margin-bottom: 8px;
   }
