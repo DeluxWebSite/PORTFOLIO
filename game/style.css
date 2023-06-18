@@ -32,12 +32,12 @@ h1 {
   background-color: bisque;
 }
 .cell-x {
-  background-image: url('/icon-x.svg');
+  background-image: url("icon-x.svg");
   background-repeat: no-repeat;
   background-position: center center;
 }
 .cell-o {
-  background-image: url('/icon-o.png');
+  background-image: url("icon-o.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
